@@ -1,0 +1,314 @@
+{
+  "bound_attained_histories": 3,
+  "complete_histories_replayed": 31,
+  "histories": [
+    {
+      "attempts": 3,
+      "canceled": 0,
+      "case": "pilot",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 1
+    },
+    {
+      "attempts": 4,
+      "canceled": 1,
+      "case": "faults/cases/admission-close_interrupted",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 2
+    },
+    {
+      "attempts": 3,
+      "canceled": 0,
+      "case": "faults/cases/admission-none",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 0
+    },
+    {
+      "attempts": 3,
+      "canceled": 0,
+      "case": "faults/cases/admission-post_effect",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 1
+    },
+    {
+      "attempts": 3,
+      "canceled": 0,
+      "case": "faults/cases/admission-post_settle",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 0
+    },
+    {
+      "attempts": 4,
+      "canceled": 1,
+      "case": "faults/cases/admission-post_then_pre",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 2
+    },
+    {
+      "attempts": 4,
+      "canceled": 1,
+      "case": "faults/cases/admission-pre_effect",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 1
+    },
+    {
+      "attempts": 4,
+      "canceled": 1,
+      "case": "faults/cases/admission-pre_then_post",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 2
+    },
+    {
+      "attempts": 4,
+      "canceled": 1,
+      "case": "faults/cases/admission-recover_interrupted",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 2
+    },
+    {
+      "attempts": 3,
+      "canceled": 0,
+      "case": "faults/cases/admission-two_post_effect",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 2
+    },
+    {
+      "attempts": 5,
+      "canceled": 2,
+      "case": "faults/cases/admission-two_pre_effect",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 2
+    },
+    {
+      "attempts": 4,
+      "canceled": 1,
+      "case": "faults/cases/cache-close_interrupted",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 2
+    },
+    {
+      "attempts": 3,
+      "canceled": 0,
+      "case": "faults/cases/cache-none",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 0
+    },
+    {
+      "attempts": 3,
+      "canceled": 0,
+      "case": "faults/cases/cache-post_effect",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 1
+    },
+    {
+      "attempts": 3,
+      "canceled": 0,
+      "case": "faults/cases/cache-post_settle",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 0
+    },
+    {
+      "attempts": 4,
+      "canceled": 1,
+      "case": "faults/cases/cache-post_then_pre",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 2
+    },
+    {
+      "attempts": 4,
+      "canceled": 1,
+      "case": "faults/cases/cache-pre_effect",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 1
+    },
+    {
+      "attempts": 4,
+      "canceled": 1,
+      "case": "faults/cases/cache-pre_then_post",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 2
+    },
+    {
+      "attempts": 4,
+      "canceled": 1,
+      "case": "faults/cases/cache-recover_interrupted",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 2
+    },
+    {
+      "attempts": 3,
+      "canceled": 0,
+      "case": "faults/cases/cache-two_post_effect",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 2
+    },
+    {
+      "attempts": 5,
+      "canceled": 2,
+      "case": "faults/cases/cache-two_pre_effect",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 2
+    },
+    {
+      "attempts": 4,
+      "canceled": 1,
+      "case": "faults/cases/tier-close_interrupted",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 2
+    },
+    {
+      "attempts": 3,
+      "canceled": 0,
+      "case": "faults/cases/tier-none",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 0
+    },
+    {
+      "attempts": 3,
+      "canceled": 0,
+      "case": "faults/cases/tier-post_effect",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 1
+    },
+    {
+      "attempts": 3,
+      "canceled": 0,
+      "case": "faults/cases/tier-post_settle",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 0
+    },
+    {
+      "attempts": 4,
+      "canceled": 1,
+      "case": "faults/cases/tier-post_then_pre",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 2
+    },
+    {
+      "attempts": 4,
+      "canceled": 1,
+      "case": "faults/cases/tier-pre_effect",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 1
+    },
+    {
+      "attempts": 4,
+      "canceled": 1,
+      "case": "faults/cases/tier-pre_then_post",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 2
+    },
+    {
+      "attempts": 4,
+      "canceled": 1,
+      "case": "faults/cases/tier-recover_interrupted",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 2
+    },
+    {
+      "attempts": 3,
+      "canceled": 0,
+      "case": "faults/cases/tier-two_post_effect",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 2
+    },
+    {
+      "attempts": 5,
+      "canceled": 2,
+      "case": "faults/cases/tier-two_pre_effect",
+      "crash_bound": 2,
+      "effects": 3,
+      "jobs": 3,
+      "recovery_events": 2
+    }
+  ],
+  "max_attempts_observed": 5,
+  "refinement_count_rows_checked": 171,
+  "scope": "One completed finite contract; no byte-size or global service storage bound.",
+  "tombstone_controls": [
+    {
+      "adapter": "admission",
+      "after_illegal_deletion": "done",
+      "after_restart_with_tombstone": "canceled",
+      "effects_after_deletion": 1,
+      "effects_with_tombstone": 0,
+      "expected_retention_violation_observed": true
+    },
+    {
+      "adapter": "cache",
+      "after_illegal_deletion": "done",
+      "after_restart_with_tombstone": "canceled",
+      "effects_after_deletion": 1,
+      "effects_with_tombstone": 0,
+      "expected_retention_violation_observed": true
+    },
+    {
+      "adapter": "tier",
+      "after_illegal_deletion": "done",
+      "after_restart_with_tombstone": "canceled",
+      "effects_after_deletion": 1,
+      "effects_with_tombstone": 0,
+      "expected_retention_violation_observed": true
+    }
+  ]
+}

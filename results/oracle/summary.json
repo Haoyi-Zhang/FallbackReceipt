@@ -1,0 +1,16 @@
+{
+  "cases": 1200,
+  "cpu_seconds": 2.457009357,
+  "feasible": 911,
+  "infeasible": 289,
+  "max_rss_kib": 32956,
+  "max_synthesis_seconds": 0.0044118819996583625,
+  "max_visited_states": 777,
+  "micro_exhaustive_cases": 23040,
+  "micro_exhaustive_feasible": 16864,
+  "micro_exhaustive_infeasible": 6176,
+  "micro_exhaustive_max_visited_states": 8,
+  "micro_exhaustive_mismatches": 0,
+  "mismatches": 0,
+  "wall_seconds": 2.457088403999933
+}

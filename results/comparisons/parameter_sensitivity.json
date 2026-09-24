@@ -1,0 +1,3245 @@
+{
+  "contracts": 320,
+  "crashes": 1,
+  "drift": 1,
+  "exploratory": true,
+  "rows": [
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "base",
+      "window": 0
+    },
+    {
+      "adaptive_cost": 22,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 22,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "base",
+      "window": 0
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "base",
+      "window": 1
+    },
+    {
+      "adaptive_cost": 20,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 20,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "base",
+      "window": 1
+    },
+    {
+      "adaptive_cost": 32,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 32,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "base",
+      "window": 2
+    },
+    {
+      "adaptive_cost": 19,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 19,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "base",
+      "window": 2
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "base",
+      "window": 3
+    },
+    {
+      "adaptive_cost": 25,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 25,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "base",
+      "window": 3
+    },
+    {
+      "adaptive_cost": 26,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 26,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "base",
+      "window": 4
+    },
+    {
+      "adaptive_cost": 17,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 17,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "base",
+      "window": 4
+    },
+    {
+      "adaptive_cost": 32,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 32,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "base",
+      "window": 5
+    },
+    {
+      "adaptive_cost": 19,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 19,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "base",
+      "window": 5
+    },
+    {
+      "adaptive_cost": 27,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 27,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "base",
+      "window": 6
+    },
+    {
+      "adaptive_cost": 15,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 15,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "base",
+      "window": 6
+    },
+    {
+      "adaptive_cost": 31,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 31,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "base",
+      "window": 7
+    },
+    {
+      "adaptive_cost": 18,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 18,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "base",
+      "window": 7
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "base",
+      "window": 8
+    },
+    {
+      "adaptive_cost": 16,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 16,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "base",
+      "window": 8
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "base",
+      "window": 9
+    },
+    {
+      "adaptive_cost": 24,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 24,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "base",
+      "window": 9
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "base",
+      "window": 10
+    },
+    {
+      "adaptive_cost": 23,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 23,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "base",
+      "window": 10
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "base",
+      "window": 11
+    },
+    {
+      "adaptive_cost": 14,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 14,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "base",
+      "window": 11
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "base",
+      "window": 12
+    },
+    {
+      "adaptive_cost": 17,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 17,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "base",
+      "window": 12
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "base",
+      "window": 13
+    },
+    {
+      "adaptive_cost": 24,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 24,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "base",
+      "window": 13
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "base",
+      "window": 14
+    },
+    {
+      "adaptive_cost": 18,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 18,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "base",
+      "window": 14
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "base",
+      "window": 15
+    },
+    {
+      "adaptive_cost": 20,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 20,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "base",
+      "window": 15
+    },
+    {
+      "adaptive_cost": 32,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 32,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "base",
+      "window": 0
+    },
+    {
+      "adaptive_cost": 22,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 22,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "base",
+      "window": 0
+    },
+    {
+      "adaptive_cost": 32,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 32,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "base",
+      "window": 1
+    },
+    {
+      "adaptive_cost": 23,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 23,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "base",
+      "window": 1
+    },
+    {
+      "adaptive_cost": 34,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 34,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "base",
+      "window": 2
+    },
+    {
+      "adaptive_cost": 23,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 23,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "base",
+      "window": 2
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "base",
+      "window": 3
+    },
+    {
+      "adaptive_cost": 24,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 24,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "base",
+      "window": 3
+    },
+    {
+      "adaptive_cost": 32,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 32,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "base",
+      "window": 4
+    },
+    {
+      "adaptive_cost": 24,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 24,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "base",
+      "window": 4
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "base",
+      "window": 5
+    },
+    {
+      "adaptive_cost": 23,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 23,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "base",
+      "window": 5
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "base",
+      "window": 6
+    },
+    {
+      "adaptive_cost": 24,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 24,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "base",
+      "window": 6
+    },
+    {
+      "adaptive_cost": 34,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 34,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "base",
+      "window": 7
+    },
+    {
+      "adaptive_cost": 23,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 23,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "base",
+      "window": 7
+    },
+    {
+      "adaptive_cost": 35,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 35,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "base",
+      "window": 8
+    },
+    {
+      "adaptive_cost": 25,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 25,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "base",
+      "window": 8
+    },
+    {
+      "adaptive_cost": 37,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 37,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "base",
+      "window": 9
+    },
+    {
+      "adaptive_cost": 27,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 27,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "base",
+      "window": 9
+    },
+    {
+      "adaptive_cost": 40,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 40,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "base",
+      "window": 10
+    },
+    {
+      "adaptive_cost": 28,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 28,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "base",
+      "window": 10
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "base",
+      "window": 11
+    },
+    {
+      "adaptive_cost": 26,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 26,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "base",
+      "window": 11
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "base",
+      "window": 12
+    },
+    {
+      "adaptive_cost": 28,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 28,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "base",
+      "window": 12
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "base",
+      "window": 13
+    },
+    {
+      "adaptive_cost": 26,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 26,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "base",
+      "window": 13
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "base",
+      "window": 14
+    },
+    {
+      "adaptive_cost": 29,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 29,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "base",
+      "window": 14
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "base",
+      "window": 15
+    },
+    {
+      "adaptive_cost": 30,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 30,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "base",
+      "window": 15
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 0
+    },
+    {
+      "adaptive_cost": 22,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 22,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 0
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 1
+    },
+    {
+      "adaptive_cost": 20,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 20,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 1
+    },
+    {
+      "adaptive_cost": 32,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 32,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 2
+    },
+    {
+      "adaptive_cost": 22,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 22,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 2
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 3
+    },
+    {
+      "adaptive_cost": 25,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 25,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 3
+    },
+    {
+      "adaptive_cost": 30,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 30,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 4
+    },
+    {
+      "adaptive_cost": 21,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 21,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 4
+    },
+    {
+      "adaptive_cost": 32,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 32,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 5
+    },
+    {
+      "adaptive_cost": 22,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 22,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 5
+    },
+    {
+      "adaptive_cost": 27,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 27,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 6
+    },
+    {
+      "adaptive_cost": 18,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 18,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 6
+    },
+    {
+      "adaptive_cost": 31,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 31,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 7
+    },
+    {
+      "adaptive_cost": 21,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 21,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 7
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 8
+    },
+    {
+      "adaptive_cost": 21,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 21,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 8
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 9
+    },
+    {
+      "adaptive_cost": 24,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 24,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 9
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 10
+    },
+    {
+      "adaptive_cost": 23,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 23,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 10
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 11
+    },
+    {
+      "adaptive_cost": 17,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 17,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 11
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 12
+    },
+    {
+      "adaptive_cost": 17,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 17,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 12
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 13
+    },
+    {
+      "adaptive_cost": 24,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 24,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 13
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 14
+    },
+    {
+      "adaptive_cost": 22,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 22,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 14
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 15
+    },
+    {
+      "adaptive_cost": 20,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 20,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "recovery_plus_one",
+      "window": 15
+    },
+    {
+      "adaptive_cost": 32,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 32,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 0
+    },
+    {
+      "adaptive_cost": 22,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 22,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 0
+    },
+    {
+      "adaptive_cost": 32,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 32,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 1
+    },
+    {
+      "adaptive_cost": 23,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 23,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 1
+    },
+    {
+      "adaptive_cost": 34,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 34,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 2
+    },
+    {
+      "adaptive_cost": 23,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 23,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 2
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 3
+    },
+    {
+      "adaptive_cost": 24,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 24,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 3
+    },
+    {
+      "adaptive_cost": 32,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 32,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 4
+    },
+    {
+      "adaptive_cost": 24,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 24,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 4
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 5
+    },
+    {
+      "adaptive_cost": 23,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 23,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 5
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 6
+    },
+    {
+      "adaptive_cost": 24,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 24,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 6
+    },
+    {
+      "adaptive_cost": 34,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 34,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 7
+    },
+    {
+      "adaptive_cost": 23,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 23,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 7
+    },
+    {
+      "adaptive_cost": 35,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 35,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 8
+    },
+    {
+      "adaptive_cost": 25,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 25,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 8
+    },
+    {
+      "adaptive_cost": 37,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 37,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 9
+    },
+    {
+      "adaptive_cost": 27,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 27,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 9
+    },
+    {
+      "adaptive_cost": 40,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 40,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 10
+    },
+    {
+      "adaptive_cost": 28,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 28,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 10
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 11
+    },
+    {
+      "adaptive_cost": 26,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 26,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 11
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 12
+    },
+    {
+      "adaptive_cost": 28,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 28,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 12
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 13
+    },
+    {
+      "adaptive_cost": 26,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 26,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 13
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 14
+    },
+    {
+      "adaptive_cost": 29,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 29,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 14
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 15
+    },
+    {
+      "adaptive_cost": 30,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 30,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "recovery_plus_one",
+      "window": 15
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 0
+    },
+    {
+      "adaptive_cost": 23,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 23,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 0
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 1
+    },
+    {
+      "adaptive_cost": 21,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 21,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 1
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 2
+    },
+    {
+      "adaptive_cost": 23,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 23,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 2
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 3
+    },
+    {
+      "adaptive_cost": 26,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 26,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 3
+    },
+    {
+      "adaptive_cost": 30,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 30,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 4
+    },
+    {
+      "adaptive_cost": 21,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 21,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 4
+    },
+    {
+      "adaptive_cost": 32,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 32,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 5
+    },
+    {
+      "adaptive_cost": 22,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 22,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 5
+    },
+    {
+      "adaptive_cost": 27,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 27,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 6
+    },
+    {
+      "adaptive_cost": 18,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 18,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 6
+    },
+    {
+      "adaptive_cost": 31,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 31,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 7
+    },
+    {
+      "adaptive_cost": 21,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 21,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 7
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 8
+    },
+    {
+      "adaptive_cost": 21,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 21,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 8
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 9
+    },
+    {
+      "adaptive_cost": 24,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 24,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 9
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 10
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "roomy",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 10
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 11
+    },
+    {
+      "adaptive_cost": 17,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 17,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 11
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 12
+    },
+    {
+      "adaptive_cost": 17,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 17,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 12
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 13
+    },
+    {
+      "adaptive_cost": 24,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 24,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 13
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 14
+    },
+    {
+      "adaptive_cost": 22,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 22,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 14
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 15
+    },
+    {
+      "adaptive_cost": 20,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 20,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "time_plus_one",
+      "window": 15
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 0
+    },
+    {
+      "adaptive_cost": 23,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 23,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 0
+    },
+    {
+      "adaptive_cost": 32,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 32,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 1
+    },
+    {
+      "adaptive_cost": 23,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 23,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 1
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 2
+    },
+    {
+      "adaptive_cost": 26,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 26,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 2
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 3
+    },
+    {
+      "adaptive_cost": 24,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 24,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 3
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 4
+    },
+    {
+      "adaptive_cost": 24,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 24,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 4
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 5
+    },
+    {
+      "adaptive_cost": 23,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 23,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 5
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 6
+    },
+    {
+      "adaptive_cost": 24,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 24,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 6
+    },
+    {
+      "adaptive_cost": 34,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 34,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 7
+    },
+    {
+      "adaptive_cost": 23,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 23,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 7
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 8
+    },
+    {
+      "adaptive_cost": 26,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 26,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 8
+    },
+    {
+      "adaptive_cost": 37,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 37,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 9
+    },
+    {
+      "adaptive_cost": 27,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 27,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 9
+    },
+    {
+      "adaptive_cost": 40,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 40,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 10
+    },
+    {
+      "adaptive_cost": 28,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 28,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 10
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 11
+    },
+    {
+      "adaptive_cost": 26,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 26,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 11
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 12
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "roomy",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 12
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 13
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "roomy",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 13
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 14
+    },
+    {
+      "adaptive_cost": 30,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 30,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 14
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 15
+    },
+    {
+      "adaptive_cost": 32,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 32,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "time_plus_one",
+      "window": 15
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 0
+    },
+    {
+      "adaptive_cost": 28,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 28,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 0
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 1
+    },
+    {
+      "adaptive_cost": 26,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 26,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 1
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 2
+    },
+    {
+      "adaptive_cost": 24,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 24,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 2
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 3
+    },
+    {
+      "adaptive_cost": 31,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 31,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 3
+    },
+    {
+      "adaptive_cost": 33,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 33,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 4
+    },
+    {
+      "adaptive_cost": 22,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 22,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 4
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 5
+    },
+    {
+      "adaptive_cost": 24,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 24,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 5
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 6
+    },
+    {
+      "adaptive_cost": 20,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 20,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 6
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 7
+    },
+    {
+      "adaptive_cost": 23,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 23,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 7
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 8
+    },
+    {
+      "adaptive_cost": 21,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 21,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 8
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 9
+    },
+    {
+      "adaptive_cost": 30,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 30,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 9
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 10
+    },
+    {
+      "adaptive_cost": 29,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 29,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 10
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 11
+    },
+    {
+      "adaptive_cost": 19,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 19,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 11
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 12
+    },
+    {
+      "adaptive_cost": 23,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 23,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 12
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 13
+    },
+    {
+      "adaptive_cost": 30,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 30,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 13
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 14
+    },
+    {
+      "adaptive_cost": 23,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 23,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 14
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 15
+    },
+    {
+      "adaptive_cost": 26,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 26,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "cost_plus_one",
+      "window": 15
+    },
+    {
+      "adaptive_cost": 40,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 40,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 0
+    },
+    {
+      "adaptive_cost": 28,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 28,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 0
+    },
+    {
+      "adaptive_cost": 40,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 40,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 1
+    },
+    {
+      "adaptive_cost": 29,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 29,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 1
+    },
+    {
+      "adaptive_cost": 42,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 42,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 2
+    },
+    {
+      "adaptive_cost": 29,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 29,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 2
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 3
+    },
+    {
+      "adaptive_cost": 30,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 30,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 3
+    },
+    {
+      "adaptive_cost": 40,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 40,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 4
+    },
+    {
+      "adaptive_cost": 30,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 30,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 4
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 5
+    },
+    {
+      "adaptive_cost": 29,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 29,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 5
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 6
+    },
+    {
+      "adaptive_cost": 30,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 30,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 6
+    },
+    {
+      "adaptive_cost": 42,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 42,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 7
+    },
+    {
+      "adaptive_cost": 29,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 29,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 7
+    },
+    {
+      "adaptive_cost": 43,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 43,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 8
+    },
+    {
+      "adaptive_cost": 31,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 31,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 8
+    },
+    {
+      "adaptive_cost": 45,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 45,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 9
+    },
+    {
+      "adaptive_cost": 33,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 33,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 9
+    },
+    {
+      "adaptive_cost": 48,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 48,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 10
+    },
+    {
+      "adaptive_cost": 34,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 34,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 10
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 11
+    },
+    {
+      "adaptive_cost": 32,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 32,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 11
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 12
+    },
+    {
+      "adaptive_cost": 34,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 34,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 12
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 13
+    },
+    {
+      "adaptive_cost": 32,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 32,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 13
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 14
+    },
+    {
+      "adaptive_cost": 35,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 35,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 14
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 15
+    },
+    {
+      "adaptive_cost": 36,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 36,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "cost_plus_one",
+      "window": 15
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 0
+    },
+    {
+      "adaptive_cost": 25,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 25,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 0
+    },
+    {
+      "adaptive_cost": 35,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 35,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 1
+    },
+    {
+      "adaptive_cost": 24,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 24,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 1
+    },
+    {
+      "adaptive_cost": 35,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 35,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 2
+    },
+    {
+      "adaptive_cost": 21,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 21,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 2
+    },
+    {
+      "adaptive_cost": 38,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 38,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 3
+    },
+    {
+      "adaptive_cost": 27,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 27,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 3
+    },
+    {
+      "adaptive_cost": 32,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 32,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 4
+    },
+    {
+      "adaptive_cost": 19,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 19,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 4
+    },
+    {
+      "adaptive_cost": 37,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 37,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 5
+    },
+    {
+      "adaptive_cost": 25,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 25,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 5
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 6
+    },
+    {
+      "adaptive_cost": 24,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 24,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 6
+    },
+    {
+      "adaptive_cost": 35,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 35,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 7
+    },
+    {
+      "adaptive_cost": 25,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 25,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 7
+    },
+    {
+      "adaptive_cost": 37,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 37,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 8
+    },
+    {
+      "adaptive_cost": 24,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 24,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 8
+    },
+    {
+      "adaptive_cost": 38,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 38,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 9
+    },
+    {
+      "adaptive_cost": 25,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 25,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 9
+    },
+    {
+      "adaptive_cost": 38,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 38,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 10
+    },
+    {
+      "adaptive_cost": 24,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 24,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 10
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 11
+    },
+    {
+      "adaptive_cost": 22,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 22,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 11
+    },
+    {
+      "adaptive_cost": 29,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 29,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 12
+    },
+    {
+      "adaptive_cost": 20,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 20,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 12
+    },
+    {
+      "adaptive_cost": 37,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 37,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 13
+    },
+    {
+      "adaptive_cost": 24,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 24,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 13
+    },
+    {
+      "adaptive_cost": 34,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 34,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 14
+    },
+    {
+      "adaptive_cost": 23,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 23,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 14
+    },
+    {
+      "adaptive_cost": 35,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 35,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 15
+    },
+    {
+      "adaptive_cost": 23,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 23,
+      "open_loop_feasible": true,
+      "source": "code",
+      "variant": "score_rotation",
+      "window": 15
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 0
+    },
+    {
+      "adaptive_cost": 31,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 31,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 0
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 1
+    },
+    {
+      "adaptive_cost": 34,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 34,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 1
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 2
+    },
+    {
+      "adaptive_cost": 31,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 31,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 2
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 3
+    },
+    {
+      "adaptive_cost": 35,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 35,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 3
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 4
+    },
+    {
+      "adaptive_cost": 39,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 39,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 4
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 5
+    },
+    {
+      "adaptive_cost": 31,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 31,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 5
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 6
+    },
+    {
+      "adaptive_cost": 32,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 32,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 6
+    },
+    {
+      "adaptive_cost": 42,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 42,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 7
+    },
+    {
+      "adaptive_cost": 28,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 28,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 7
+    },
+    {
+      "adaptive_cost": 40,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 40,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 8
+    },
+    {
+      "adaptive_cost": 28,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 28,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 8
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 9
+    },
+    {
+      "adaptive_cost": 32,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 32,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 9
+    },
+    {
+      "adaptive_cost": 46,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 46,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 10
+    },
+    {
+      "adaptive_cost": 32,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 32,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 10
+    },
+    {
+      "adaptive_cost": null,
+      "adaptive_feasible": false,
+      "budget": "tight",
+      "open_loop_cost": null,
+      "open_loop_feasible": false,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 11
+    },
+    {
+      "adaptive_cost": 34,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 34,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 11
+    },
+    {
+      "adaptive_cost": 38,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 38,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 12
+    },
+    {
+      "adaptive_cost": 28,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 28,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 12
+    },
+    {
+      "adaptive_cost": 44,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 44,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 13
+    },
+    {
+      "adaptive_cost": 28,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 28,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 13
+    },
+    {
+      "adaptive_cost": 39,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 39,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 14
+    },
+    {
+      "adaptive_cost": 29,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 29,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 14
+    },
+    {
+      "adaptive_cost": 42,
+      "adaptive_feasible": true,
+      "budget": "tight",
+      "open_loop_cost": 42,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 15
+    },
+    {
+      "adaptive_cost": 30,
+      "adaptive_feasible": true,
+      "budget": "roomy",
+      "open_loop_cost": 30,
+      "open_loop_feasible": true,
+      "source": "conv",
+      "variant": "score_rotation",
+      "window": 15
+    }
+  ],
+  "summary": {
+    "base": {
+      "adaptive_feasible": 45,
+      "adaptive_lower_cost": 0,
+      "adaptive_only": 0,
+      "contracts": 64,
+      "open_loop_feasible": 45
+    },
+    "cost_plus_one": {
+      "adaptive_feasible": 41,
+      "adaptive_lower_cost": 0,
+      "adaptive_only": 0,
+      "contracts": 64,
+      "open_loop_feasible": 41
+    },
+    "recovery_plus_one": {
+      "adaptive_feasible": 45,
+      "adaptive_lower_cost": 0,
+      "adaptive_only": 0,
+      "contracts": 64,
+      "open_loop_feasible": 45
+    },
+    "score_rotation": {
+      "adaptive_feasible": 52,
+      "adaptive_lower_cost": 0,
+      "adaptive_only": 0,
+      "contracts": 64,
+      "open_loop_feasible": 52
+    },
+    "time_plus_one": {
+      "adaptive_feasible": 37,
+      "adaptive_lower_cost": 0,
+      "adaptive_only": 0,
+      "contracts": 64,
+      "open_loop_feasible": 37
+    }
+  }
+}

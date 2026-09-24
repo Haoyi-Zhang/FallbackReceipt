@@ -1,0 +1,42 @@
+[
+  {
+    "crash_bound": 0,
+    "edges": 4,
+    "longest_no_further_crash_path": 4,
+    "nonterminal_dead_ends": 0,
+    "productive_cycles": 0,
+    "states": 5
+  },
+  {
+    "crash_bound": 1,
+    "edges": 24,
+    "longest_no_further_crash_path": 6,
+    "nonterminal_dead_ends": 0,
+    "productive_cycles": 0,
+    "states": 23
+  },
+  {
+    "crash_bound": 2,
+    "edges": 91,
+    "longest_no_further_crash_path": 6,
+    "nonterminal_dead_ends": 0,
+    "productive_cycles": 0,
+    "states": 79
+  },
+  {
+    "crash_bound": 3,
+    "edges": 260,
+    "longest_no_further_crash_path": 6,
+    "nonterminal_dead_ends": 0,
+    "productive_cycles": 0,
+    "states": 211
+  },
+  {
+    "crash_bound": 4,
+    "edges": 633,
+    "longest_no_further_crash_path": 6,
+    "nonterminal_dead_ends": 0,
+    "productive_cycles": 0,
+    "states": 495
+  }
+]

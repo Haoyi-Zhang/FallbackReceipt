@@ -1,0 +1,21 @@
+{
+  "candidate_cases": 300,
+  "cpu_seconds": 1.6724344430000002,
+  "feasible_source_cases": 296,
+  "max_rss_kib": 35004,
+  "semantic_by_kind": {
+    "ignore_recovery_time": {
+      "cases": 296,
+      "rejected": 49
+    },
+    "invert_score_classes": {
+      "cases": 296,
+      "rejected": 132
+    }
+  },
+  "semantic_mutants": 592,
+  "semantic_rejected": 181,
+  "structural_value_mutants": 2072,
+  "structural_value_rejected": 2072,
+  "wall_seconds": 1.6720155079997312
+}

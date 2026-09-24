@@ -1,0 +1,2552 @@
+[
+  {
+    "declared_crashes": 0,
+    "declared_flips": 0,
+    "path": 0,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 1
+        },
+        "next": [
+          2,
+          1,
+          2,
+          0,
+          0,
+          12
+        ],
+        "state": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "fallback",
+        "meta": {
+          "cost": 5,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          1,
+          2,
+          0,
+          0,
+          7
+        ],
+        "state": [
+          2,
+          1,
+          2,
+          0,
+          0,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 1,
+    "declared_flips": 0,
+    "path": 1,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 1
+        },
+        "next": [
+          2,
+          1,
+          2,
+          0,
+          0,
+          12
+        ],
+        "state": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "fallback",
+        "meta": {
+          "cost": 5,
+          "crashes": 1,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          1,
+          1,
+          0,
+          0,
+          7
+        ],
+        "state": [
+          2,
+          1,
+          2,
+          0,
+          0,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 2,
+    "declared_flips": 0,
+    "path": 2,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 1
+        },
+        "next": [
+          2,
+          1,
+          2,
+          0,
+          0,
+          12
+        ],
+        "state": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "fallback",
+        "meta": {
+          "cost": 5,
+          "crashes": 2,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          1,
+          0,
+          0,
+          0,
+          7
+        ],
+        "state": [
+          2,
+          1,
+          2,
+          0,
+          0,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 1,
+    "declared_flips": 0,
+    "path": 3,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 1,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 1
+        },
+        "next": [
+          2,
+          1,
+          1,
+          0,
+          0,
+          12
+        ],
+        "state": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "fallback",
+        "meta": {
+          "cost": 5,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          1,
+          1,
+          0,
+          0,
+          7
+        ],
+        "state": [
+          2,
+          1,
+          1,
+          0,
+          0,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 2,
+    "declared_flips": 0,
+    "path": 4,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 1,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 1
+        },
+        "next": [
+          2,
+          1,
+          1,
+          0,
+          0,
+          12
+        ],
+        "state": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "fallback",
+        "meta": {
+          "cost": 5,
+          "crashes": 1,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          1,
+          0,
+          0,
+          0,
+          7
+        ],
+        "state": [
+          2,
+          1,
+          1,
+          0,
+          0,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 2,
+    "declared_flips": 0,
+    "path": 5,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 2,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 1
+        },
+        "next": [
+          2,
+          1,
+          0,
+          0,
+          0,
+          12
+        ],
+        "state": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "fallback",
+        "meta": {
+          "cost": 5,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          1,
+          0,
+          0,
+          0,
+          7
+        ],
+        "state": [
+          2,
+          1,
+          0,
+          0,
+          0,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 0,
+    "declared_flips": 1,
+    "path": 6,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 1,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          2,
+          0,
+          2,
+          1,
+          0,
+          12
+        ],
+        "state": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 3,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          0,
+          2,
+          1,
+          0,
+          9
+        ],
+        "state": [
+          2,
+          0,
+          2,
+          1,
+          0,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 1,
+    "declared_flips": 1,
+    "path": 7,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 1,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          2,
+          0,
+          2,
+          1,
+          0,
+          12
+        ],
+        "state": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 3,
+          "crashes": 1,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          0,
+          1,
+          1,
+          0,
+          9
+        ],
+        "state": [
+          2,
+          0,
+          2,
+          1,
+          0,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 2,
+    "declared_flips": 1,
+    "path": 8,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 1,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          2,
+          0,
+          2,
+          1,
+          0,
+          12
+        ],
+        "state": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 3,
+          "crashes": 2,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          0,
+          0,
+          1,
+          0,
+          9
+        ],
+        "state": [
+          2,
+          0,
+          2,
+          1,
+          0,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 1,
+    "declared_flips": 1,
+    "path": 9,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 1,
+          "flip": 1,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          2,
+          0,
+          1,
+          1,
+          0,
+          12
+        ],
+        "state": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 3,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          0,
+          1,
+          1,
+          0,
+          9
+        ],
+        "state": [
+          2,
+          0,
+          1,
+          1,
+          0,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 2,
+    "declared_flips": 1,
+    "path": 10,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 1,
+          "flip": 1,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          2,
+          0,
+          1,
+          1,
+          0,
+          12
+        ],
+        "state": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 3,
+          "crashes": 1,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          0,
+          0,
+          1,
+          0,
+          9
+        ],
+        "state": [
+          2,
+          0,
+          1,
+          1,
+          0,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 2,
+    "declared_flips": 1,
+    "path": 11,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 2,
+          "flip": 1,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          2,
+          0,
+          0,
+          1,
+          0,
+          12
+        ],
+        "state": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 3,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          0,
+          0,
+          1,
+          0,
+          9
+        ],
+        "state": [
+          2,
+          0,
+          0,
+          1,
+          0,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 1,
+    "declared_flips": 0,
+    "path": 12,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 1,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 1
+        },
+        "next": [
+          2,
+          1,
+          1,
+          0,
+          0,
+          12
+        ],
+        "state": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "fallback",
+        "meta": {
+          "cost": 5,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          1,
+          1,
+          0,
+          0,
+          7
+        ],
+        "state": [
+          2,
+          1,
+          1,
+          0,
+          0,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 2,
+    "declared_flips": 0,
+    "path": 13,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 1,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 1
+        },
+        "next": [
+          2,
+          1,
+          1,
+          0,
+          0,
+          12
+        ],
+        "state": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "fallback",
+        "meta": {
+          "cost": 5,
+          "crashes": 1,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          1,
+          0,
+          0,
+          0,
+          7
+        ],
+        "state": [
+          2,
+          1,
+          1,
+          0,
+          0,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 2,
+    "declared_flips": 0,
+    "path": 14,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 1,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 1,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 1
+        },
+        "next": [
+          2,
+          1,
+          0,
+          0,
+          0,
+          12
+        ],
+        "state": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "fallback",
+        "meta": {
+          "cost": 5,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          1,
+          0,
+          0,
+          0,
+          7
+        ],
+        "state": [
+          2,
+          1,
+          0,
+          0,
+          0,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 1,
+    "declared_flips": 1,
+    "path": 15,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 1,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 1,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          2,
+          0,
+          1,
+          1,
+          0,
+          12
+        ],
+        "state": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 3,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          0,
+          1,
+          1,
+          0,
+          9
+        ],
+        "state": [
+          2,
+          0,
+          1,
+          1,
+          0,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 2,
+    "declared_flips": 1,
+    "path": 16,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 1,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 1,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          2,
+          0,
+          1,
+          1,
+          0,
+          12
+        ],
+        "state": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 3,
+          "crashes": 1,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          0,
+          0,
+          1,
+          0,
+          9
+        ],
+        "state": [
+          2,
+          0,
+          1,
+          1,
+          0,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 2,
+    "declared_flips": 1,
+    "path": 17,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 1,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 1,
+          "flip": 1,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          2,
+          0,
+          0,
+          1,
+          0,
+          12
+        ],
+        "state": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 3,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          0,
+          0,
+          1,
+          0,
+          9
+        ],
+        "state": [
+          2,
+          0,
+          0,
+          1,
+          0,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 2,
+    "declared_flips": 0,
+    "path": 18,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 2,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 1
+        },
+        "next": [
+          2,
+          1,
+          0,
+          0,
+          0,
+          12
+        ],
+        "state": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "fallback",
+        "meta": {
+          "cost": 5,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          1,
+          0,
+          0,
+          0,
+          7
+        ],
+        "state": [
+          2,
+          1,
+          0,
+          0,
+          0,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 2,
+    "declared_flips": 1,
+    "path": 19,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 2,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 1,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          2,
+          0,
+          0,
+          1,
+          0,
+          12
+        ],
+        "state": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 3,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          0,
+          0,
+          1,
+          0,
+          9
+        ],
+        "state": [
+          2,
+          0,
+          0,
+          1,
+          0,
+          12
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 0,
+    "declared_flips": 1,
+    "path": 20,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 1,
+          "late": 0,
+          "unsafe": 1
+        },
+        "next": [
+          1,
+          0,
+          2,
+          0,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "fallback",
+        "meta": {
+          "cost": 5,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          2,
+          0,
+          2,
+          0,
+          0,
+          9
+        ],
+        "state": [
+          1,
+          0,
+          2,
+          0,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 3,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          0,
+          2,
+          0,
+          0,
+          6
+        ],
+        "state": [
+          2,
+          0,
+          2,
+          0,
+          0,
+          9
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 1,
+    "declared_flips": 1,
+    "path": 21,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 1,
+          "late": 0,
+          "unsafe": 1
+        },
+        "next": [
+          1,
+          0,
+          2,
+          0,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "fallback",
+        "meta": {
+          "cost": 5,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          2,
+          0,
+          2,
+          0,
+          0,
+          9
+        ],
+        "state": [
+          1,
+          0,
+          2,
+          0,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 3,
+          "crashes": 1,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          0,
+          1,
+          0,
+          0,
+          6
+        ],
+        "state": [
+          2,
+          0,
+          2,
+          0,
+          0,
+          9
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 2,
+    "declared_flips": 1,
+    "path": 22,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 1,
+          "late": 0,
+          "unsafe": 1
+        },
+        "next": [
+          1,
+          0,
+          2,
+          0,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "fallback",
+        "meta": {
+          "cost": 5,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          2,
+          0,
+          2,
+          0,
+          0,
+          9
+        ],
+        "state": [
+          1,
+          0,
+          2,
+          0,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 3,
+          "crashes": 2,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          6
+        ],
+        "state": [
+          2,
+          0,
+          2,
+          0,
+          0,
+          9
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 1,
+    "declared_flips": 1,
+    "path": 23,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 1,
+          "late": 0,
+          "unsafe": 1
+        },
+        "next": [
+          1,
+          0,
+          2,
+          0,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "fallback",
+        "meta": {
+          "cost": 5,
+          "crashes": 1,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          2,
+          0,
+          1,
+          0,
+          0,
+          9
+        ],
+        "state": [
+          1,
+          0,
+          2,
+          0,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 3,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          0,
+          1,
+          0,
+          0,
+          6
+        ],
+        "state": [
+          2,
+          0,
+          1,
+          0,
+          0,
+          9
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 2,
+    "declared_flips": 1,
+    "path": 24,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 1,
+          "late": 0,
+          "unsafe": 1
+        },
+        "next": [
+          1,
+          0,
+          2,
+          0,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "fallback",
+        "meta": {
+          "cost": 5,
+          "crashes": 1,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          2,
+          0,
+          1,
+          0,
+          0,
+          9
+        ],
+        "state": [
+          1,
+          0,
+          2,
+          0,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 3,
+          "crashes": 1,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          6
+        ],
+        "state": [
+          2,
+          0,
+          1,
+          0,
+          0,
+          9
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 2,
+    "declared_flips": 1,
+    "path": 25,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 0,
+          "flip": 1,
+          "late": 0,
+          "unsafe": 1
+        },
+        "next": [
+          1,
+          0,
+          2,
+          0,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "fallback",
+        "meta": {
+          "cost": 5,
+          "crashes": 2,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          9
+        ],
+        "state": [
+          1,
+          0,
+          2,
+          0,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 3,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          6
+        ],
+        "state": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          9
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 1,
+    "declared_flips": 1,
+    "path": 26,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 1,
+          "flip": 1,
+          "late": 0,
+          "unsafe": 1
+        },
+        "next": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "fallback",
+        "meta": {
+          "cost": 5,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          2,
+          0,
+          1,
+          0,
+          0,
+          9
+        ],
+        "state": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 3,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          0,
+          1,
+          0,
+          0,
+          6
+        ],
+        "state": [
+          2,
+          0,
+          1,
+          0,
+          0,
+          9
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 2,
+    "declared_flips": 1,
+    "path": 27,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 1,
+          "flip": 1,
+          "late": 0,
+          "unsafe": 1
+        },
+        "next": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "fallback",
+        "meta": {
+          "cost": 5,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          2,
+          0,
+          1,
+          0,
+          0,
+          9
+        ],
+        "state": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 3,
+          "crashes": 1,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          6
+        ],
+        "state": [
+          2,
+          0,
+          1,
+          0,
+          0,
+          9
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 2,
+    "declared_flips": 1,
+    "path": 28,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 1,
+          "flip": 1,
+          "late": 0,
+          "unsafe": 1
+        },
+        "next": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "fallback",
+        "meta": {
+          "cost": 5,
+          "crashes": 1,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          9
+        ],
+        "state": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 3,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          6
+        ],
+        "state": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          9
+        ]
+      }
+    ]
+  },
+  {
+    "declared_crashes": 2,
+    "declared_flips": 1,
+    "path": 29,
+    "steps": [
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 2,
+          "crashes": 2,
+          "flip": 1,
+          "late": 0,
+          "unsafe": 1
+        },
+        "next": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          14
+        ],
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "fallback",
+        "meta": {
+          "cost": 5,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          9
+        ],
+        "state": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "accept",
+        "meta": {
+          "cost": 3,
+          "crashes": 0,
+          "flip": 0,
+          "late": 0,
+          "unsafe": 0
+        },
+        "next": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          6
+        ],
+        "state": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          9
+        ]
+      }
+    ]
+  }
+]

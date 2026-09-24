@@ -1,0 +1,23 @@
+{
+  "drift_and_crash_budgets": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "fixed_sequences": 3120,
+  "horizons": [
+    1,
+    2,
+    3
+  ],
+  "instances": 240,
+  "mismatches": 0,
+  "recovery_times": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "seed": 20260923
+}

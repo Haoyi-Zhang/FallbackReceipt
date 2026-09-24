@@ -1,0 +1,409 @@
+{
+  "adapter": "cache",
+  "cuts": [
+    "after_reserve",
+    "after_reserve"
+  ],
+  "effects": {
+    "artifact-run-j0-a2": [
+      2,
+      0
+    ],
+    "artifact-run-j1-a0": [
+      2,
+      1
+    ],
+    "artifact-run-j2-a0": [
+      5,
+      0
+    ]
+  },
+  "launches": [
+    {
+      "cut": "after_reserve",
+      "exit": 73,
+      "stderr": "",
+      "stdout": "",
+      "wall_seconds": 0.07779862400002457
+    },
+    {
+      "cut": "after_reserve",
+      "exit": 73,
+      "stderr": "",
+      "stdout": "",
+      "wall_seconds": 0.08388207899997724
+    },
+    {
+      "cut": "none",
+      "exit": 0,
+      "stderr": "",
+      "stdout": "{\"adapter\": \"cache\", \"attempts\": {\"artifact-run-j0-a0\": {\"action\": \"accept\", \"actual\": [0, 0], \"adapter\": \"cache\", \"job\": 0, \"recoveries\": 1, \"status\": \"canceled\", \"target\": \"job-0\", \"ticket\": \"056e8f44047343539d0d7130bfac67a0\", \"upper\": [2, 1]}, \"artifact-run-j0-a1\": {\"action\": \"accept\", \"actual\": [0, 0], \"adapter\": \"cache\", \"job\": 0, \"recoveries\": 1, \"status\": \"canceled\", \"target\": \"job-0\", \"ticket\": \"479f2475cd4a40ad8fb5d80156566f26\", \"upper\": [2, 1]}, \"artifact-run-j0-a2\": {\"action\": \"accept\", \"actual\": [2, 0], \"adapter\": \"cache\", \"job\": 0, \"recoveries\": 0, \"status\": \"done\", \"target\": \"job-0\", \"ticket\": null, \"upper\": [2, 1]}}, \"controller_id\": \"artifact-run\", \"done\": false, \"events\": [{\"action\": \"accept\", \"job\": 0, \"kind\": \"select\", \"state\": [0, 1, 2, 1, 0, 16]}, {\"action\": \"accept\", \"adapter\": \"cache\", \"id\": \"artifact-run-j0-a0\", \"job\": 0, \"kind\": \"reserve\", \"target\": \"job-0\", \"upper\": [2, 1]}, {\"id\": \"artifact-run-j0-a0\", \"job\": 0, \"kind\": \"recover\", \"recoveries\": 1, \"ticket\": \"056e8f44047343539d0d7130bfac67a0\"}, {\"actual\": [0, 0], \"adapter\": \"cache\", \"id\": \"artifact-run-j0-a0\", \"kind\": \"settle\", \"status\": \"canceled\", \"target\": \"job-0\", \"ticket\": \"056e8f44047343539d0d7130bfac67a0\", \"via\": \"close\"}, {\"action\": \"accept\", \"adapter\": \"cache\", \"id\": \"artifact-run-j0-a1\", \"job\": 0, \"kind\": \"reserve\", \"target\": \"job-0\", \"upper\": [2, 1]}, {\"id\": \"artifact-run-j0-a1\", \"job\": 0, \"kind\": \"recover\", \"recoveries\": 1, \"ticket\": \"479f2475cd4a40ad8fb5d80156566f26\"}, {\"actual\": [0, 0], \"adapter\": \"cache\", \"id\": \"artifact-run-j0-a1\", \"kind\": \"settle\", \"status\": \"canceled\", \"target\": \"job-0\", \"ticket\": \"479f2475cd4a40ad8fb5d80156566f26\", \"via\": \"close\"}, {\"action\": \"accept\", \"adapter\": \"cache\", \"id\": \"artifact-run-j0-a2\", \"job\": 0, \"kind\": \"reserve\", \"target\": \"job-0\", \"upper\": [2, 1]}, {\"actual\": [2, 0], \"adapter\": \"cache\", \"charge\": 2, \"crashes\": 2, \"id\": \"artifact-run-j0-a2\", \"kind\": \"settle\", \"late\": 0, \"next\": [1, 1, 0, 1, 0, 14], \"status\": \"done\", \"target\": \"job-0\", \"ticket\": null, \"via\": \"execute\"}], \"state\": [1, 1, 0, 1, 0, 14]}\n",
+      "wall_seconds": 0.08014856499994494
+    },
+    {
+      "cut": "none",
+      "exit": 0,
+      "stderr": "",
+      "stdout": "{\"adapter\": \"cache\", \"attempts\": {\"artifact-run-j0-a0\": {\"action\": \"accept\", \"actual\": [0, 0], \"adapter\": \"cache\", \"job\": 0, \"recoveries\": 1, \"status\": \"canceled\", \"target\": \"job-0\", \"ticket\": \"056e8f44047343539d0d7130bfac67a0\", \"upper\": [2, 1]}, \"artifact-run-j0-a1\": {\"action\": \"accept\", \"actual\": [0, 0], \"adapter\": \"cache\", \"job\": 0, \"recoveries\": 1, \"status\": \"canceled\", \"target\": \"job-0\", \"ticket\": \"479f2475cd4a40ad8fb5d80156566f26\", \"upper\": [2, 1]}, \"artifact-run-j0-a2\": {\"action\": \"accept\", \"actual\": [2, 0], \"adapter\": \"cache\", \"job\": 0, \"recoveries\": 0, \"status\": \"done\", \"target\": \"job-0\", \"ticket\": null, \"upper\": [2, 1]}, \"artifact-run-j1-a0\": {\"action\": \"accept\", \"actual\": [2, 1], \"adapter\": \"cache\", \"job\": 1, \"recoveries\": 0, \"status\": \"done\", \"target\": \"job-1\", \"ticket\": null, \"upper\": [2, 1]}}, \"controller_id\": \"artifact-run\", \"done\": false, \"events\": [{\"action\": \"accept\", \"job\": 0, \"kind\": \"select\", \"state\": [0, 1, 2, 1, 0, 16]}, {\"action\": \"accept\", \"adapter\": \"cache\", \"id\": \"artifact-run-j0-a0\", \"job\": 0, \"kind\": \"reserve\", \"target\": \"job-0\", \"upper\": [2, 1]}, {\"id\": \"artifact-run-j0-a0\", \"job\": 0, \"kind\": \"recover\", \"recoveries\": 1, \"ticket\": \"056e8f44047343539d0d7130bfac67a0\"}, {\"actual\": [0, 0], \"adapter\": \"cache\", \"id\": \"artifact-run-j0-a0\", \"kind\": \"settle\", \"status\": \"canceled\", \"target\": \"job-0\", \"ticket\": \"056e8f44047343539d0d7130bfac67a0\", \"via\": \"close\"}, {\"action\": \"accept\", \"adapter\": \"cache\", \"id\": \"artifact-run-j0-a1\", \"job\": 0, \"kind\": \"reserve\", \"target\": \"job-0\", \"upper\": [2, 1]}, {\"id\": \"artifact-run-j0-a1\", \"job\": 0, \"kind\": \"recover\", \"recoveries\": 1, \"ticket\": \"479f2475cd4a40ad8fb5d80156566f26\"}, {\"actual\": [0, 0], \"adapter\": \"cache\", \"id\": \"artifact-run-j0-a1\", \"kind\": \"settle\", \"status\": \"canceled\", \"target\": \"job-0\", \"ticket\": \"479f2475cd4a40ad8fb5d80156566f26\", \"via\": \"close\"}, {\"action\": \"accept\", \"adapter\": \"cache\", \"id\": \"artifact-run-j0-a2\", \"job\": 0, \"kind\": \"reserve\", \"target\": \"job-0\", \"upper\": [2, 1]}, {\"actual\": [2, 0], \"adapter\": \"cache\", \"charge\": 2, \"crashes\": 2, \"id\": \"artifact-run-j0-a2\", \"kind\": \"settle\", \"late\": 0, \"next\": [1, 1, 0, 1, 0, 14], \"status\": \"done\", \"target\": \"job-0\", \"ticket\": null, \"via\": \"execute\"}, {\"action\": \"accept\", \"job\": 1, \"kind\": \"select\", \"state\": [1, 1, 0, 1, 0, 14]}, {\"action\": \"accept\", \"adapter\": \"cache\", \"id\": \"artifact-run-j1-a0\", \"job\": 1, \"kind\": \"reserve\", \"target\": \"job-1\", \"upper\": [2, 1]}, {\"actual\": [2, 1], \"adapter\": \"cache\", \"charge\": 2, \"crashes\": 0, \"id\": \"artifact-run-j1-a0\", \"kind\": \"settle\", \"late\": 0, \"next\": [2, 1, 0, 0, 0, 12], \"status\": \"done\", \"target\": \"job-1\", \"ticket\": null, \"via\": \"execute\"}], \"state\": [2, 1, 0, 0, 0, 12]}\n",
+      "wall_seconds": 0.08617590200037739
+    },
+    {
+      "cut": "none",
+      "exit": 0,
+      "stderr": "",
+      "stdout": "{\"adapter\": \"cache\", \"attempts\": {\"artifact-run-j0-a0\": {\"action\": \"accept\", \"actual\": [0, 0], \"adapter\": \"cache\", \"job\": 0, \"recoveries\": 1, \"status\": \"canceled\", \"target\": \"job-0\", \"ticket\": \"056e8f44047343539d0d7130bfac67a0\", \"upper\": [2, 1]}, \"artifact-run-j0-a1\": {\"action\": \"accept\", \"actual\": [0, 0], \"adapter\": \"cache\", \"job\": 0, \"recoveries\": 1, \"status\": \"canceled\", \"target\": \"job-0\", \"ticket\": \"479f2475cd4a40ad8fb5d80156566f26\", \"upper\": [2, 1]}, \"artifact-run-j0-a2\": {\"action\": \"accept\", \"actual\": [2, 0], \"adapter\": \"cache\", \"job\": 0, \"recoveries\": 0, \"status\": \"done\", \"target\": \"job-0\", \"ticket\": null, \"upper\": [2, 1]}, \"artifact-run-j1-a0\": {\"action\": \"accept\", \"actual\": [2, 1], \"adapter\": \"cache\", \"job\": 1, \"recoveries\": 0, \"status\": \"done\", \"target\": \"job-1\", \"ticket\": null, \"upper\": [2, 1]}, \"artifact-run-j2-a0\": {\"action\": \"fallback\", \"actual\": [5, 0], \"adapter\": \"cache\", \"job\": 2, \"recoveries\": 0, \"status\": \"done\", \"target\": \"job-2\", \"ticket\": null, \"upper\": [5, 0]}}, \"controller_id\": \"artifact-run\", \"done\": true, \"events\": [{\"action\": \"accept\", \"job\": 0, \"kind\": \"select\", \"state\": [0, 1, 2, 1, 0, 16]}, {\"action\": \"accept\", \"adapter\": \"cache\", \"id\": \"artifact-run-j0-a0\", \"job\": 0, \"kind\": \"reserve\", \"target\": \"job-0\", \"upper\": [2, 1]}, {\"id\": \"artifact-run-j0-a0\", \"job\": 0, \"kind\": \"recover\", \"recoveries\": 1, \"ticket\": \"056e8f44047343539d0d7130bfac67a0\"}, {\"actual\": [0, 0], \"adapter\": \"cache\", \"id\": \"artifact-run-j0-a0\", \"kind\": \"settle\", \"status\": \"canceled\", \"target\": \"job-0\", \"ticket\": \"056e8f44047343539d0d7130bfac67a0\", \"via\": \"close\"}, {\"action\": \"accept\", \"adapter\": \"cache\", \"id\": \"artifact-run-j0-a1\", \"job\": 0, \"kind\": \"reserve\", \"target\": \"job-0\", \"upper\": [2, 1]}, {\"id\": \"artifact-run-j0-a1\", \"job\": 0, \"kind\": \"recover\", \"recoveries\": 1, \"ticket\": \"479f2475cd4a40ad8fb5d80156566f26\"}, {\"actual\": [0, 0], \"adapter\": \"cache\", \"id\": \"artifact-run-j0-a1\", \"kind\": \"settle\", \"status\": \"canceled\", \"target\": \"job-0\", \"ticket\": \"479f2475cd4a40ad8fb5d80156566f26\", \"via\": \"close\"}, {\"action\": \"accept\", \"adapter\": \"cache\", \"id\": \"artifact-run-j0-a2\", \"job\": 0, \"kind\": \"reserve\", \"target\": \"job-0\", \"upper\": [2, 1]}, {\"actual\": [2, 0], \"adapter\": \"cache\", \"charge\": 2, \"crashes\": 2, \"id\": \"artifact-run-j0-a2\", \"kind\": \"settle\", \"late\": 0, \"next\": [1, 1, 0, 1, 0, 14], \"status\": \"done\", \"target\": \"job-0\", \"ticket\": null, \"via\": \"execute\"}, {\"action\": \"accept\", \"job\": 1, \"kind\": \"select\", \"state\": [1, 1, 0, 1, 0, 14]}, {\"action\": \"accept\", \"adapter\": \"cache\", \"id\": \"artifact-run-j1-a0\", \"job\": 1, \"kind\": \"reserve\", \"target\": \"job-1\", \"upper\": [2, 1]}, {\"actual\": [2, 1], \"adapter\": \"cache\", \"charge\": 2, \"crashes\": 0, \"id\": \"artifact-run-j1-a0\", \"kind\": \"settle\", \"late\": 0, \"next\": [2, 1, 0, 0, 0, 12], \"status\": \"done\", \"target\": \"job-1\", \"ticket\": null, \"via\": \"execute\"}, {\"action\": \"fallback\", \"job\": 2, \"kind\": \"select\", \"state\": [2, 1, 0, 0, 0, 12]}, {\"action\": \"fallback\", \"adapter\": \"cache\", \"id\": \"artifact-run-j2-a0\", \"job\": 2, \"kind\": \"reserve\", \"target\": \"job-2\", \"upper\": [5, 0]}, {\"actual\": [5, 0], \"adapter\": \"cache\", \"charge\": 5, \"crashes\": 0, \"id\": \"artifact-run-j2-a0\", \"kind\": \"settle\", \"late\": 0, \"next\": [3, 1, 0, 0, 0, 7], \"status\": \"done\", \"target\": \"job-2\", \"ticket\": null, \"via\": \"execute\"}], \"state\": [3, 1, 0, 0, 0, 7]}\n",
+      "wall_seconds": 0.08347177100040426
+    }
+  ],
+  "receiver_outcomes": {
+    "artifact-run-j0-a0": {
+      "adapter": null,
+      "cost": 0,
+      "job": null,
+      "status": "canceled",
+      "unsafe": 0
+    },
+    "artifact-run-j0-a1": {
+      "adapter": null,
+      "cost": 0,
+      "job": null,
+      "status": "canceled",
+      "unsafe": 0
+    },
+    "artifact-run-j0-a2": {
+      "adapter": "cache",
+      "cost": 2,
+      "job": "job-0",
+      "status": "done",
+      "unsafe": 0
+    },
+    "artifact-run-j1-a0": {
+      "adapter": "cache",
+      "cost": 2,
+      "job": "job-1",
+      "status": "done",
+      "unsafe": 1
+    },
+    "artifact-run-j2-a0": {
+      "adapter": "cache",
+      "cost": 5,
+      "job": "job-2",
+      "status": "done",
+      "unsafe": 0
+    }
+  },
+  "snapshot": {
+    "adapter": "cache",
+    "attempts": {
+      "artifact-run-j0-a0": {
+        "action": "accept",
+        "actual": [
+          0,
+          0
+        ],
+        "adapter": "cache",
+        "job": 0,
+        "recoveries": 1,
+        "status": "canceled",
+        "target": "job-0",
+        "ticket": "056e8f44047343539d0d7130bfac67a0",
+        "upper": [
+          2,
+          1
+        ]
+      },
+      "artifact-run-j0-a1": {
+        "action": "accept",
+        "actual": [
+          0,
+          0
+        ],
+        "adapter": "cache",
+        "job": 0,
+        "recoveries": 1,
+        "status": "canceled",
+        "target": "job-0",
+        "ticket": "479f2475cd4a40ad8fb5d80156566f26",
+        "upper": [
+          2,
+          1
+        ]
+      },
+      "artifact-run-j0-a2": {
+        "action": "accept",
+        "actual": [
+          2,
+          0
+        ],
+        "adapter": "cache",
+        "job": 0,
+        "recoveries": 0,
+        "status": "done",
+        "target": "job-0",
+        "ticket": null,
+        "upper": [
+          2,
+          1
+        ]
+      },
+      "artifact-run-j1-a0": {
+        "action": "accept",
+        "actual": [
+          2,
+          1
+        ],
+        "adapter": "cache",
+        "job": 1,
+        "recoveries": 0,
+        "status": "done",
+        "target": "job-1",
+        "ticket": null,
+        "upper": [
+          2,
+          1
+        ]
+      },
+      "artifact-run-j2-a0": {
+        "action": "fallback",
+        "actual": [
+          5,
+          0
+        ],
+        "adapter": "cache",
+        "job": 2,
+        "recoveries": 0,
+        "status": "done",
+        "target": "job-2",
+        "ticket": null,
+        "upper": [
+          5,
+          0
+        ]
+      }
+    },
+    "controller_id": "artifact-run",
+    "done": true,
+    "events": [
+      {
+        "action": "accept",
+        "job": 0,
+        "kind": "select",
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "accept",
+        "adapter": "cache",
+        "id": "artifact-run-j0-a0",
+        "job": 0,
+        "kind": "reserve",
+        "target": "job-0",
+        "upper": [
+          2,
+          1
+        ]
+      },
+      {
+        "id": "artifact-run-j0-a0",
+        "job": 0,
+        "kind": "recover",
+        "recoveries": 1,
+        "ticket": "056e8f44047343539d0d7130bfac67a0"
+      },
+      {
+        "actual": [
+          0,
+          0
+        ],
+        "adapter": "cache",
+        "id": "artifact-run-j0-a0",
+        "kind": "settle",
+        "status": "canceled",
+        "target": "job-0",
+        "ticket": "056e8f44047343539d0d7130bfac67a0",
+        "via": "close"
+      },
+      {
+        "action": "accept",
+        "adapter": "cache",
+        "id": "artifact-run-j0-a1",
+        "job": 0,
+        "kind": "reserve",
+        "target": "job-0",
+        "upper": [
+          2,
+          1
+        ]
+      },
+      {
+        "id": "artifact-run-j0-a1",
+        "job": 0,
+        "kind": "recover",
+        "recoveries": 1,
+        "ticket": "479f2475cd4a40ad8fb5d80156566f26"
+      },
+      {
+        "actual": [
+          0,
+          0
+        ],
+        "adapter": "cache",
+        "id": "artifact-run-j0-a1",
+        "kind": "settle",
+        "status": "canceled",
+        "target": "job-0",
+        "ticket": "479f2475cd4a40ad8fb5d80156566f26",
+        "via": "close"
+      },
+      {
+        "action": "accept",
+        "adapter": "cache",
+        "id": "artifact-run-j0-a2",
+        "job": 0,
+        "kind": "reserve",
+        "target": "job-0",
+        "upper": [
+          2,
+          1
+        ]
+      },
+      {
+        "actual": [
+          2,
+          0
+        ],
+        "adapter": "cache",
+        "charge": 2,
+        "crashes": 2,
+        "id": "artifact-run-j0-a2",
+        "kind": "settle",
+        "late": 0,
+        "next": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          14
+        ],
+        "status": "done",
+        "target": "job-0",
+        "ticket": null,
+        "via": "execute"
+      },
+      {
+        "action": "accept",
+        "job": 1,
+        "kind": "select",
+        "state": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "accept",
+        "adapter": "cache",
+        "id": "artifact-run-j1-a0",
+        "job": 1,
+        "kind": "reserve",
+        "target": "job-1",
+        "upper": [
+          2,
+          1
+        ]
+      },
+      {
+        "actual": [
+          2,
+          1
+        ],
+        "adapter": "cache",
+        "charge": 2,
+        "crashes": 0,
+        "id": "artifact-run-j1-a0",
+        "kind": "settle",
+        "late": 0,
+        "next": [
+          2,
+          1,
+          0,
+          0,
+          0,
+          12
+        ],
+        "status": "done",
+        "target": "job-1",
+        "ticket": null,
+        "via": "execute"
+      },
+      {
+        "action": "fallback",
+        "job": 2,
+        "kind": "select",
+        "state": [
+          2,
+          1,
+          0,
+          0,
+          0,
+          12
+        ]
+      },
+      {
+        "action": "fallback",
+        "adapter": "cache",
+        "id": "artifact-run-j2-a0",
+        "job": 2,
+        "kind": "reserve",
+        "target": "job-2",
+        "upper": [
+          5,
+          0
+        ]
+      },
+      {
+        "actual": [
+          5,
+          0
+        ],
+        "adapter": "cache",
+        "charge": 5,
+        "crashes": 0,
+        "id": "artifact-run-j2-a0",
+        "kind": "settle",
+        "late": 0,
+        "next": [
+          3,
+          1,
+          0,
+          0,
+          0,
+          7
+        ],
+        "status": "done",
+        "target": "job-2",
+        "ticket": null,
+        "via": "execute"
+      }
+    ],
+    "state": [
+      3,
+      1,
+      0,
+      0,
+      0,
+      7
+    ]
+  },
+  "valid": true
+}

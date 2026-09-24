@@ -1,0 +1,25 @@
+{
+  "cpu_seconds": 1.811561110000003,
+  "max_rss_kib": 50968,
+  "median_overhead_ratio": 4.91004231402823,
+  "methods": {
+    "contract": {
+      "max_rep_median_us": 241.442,
+      "median_us": 228.015,
+      "min_rep_median_us": 222.4225,
+      "p95_us": 492.31589999999875,
+      "p99_us": 863.0637299999992
+    },
+    "direct": {
+      "max_rep_median_us": 48.668,
+      "median_us": 46.438500000000005,
+      "min_rep_median_us": 44.364000000000004,
+      "p95_us": 144.53014999999994,
+      "p99_us": 1006.8674999999985
+    }
+  },
+  "operations_per_method": 2048,
+  "ordered_alternating": true,
+  "repetitions": 8,
+  "wall_seconds": 1.8139716949999638
+}

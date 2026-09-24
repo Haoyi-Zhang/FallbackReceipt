@@ -1,0 +1,584 @@
+[
+  {
+    "adapter": "admission",
+    "attempts": 3,
+    "cuts": [],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      2,
+      0,
+      0,
+      7
+    ],
+    "launches": 3,
+    "schedule": "none",
+    "valid": true
+  },
+  {
+    "adapter": "admission",
+    "attempts": 4,
+    "cuts": [
+      "after_reserve"
+    ],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      1,
+      0,
+      0,
+      7
+    ],
+    "launches": 4,
+    "schedule": "pre_effect",
+    "valid": true
+  },
+  {
+    "adapter": "admission",
+    "attempts": 3,
+    "cuts": [
+      "after_execute"
+    ],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      1,
+      0,
+      0,
+      7
+    ],
+    "launches": 3,
+    "schedule": "post_effect",
+    "valid": true
+  },
+  {
+    "adapter": "admission",
+    "attempts": 4,
+    "cuts": [
+      "after_reserve",
+      "after_close"
+    ],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      0,
+      0,
+      0,
+      7
+    ],
+    "launches": 5,
+    "schedule": "close_interrupted",
+    "valid": true
+  },
+  {
+    "adapter": "admission",
+    "attempts": 4,
+    "cuts": [
+      "after_reserve",
+      "after_recover"
+    ],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      0,
+      0,
+      0,
+      7
+    ],
+    "launches": 5,
+    "schedule": "recover_interrupted",
+    "valid": true
+  },
+  {
+    "adapter": "admission",
+    "attempts": 5,
+    "cuts": [
+      "after_reserve",
+      "after_reserve"
+    ],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      0,
+      0,
+      0,
+      7
+    ],
+    "launches": 5,
+    "schedule": "two_pre_effect",
+    "valid": true
+  },
+  {
+    "adapter": "admission",
+    "attempts": 4,
+    "cuts": [
+      "after_reserve",
+      "after_execute"
+    ],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      0,
+      0,
+      0,
+      7
+    ],
+    "launches": 4,
+    "schedule": "pre_then_post",
+    "valid": true
+  },
+  {
+    "adapter": "admission",
+    "attempts": 4,
+    "cuts": [
+      "after_execute",
+      "after_reserve"
+    ],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      0,
+      0,
+      0,
+      7
+    ],
+    "launches": 4,
+    "schedule": "post_then_pre",
+    "valid": true
+  },
+  {
+    "adapter": "admission",
+    "attempts": 3,
+    "cuts": [
+      "after_execute",
+      "after_execute"
+    ],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      0,
+      0,
+      0,
+      7
+    ],
+    "launches": 3,
+    "schedule": "two_post_effect",
+    "valid": true
+  },
+  {
+    "adapter": "admission",
+    "attempts": 3,
+    "cuts": [
+      "after_settle"
+    ],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      2,
+      0,
+      0,
+      7
+    ],
+    "launches": 3,
+    "schedule": "post_settle",
+    "valid": true
+  },
+  {
+    "adapter": "cache",
+    "attempts": 3,
+    "cuts": [],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      2,
+      0,
+      0,
+      7
+    ],
+    "launches": 3,
+    "schedule": "none",
+    "valid": true
+  },
+  {
+    "adapter": "cache",
+    "attempts": 4,
+    "cuts": [
+      "after_reserve"
+    ],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      1,
+      0,
+      0,
+      7
+    ],
+    "launches": 4,
+    "schedule": "pre_effect",
+    "valid": true
+  },
+  {
+    "adapter": "cache",
+    "attempts": 3,
+    "cuts": [
+      "after_execute"
+    ],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      1,
+      0,
+      0,
+      7
+    ],
+    "launches": 3,
+    "schedule": "post_effect",
+    "valid": true
+  },
+  {
+    "adapter": "cache",
+    "attempts": 4,
+    "cuts": [
+      "after_reserve",
+      "after_close"
+    ],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      0,
+      0,
+      0,
+      7
+    ],
+    "launches": 5,
+    "schedule": "close_interrupted",
+    "valid": true
+  },
+  {
+    "adapter": "cache",
+    "attempts": 4,
+    "cuts": [
+      "after_reserve",
+      "after_recover"
+    ],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      0,
+      0,
+      0,
+      7
+    ],
+    "launches": 5,
+    "schedule": "recover_interrupted",
+    "valid": true
+  },
+  {
+    "adapter": "cache",
+    "attempts": 5,
+    "cuts": [
+      "after_reserve",
+      "after_reserve"
+    ],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      0,
+      0,
+      0,
+      7
+    ],
+    "launches": 5,
+    "schedule": "two_pre_effect",
+    "valid": true
+  },
+  {
+    "adapter": "cache",
+    "attempts": 4,
+    "cuts": [
+      "after_reserve",
+      "after_execute"
+    ],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      0,
+      0,
+      0,
+      7
+    ],
+    "launches": 4,
+    "schedule": "pre_then_post",
+    "valid": true
+  },
+  {
+    "adapter": "cache",
+    "attempts": 4,
+    "cuts": [
+      "after_execute",
+      "after_reserve"
+    ],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      0,
+      0,
+      0,
+      7
+    ],
+    "launches": 4,
+    "schedule": "post_then_pre",
+    "valid": true
+  },
+  {
+    "adapter": "cache",
+    "attempts": 3,
+    "cuts": [
+      "after_execute",
+      "after_execute"
+    ],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      0,
+      0,
+      0,
+      7
+    ],
+    "launches": 3,
+    "schedule": "two_post_effect",
+    "valid": true
+  },
+  {
+    "adapter": "cache",
+    "attempts": 3,
+    "cuts": [
+      "after_settle"
+    ],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      2,
+      0,
+      0,
+      7
+    ],
+    "launches": 3,
+    "schedule": "post_settle",
+    "valid": true
+  },
+  {
+    "adapter": "tier",
+    "attempts": 3,
+    "cuts": [],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      2,
+      0,
+      0,
+      7
+    ],
+    "launches": 3,
+    "schedule": "none",
+    "valid": true
+  },
+  {
+    "adapter": "tier",
+    "attempts": 4,
+    "cuts": [
+      "after_reserve"
+    ],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      1,
+      0,
+      0,
+      7
+    ],
+    "launches": 4,
+    "schedule": "pre_effect",
+    "valid": true
+  },
+  {
+    "adapter": "tier",
+    "attempts": 3,
+    "cuts": [
+      "after_execute"
+    ],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      1,
+      0,
+      0,
+      7
+    ],
+    "launches": 3,
+    "schedule": "post_effect",
+    "valid": true
+  },
+  {
+    "adapter": "tier",
+    "attempts": 4,
+    "cuts": [
+      "after_reserve",
+      "after_close"
+    ],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      0,
+      0,
+      0,
+      7
+    ],
+    "launches": 5,
+    "schedule": "close_interrupted",
+    "valid": true
+  },
+  {
+    "adapter": "tier",
+    "attempts": 4,
+    "cuts": [
+      "after_reserve",
+      "after_recover"
+    ],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      0,
+      0,
+      0,
+      7
+    ],
+    "launches": 5,
+    "schedule": "recover_interrupted",
+    "valid": true
+  },
+  {
+    "adapter": "tier",
+    "attempts": 5,
+    "cuts": [
+      "after_reserve",
+      "after_reserve"
+    ],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      0,
+      0,
+      0,
+      7
+    ],
+    "launches": 5,
+    "schedule": "two_pre_effect",
+    "valid": true
+  },
+  {
+    "adapter": "tier",
+    "attempts": 4,
+    "cuts": [
+      "after_reserve",
+      "after_execute"
+    ],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      0,
+      0,
+      0,
+      7
+    ],
+    "launches": 4,
+    "schedule": "pre_then_post",
+    "valid": true
+  },
+  {
+    "adapter": "tier",
+    "attempts": 4,
+    "cuts": [
+      "after_execute",
+      "after_reserve"
+    ],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      0,
+      0,
+      0,
+      7
+    ],
+    "launches": 4,
+    "schedule": "post_then_pre",
+    "valid": true
+  },
+  {
+    "adapter": "tier",
+    "attempts": 3,
+    "cuts": [
+      "after_execute",
+      "after_execute"
+    ],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      0,
+      0,
+      0,
+      7
+    ],
+    "launches": 3,
+    "schedule": "two_post_effect",
+    "valid": true
+  },
+  {
+    "adapter": "tier",
+    "attempts": 3,
+    "cuts": [
+      "after_settle"
+    ],
+    "effects": 3,
+    "final_state": [
+      3,
+      1,
+      2,
+      0,
+      0,
+      7
+    ],
+    "launches": 3,
+    "schedule": "post_settle",
+    "valid": true
+  }
+]

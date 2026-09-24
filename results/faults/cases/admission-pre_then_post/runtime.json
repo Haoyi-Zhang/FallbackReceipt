@@ -1,0 +1,353 @@
+{
+  "adapter": "admission",
+  "cuts": [
+    "after_reserve",
+    "after_execute"
+  ],
+  "effects": {
+    "artifact-run-j0-a1": [
+      2,
+      0
+    ],
+    "artifact-run-j1-a0": [
+      2,
+      1
+    ],
+    "artifact-run-j2-a0": [
+      5,
+      0
+    ]
+  },
+  "launches": [
+    {
+      "cut": "after_reserve",
+      "exit": 73,
+      "stderr": "",
+      "stdout": "",
+      "wall_seconds": 0.05498372100009874
+    },
+    {
+      "cut": "after_execute",
+      "exit": 73,
+      "stderr": "",
+      "stdout": "",
+      "wall_seconds": 0.05331011900034355
+    },
+    {
+      "cut": "none",
+      "exit": 0,
+      "stderr": "",
+      "stdout": "{\"adapter\": \"admission\", \"attempts\": {\"artifact-run-j0-a0\": {\"action\": \"accept\", \"actual\": [0, 0], \"adapter\": \"admission\", \"job\": 0, \"recoveries\": 1, \"status\": \"canceled\", \"target\": \"job-0\", \"ticket\": \"867f9784b92745e9b6276b1aa640bacd\", \"upper\": [2, 1]}, \"artifact-run-j0-a1\": {\"action\": \"accept\", \"actual\": [2, 0], \"adapter\": \"admission\", \"job\": 0, \"recoveries\": 1, \"status\": \"done\", \"target\": \"job-0\", \"ticket\": \"04a8e34fa8414c4a8be595da2c1b75be\", \"upper\": [2, 1]}, \"artifact-run-j1-a0\": {\"action\": \"accept\", \"actual\": [2, 1], \"adapter\": \"admission\", \"job\": 1, \"recoveries\": 0, \"status\": \"done\", \"target\": \"job-1\", \"ticket\": null, \"upper\": [2, 1]}}, \"controller_id\": \"artifact-run\", \"done\": false, \"events\": [{\"action\": \"accept\", \"job\": 0, \"kind\": \"select\", \"state\": [0, 1, 2, 1, 0, 16]}, {\"action\": \"accept\", \"adapter\": \"admission\", \"id\": \"artifact-run-j0-a0\", \"job\": 0, \"kind\": \"reserve\", \"target\": \"job-0\", \"upper\": [2, 1]}, {\"id\": \"artifact-run-j0-a0\", \"job\": 0, \"kind\": \"recover\", \"recoveries\": 1, \"ticket\": \"867f9784b92745e9b6276b1aa640bacd\"}, {\"actual\": [0, 0], \"adapter\": \"admission\", \"id\": \"artifact-run-j0-a0\", \"kind\": \"settle\", \"status\": \"canceled\", \"target\": \"job-0\", \"ticket\": \"867f9784b92745e9b6276b1aa640bacd\", \"via\": \"close\"}, {\"action\": \"accept\", \"adapter\": \"admission\", \"id\": \"artifact-run-j0-a1\", \"job\": 0, \"kind\": \"reserve\", \"target\": \"job-0\", \"upper\": [2, 1]}, {\"id\": \"artifact-run-j0-a1\", \"job\": 0, \"kind\": \"recover\", \"recoveries\": 1, \"ticket\": \"04a8e34fa8414c4a8be595da2c1b75be\"}, {\"actual\": [2, 0], \"adapter\": \"admission\", \"charge\": 2, \"crashes\": 2, \"id\": \"artifact-run-j0-a1\", \"kind\": \"settle\", \"late\": 0, \"next\": [1, 1, 0, 1, 0, 14], \"status\": \"done\", \"target\": \"job-0\", \"ticket\": \"04a8e34fa8414c4a8be595da2c1b75be\", \"via\": \"close\"}, {\"action\": \"accept\", \"job\": 1, \"kind\": \"select\", \"state\": [1, 1, 0, 1, 0, 14]}, {\"action\": \"accept\", \"adapter\": \"admission\", \"id\": \"artifact-run-j1-a0\", \"job\": 1, \"kind\": \"reserve\", \"target\": \"job-1\", \"upper\": [2, 1]}, {\"actual\": [2, 1], \"adapter\": \"admission\", \"charge\": 2, \"crashes\": 0, \"id\": \"artifact-run-j1-a0\", \"kind\": \"settle\", \"late\": 0, \"next\": [2, 1, 0, 0, 0, 12], \"status\": \"done\", \"target\": \"job-1\", \"ticket\": null, \"via\": \"execute\"}], \"state\": [2, 1, 0, 0, 0, 12]}\n",
+      "wall_seconds": 0.05913724899983208
+    },
+    {
+      "cut": "none",
+      "exit": 0,
+      "stderr": "",
+      "stdout": "{\"adapter\": \"admission\", \"attempts\": {\"artifact-run-j0-a0\": {\"action\": \"accept\", \"actual\": [0, 0], \"adapter\": \"admission\", \"job\": 0, \"recoveries\": 1, \"status\": \"canceled\", \"target\": \"job-0\", \"ticket\": \"867f9784b92745e9b6276b1aa640bacd\", \"upper\": [2, 1]}, \"artifact-run-j0-a1\": {\"action\": \"accept\", \"actual\": [2, 0], \"adapter\": \"admission\", \"job\": 0, \"recoveries\": 1, \"status\": \"done\", \"target\": \"job-0\", \"ticket\": \"04a8e34fa8414c4a8be595da2c1b75be\", \"upper\": [2, 1]}, \"artifact-run-j1-a0\": {\"action\": \"accept\", \"actual\": [2, 1], \"adapter\": \"admission\", \"job\": 1, \"recoveries\": 0, \"status\": \"done\", \"target\": \"job-1\", \"ticket\": null, \"upper\": [2, 1]}, \"artifact-run-j2-a0\": {\"action\": \"fallback\", \"actual\": [5, 0], \"adapter\": \"admission\", \"job\": 2, \"recoveries\": 0, \"status\": \"done\", \"target\": \"job-2\", \"ticket\": null, \"upper\": [5, 0]}}, \"controller_id\": \"artifact-run\", \"done\": true, \"events\": [{\"action\": \"accept\", \"job\": 0, \"kind\": \"select\", \"state\": [0, 1, 2, 1, 0, 16]}, {\"action\": \"accept\", \"adapter\": \"admission\", \"id\": \"artifact-run-j0-a0\", \"job\": 0, \"kind\": \"reserve\", \"target\": \"job-0\", \"upper\": [2, 1]}, {\"id\": \"artifact-run-j0-a0\", \"job\": 0, \"kind\": \"recover\", \"recoveries\": 1, \"ticket\": \"867f9784b92745e9b6276b1aa640bacd\"}, {\"actual\": [0, 0], \"adapter\": \"admission\", \"id\": \"artifact-run-j0-a0\", \"kind\": \"settle\", \"status\": \"canceled\", \"target\": \"job-0\", \"ticket\": \"867f9784b92745e9b6276b1aa640bacd\", \"via\": \"close\"}, {\"action\": \"accept\", \"adapter\": \"admission\", \"id\": \"artifact-run-j0-a1\", \"job\": 0, \"kind\": \"reserve\", \"target\": \"job-0\", \"upper\": [2, 1]}, {\"id\": \"artifact-run-j0-a1\", \"job\": 0, \"kind\": \"recover\", \"recoveries\": 1, \"ticket\": \"04a8e34fa8414c4a8be595da2c1b75be\"}, {\"actual\": [2, 0], \"adapter\": \"admission\", \"charge\": 2, \"crashes\": 2, \"id\": \"artifact-run-j0-a1\", \"kind\": \"settle\", \"late\": 0, \"next\": [1, 1, 0, 1, 0, 14], \"status\": \"done\", \"target\": \"job-0\", \"ticket\": \"04a8e34fa8414c4a8be595da2c1b75be\", \"via\": \"close\"}, {\"action\": \"accept\", \"job\": 1, \"kind\": \"select\", \"state\": [1, 1, 0, 1, 0, 14]}, {\"action\": \"accept\", \"adapter\": \"admission\", \"id\": \"artifact-run-j1-a0\", \"job\": 1, \"kind\": \"reserve\", \"target\": \"job-1\", \"upper\": [2, 1]}, {\"actual\": [2, 1], \"adapter\": \"admission\", \"charge\": 2, \"crashes\": 0, \"id\": \"artifact-run-j1-a0\", \"kind\": \"settle\", \"late\": 0, \"next\": [2, 1, 0, 0, 0, 12], \"status\": \"done\", \"target\": \"job-1\", \"ticket\": null, \"via\": \"execute\"}, {\"action\": \"fallback\", \"job\": 2, \"kind\": \"select\", \"state\": [2, 1, 0, 0, 0, 12]}, {\"action\": \"fallback\", \"adapter\": \"admission\", \"id\": \"artifact-run-j2-a0\", \"job\": 2, \"kind\": \"reserve\", \"target\": \"job-2\", \"upper\": [5, 0]}, {\"actual\": [5, 0], \"adapter\": \"admission\", \"charge\": 5, \"crashes\": 0, \"id\": \"artifact-run-j2-a0\", \"kind\": \"settle\", \"late\": 0, \"next\": [3, 1, 0, 0, 0, 7], \"status\": \"done\", \"target\": \"job-2\", \"ticket\": null, \"via\": \"execute\"}], \"state\": [3, 1, 0, 0, 0, 7]}\n",
+      "wall_seconds": 0.05372807300000204
+    }
+  ],
+  "receiver_outcomes": {
+    "artifact-run-j0-a0": {
+      "adapter": null,
+      "cost": 0,
+      "job": null,
+      "status": "canceled",
+      "unsafe": 0
+    },
+    "artifact-run-j0-a1": {
+      "adapter": "admission",
+      "cost": 2,
+      "job": "job-0",
+      "status": "done",
+      "unsafe": 0
+    },
+    "artifact-run-j1-a0": {
+      "adapter": "admission",
+      "cost": 2,
+      "job": "job-1",
+      "status": "done",
+      "unsafe": 1
+    },
+    "artifact-run-j2-a0": {
+      "adapter": "admission",
+      "cost": 5,
+      "job": "job-2",
+      "status": "done",
+      "unsafe": 0
+    }
+  },
+  "snapshot": {
+    "adapter": "admission",
+    "attempts": {
+      "artifact-run-j0-a0": {
+        "action": "accept",
+        "actual": [
+          0,
+          0
+        ],
+        "adapter": "admission",
+        "job": 0,
+        "recoveries": 1,
+        "status": "canceled",
+        "target": "job-0",
+        "ticket": "867f9784b92745e9b6276b1aa640bacd",
+        "upper": [
+          2,
+          1
+        ]
+      },
+      "artifact-run-j0-a1": {
+        "action": "accept",
+        "actual": [
+          2,
+          0
+        ],
+        "adapter": "admission",
+        "job": 0,
+        "recoveries": 1,
+        "status": "done",
+        "target": "job-0",
+        "ticket": "04a8e34fa8414c4a8be595da2c1b75be",
+        "upper": [
+          2,
+          1
+        ]
+      },
+      "artifact-run-j1-a0": {
+        "action": "accept",
+        "actual": [
+          2,
+          1
+        ],
+        "adapter": "admission",
+        "job": 1,
+        "recoveries": 0,
+        "status": "done",
+        "target": "job-1",
+        "ticket": null,
+        "upper": [
+          2,
+          1
+        ]
+      },
+      "artifact-run-j2-a0": {
+        "action": "fallback",
+        "actual": [
+          5,
+          0
+        ],
+        "adapter": "admission",
+        "job": 2,
+        "recoveries": 0,
+        "status": "done",
+        "target": "job-2",
+        "ticket": null,
+        "upper": [
+          5,
+          0
+        ]
+      }
+    },
+    "controller_id": "artifact-run",
+    "done": true,
+    "events": [
+      {
+        "action": "accept",
+        "job": 0,
+        "kind": "select",
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "accept",
+        "adapter": "admission",
+        "id": "artifact-run-j0-a0",
+        "job": 0,
+        "kind": "reserve",
+        "target": "job-0",
+        "upper": [
+          2,
+          1
+        ]
+      },
+      {
+        "id": "artifact-run-j0-a0",
+        "job": 0,
+        "kind": "recover",
+        "recoveries": 1,
+        "ticket": "867f9784b92745e9b6276b1aa640bacd"
+      },
+      {
+        "actual": [
+          0,
+          0
+        ],
+        "adapter": "admission",
+        "id": "artifact-run-j0-a0",
+        "kind": "settle",
+        "status": "canceled",
+        "target": "job-0",
+        "ticket": "867f9784b92745e9b6276b1aa640bacd",
+        "via": "close"
+      },
+      {
+        "action": "accept",
+        "adapter": "admission",
+        "id": "artifact-run-j0-a1",
+        "job": 0,
+        "kind": "reserve",
+        "target": "job-0",
+        "upper": [
+          2,
+          1
+        ]
+      },
+      {
+        "id": "artifact-run-j0-a1",
+        "job": 0,
+        "kind": "recover",
+        "recoveries": 1,
+        "ticket": "04a8e34fa8414c4a8be595da2c1b75be"
+      },
+      {
+        "actual": [
+          2,
+          0
+        ],
+        "adapter": "admission",
+        "charge": 2,
+        "crashes": 2,
+        "id": "artifact-run-j0-a1",
+        "kind": "settle",
+        "late": 0,
+        "next": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          14
+        ],
+        "status": "done",
+        "target": "job-0",
+        "ticket": "04a8e34fa8414c4a8be595da2c1b75be",
+        "via": "close"
+      },
+      {
+        "action": "accept",
+        "job": 1,
+        "kind": "select",
+        "state": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "accept",
+        "adapter": "admission",
+        "id": "artifact-run-j1-a0",
+        "job": 1,
+        "kind": "reserve",
+        "target": "job-1",
+        "upper": [
+          2,
+          1
+        ]
+      },
+      {
+        "actual": [
+          2,
+          1
+        ],
+        "adapter": "admission",
+        "charge": 2,
+        "crashes": 0,
+        "id": "artifact-run-j1-a0",
+        "kind": "settle",
+        "late": 0,
+        "next": [
+          2,
+          1,
+          0,
+          0,
+          0,
+          12
+        ],
+        "status": "done",
+        "target": "job-1",
+        "ticket": null,
+        "via": "execute"
+      },
+      {
+        "action": "fallback",
+        "job": 2,
+        "kind": "select",
+        "state": [
+          2,
+          1,
+          0,
+          0,
+          0,
+          12
+        ]
+      },
+      {
+        "action": "fallback",
+        "adapter": "admission",
+        "id": "artifact-run-j2-a0",
+        "job": 2,
+        "kind": "reserve",
+        "target": "job-2",
+        "upper": [
+          5,
+          0
+        ]
+      },
+      {
+        "actual": [
+          5,
+          0
+        ],
+        "adapter": "admission",
+        "charge": 5,
+        "crashes": 0,
+        "id": "artifact-run-j2-a0",
+        "kind": "settle",
+        "late": 0,
+        "next": [
+          3,
+          1,
+          0,
+          0,
+          0,
+          7
+        ],
+        "status": "done",
+        "target": "job-2",
+        "ticket": null,
+        "via": "execute"
+      }
+    ],
+    "state": [
+      3,
+      1,
+      0,
+      0,
+      0,
+      7
+    ]
+  },
+  "valid": true
+}
