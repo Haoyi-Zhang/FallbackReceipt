@@ -2,7 +2,8 @@
 """Recheck retained receipt-closed fallback results.
 
 The verifier recomputes claim-bearing counts, certificate validity, the small
-oracle, independent runtime replay for the pilot, and descriptive quantiles.
+oracle, independent runtime replay, exact pilot/30-case database-to-JSON bindings,
+local adapter effects, the protocol model, and descriptive quantiles.
 Wall/CPU/RSS and timing samples are permitted to differ across clean replays.
 """
 from __future__ import annotations
@@ -23,6 +24,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "src"))
 from checker import check
+from evidence_check import verify_database_evidence
 from game import ACTIONS, encode, initial, successors, synthesize
 from oracle import exact
 from protocol_model import explore as explore_protocol
@@ -87,9 +89,89 @@ def evaluate_exported_policy(spec: dict[str, Any], cert: dict[str, Any]) -> int 
 
     return visit(initial(spec))
 
+def verify_model(root: Path) -> dict[str, Any]:
+    """Validate flat --phase model output, including its summary and crash sweep."""
+    if not __debug__:
+        raise RuntimeError("verification cannot run with Python assertions disabled")
+    retained_model = load(root / "model.json")
+    recomputed_model = run_protocol_models(max_crashes=2)
+    assert {key: value for key, value in retained_model.items()
+            if key != "receipt_closed_crash_sweep"} == recomputed_model
+    models = retained_model["models"]
+    expected_sweep = {
+        "0": (5, 4, 4),
+        "1": (23, 24, 6),
+        "2": (79, 91, 6),
+        "3": (211, 260, 6),
+        "4": (495, 633, 6),
+    }
+    for crashes, (states, edges, steps) in expected_sweep.items():
+        observed = retained_model["receipt_closed_crash_sweep"][crashes]
+        recomputed = explore_protocol("receipt_closed", max_crashes=int(crashes))
+        assert observed == {key: recomputed[key] for key in (
+            "reachable_states", "explored_edges", "violation_kinds",
+            "all_states_complete_without_more_crashes", "max_no_further_crash_steps")}
+        assert observed["reachable_states"] == recomputed["reachable_states"] == states
+        assert observed["explored_edges"] == recomputed["explored_edges"] == edges
+        assert observed["max_no_further_crash_steps"] == steps
+        assert observed["violation_kinds"] == []
+        assert observed["all_states_complete_without_more_crashes"]
+    correct_model = models["receipt_closed"]
+    assert correct_model["reachable_states"] == 79
+    assert correct_model["explored_edges"] == 91
+    assert correct_model["violation_kinds"] == []
+    assert correct_model["all_states_complete_without_more_crashes"]
+    assert correct_model["max_no_further_crash_steps"] == 6
+    expected_model_failures = {
+        "send_before_reserve": {
+            "effect_without_durable_reservation": 2,
+            "duplicate_effect": 6,
+        },
+        "fresh_retry": {"duplicate_effect": 8},
+        "query_without_fence": {"duplicate_effect": 8},
+        "settle_before_charge": {"settled_before_recovery_charge": 6},
+    }
+    for variant, failures in expected_model_failures.items():
+        for kind, steps in failures.items():
+            assert len(models[variant]["shortest_counterexamples"][kind]["trace"]) == steps
+
+    summary = load(root / "summary.json")
+    expected_summary = {
+        "max_crashes": retained_model["max_crashes"],
+        "correct_reachable_states": correct_model["reachable_states"],
+        "correct_explored_edges": correct_model["explored_edges"],
+        "correct_violation_kinds": correct_model["violation_kinds"],
+        "correct_all_states_complete_without_more_crashes":
+            correct_model["all_states_complete_without_more_crashes"],
+        "correct_max_no_further_crash_steps": correct_model["max_no_further_crash_steps"],
+        "receipt_closed_crash_sweep": retained_model["receipt_closed_crash_sweep"],
+        "mutant_shortest_counterexample_steps": {
+            variant: {kind: len(record["trace"])
+                      for kind, record in model["shortest_counterexamples"].items()}
+            for variant, model in models.items() if variant != "receipt_closed"
+        },
+    }
+    measurements = {"wall_seconds", "cpu_seconds", "max_rss_kib"}
+    assert set(summary) == set(expected_summary) | measurements
+    assert {k: v for k, v in summary.items() if k not in measurements} == expected_summary
+    assert all(type(summary[k]) in (int, float) and math.isfinite(summary[k])
+               and summary[k] >= 0 for k in measurements)
+    return {
+        "protocol_model_states": correct_model["reachable_states"],
+        "protocol_model_edges": correct_model["explored_edges"],
+        "protocol_crash_sweep": {key: {"states": values[0], "edges": values[1],
+                                       "max_completion_steps": values[2]}
+                                 for key, values in expected_sweep.items()},
+        "protocol_mutant_counterexamples": expected_model_failures,
+    }
+
+
 def verify(root: Path) -> dict[str, Any]:
     if not __debug__:
         raise RuntimeError("verification cannot run with Python assertions disabled")
+    # Exact file inventory and database-to-JSON bindings are checked before
+    # expensive recomputation; missing a database must not degrade to JSON-only.
+    database_checked = verify_database_evidence(root)
     # Pilot: three mutually independent checks for the finite value and one
     # independent audit replay for the integrated local runtime.
     pilot = root / "pilot"
@@ -166,45 +248,7 @@ def verify(root: Path) -> dict[str, Any]:
         "invert_score_classes": {"cases": 296, "rejected": 132},
     }
 
-    # Independent bounded protocol model and shortest counterexamples.
-    retained_model = load(root / "model" / "model.json")
-    recomputed_model = run_protocol_models(max_crashes=2)
-    assert {key: value for key, value in retained_model.items()
-            if key != "receipt_closed_crash_sweep"} == recomputed_model
-    models = retained_model["models"]
-    expected_sweep = {
-        "0": (5, 4, 4),
-        "1": (23, 24, 6),
-        "2": (79, 91, 6),
-        "3": (211, 260, 6),
-        "4": (495, 633, 6),
-    }
-    for crashes, (states, edges, steps) in expected_sweep.items():
-        observed = retained_model["receipt_closed_crash_sweep"][crashes]
-        recomputed = explore_protocol("receipt_closed", max_crashes=int(crashes))
-        assert observed["reachable_states"] == recomputed["reachable_states"] == states
-        assert observed["explored_edges"] == recomputed["explored_edges"] == edges
-        assert observed["max_no_further_crash_steps"] == steps
-        assert observed["violation_kinds"] == []
-        assert observed["all_states_complete_without_more_crashes"]
-    correct_model = models["receipt_closed"]
-    assert correct_model["reachable_states"] == 79
-    assert correct_model["explored_edges"] == 91
-    assert correct_model["violation_kinds"] == []
-    assert correct_model["all_states_complete_without_more_crashes"]
-    assert correct_model["max_no_further_crash_steps"] == 6
-    expected_model_failures = {
-        "send_before_reserve": {
-            "effect_without_durable_reservation": 2,
-            "duplicate_effect": 6,
-        },
-        "fresh_retry": {"duplicate_effect": 8},
-        "query_without_fence": {"duplicate_effect": 8},
-        "settle_before_charge": {"settled_before_recovery_charge": 6},
-    }
-    for variant, failures in expected_model_failures.items():
-        for kind, steps in failures.items():
-            assert len(models[variant]["shortest_counterexamples"][kind]["trace"]) == steps
+    model_checked = verify_model(root / "model")
 
     # Cross-trace workload-derived specifications and paired policy comparison.
     # The code trace freezes all thresholds; the conversation trace is evaluated
@@ -323,6 +367,9 @@ def verify(root: Path) -> dict[str, Any]:
     assert all(not values[m] or values["adaptive"] for values in paired.values() for m in method_names[1:])
 
     trace_summary = load(root / "trace" / "summary.json")
+    for method in method_names:
+        values = [float(row["planning_ms"]) for row in trace_rows if row["method"] == method]
+        assert close(percentile(values, 0.95), trace_summary["methods"][method]["p95_planning_ms"])
     assert trace_summary["calibration"] == calibration
     assert trace_summary["source_rows"] == {"code": 128, "conversation": 128}
     assert trace_summary["total_source_rows"] == 256
@@ -412,37 +459,6 @@ def verify(root: Path) -> dict[str, Any]:
                  timing["methods"]["contract"]["median_us"] /
                  timing["methods"]["direct"]["median_us"])
 
-    assert not list(root.rglob("*.db-wal"))
-    assert not list(root.rglob("*.db-shm"))
-    database_files = sorted(root.rglob("*.db"))
-    assert database_files
-    for database in database_files:
-        uri = f"file:{database}?mode=ro&immutable=1"
-        with closing(sqlite3.connect(uri, uri=True)) as connection:
-            assert connection.execute("PRAGMA integrity_check").fetchone()[0] == "ok"
-            assert connection.execute("PRAGMA foreign_key_check").fetchall() == []
-            tables = {row[0] for row in connection.execute(
-                "SELECT name FROM sqlite_master WHERE type='table'"
-            )}
-            if "attempts" in tables:
-                index_sql = connection.execute(
-                    "SELECT sql FROM sqlite_master WHERE type='index' AND name='one_pending_attempt'"
-                ).fetchone()
-                assert index_sql is not None and "WHERE state='pending'" in index_sql[0]
-                assert connection.execute(
-                    "SELECT COUNT(*) FROM attempts WHERE state='pending'"
-                ).fetchone()[0] <= 1
-            if "outcomes" in tables:
-                table_sql = connection.execute(
-                    "SELECT sql FROM sqlite_master WHERE type='table' AND name='outcomes'"
-                ).fetchone()[0]
-                assert "state='done' AND adapter IS NOT NULL AND job IS NOT NULL" in table_sql
-                assert connection.execute(
-                    "SELECT COUNT(*) FROM outcomes WHERE "
-                    "(state='done' AND (adapter IS NULL OR job IS NULL)) OR "
-                    "(state='canceled' AND (adapter IS NOT NULL OR job IS NOT NULL OR cost<>0 OR unsafe<>0))"
-                ).fetchone()[0] == 0
-
     return {
         "pilot_optimum": 10,
         "oracle_cases": 1200,
@@ -453,12 +469,7 @@ def verify(root: Path) -> dict[str, Any]:
         "micro_exhaustive_mismatches": 0,
         "structural_value_mutants": 2072,
         "semantic_mutants": semantic_counts,
-        "protocol_model_states": correct_model["reachable_states"],
-        "protocol_model_edges": correct_model["explored_edges"],
-        "protocol_crash_sweep": {key: {"states": values[0], "edges": values[1],
-                                       "max_completion_steps": values[2]}
-                                 for key, values in expected_sweep.items()},
-        "protocol_mutant_counterexamples": expected_model_failures,
+        **model_checked,
         "trace_feasible": method_counts,
         "trace_feasible_by_source": source_method_counts,
         "trace_adaptive_only_vs_any_fixed": adaptive_only_any,
@@ -470,21 +481,32 @@ def verify(root: Path) -> dict[str, Any]:
         "scaling_max_states": scale_states,
         "concurrency_cases": 270,
         "latency_samples_per_method": 2048,
-        "sqlite_databases_checked": len(database_files),
+        **database_checked,
     }
 
 
 def main() -> None:
     p = argparse.ArgumentParser()
     p.add_argument("--results", type=Path, default=ROOT / "results")
+    p.add_argument("--phase", choices=("all", "model", "databases"), default="all",
+                   help="all expects the complete result tree; model expects flat model output; "
+                        "databases checks the exact pilot/fault database packet")
     p.add_argument("--compare", type=Path)
     a = p.parse_args()
-    checked = verify(a.results)
+    if not __debug__:
+        raise RuntimeError("verification cannot run with Python assertions disabled")
+    validator = {"all": verify, "model": verify_model, "databases": verify_database_evidence}[a.phase]
+    checked = validator(a.results)
     if a.compare is not None:
-        assert checked == verify(a.compare)
+        assert checked == validator(a.compare)
     print(json.dumps({"checked_claims": checked, "timing_equality_not_required": True},
                      indent=2, sort_keys=True))
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except (AssertionError, OSError, ValueError, KeyError, TypeError, IndexError,
+            sqlite3.Error, RuntimeError) as exc:
+        print(f"RESULT VERIFICATION FAILED: {exc or type(exc).__name__}", file=sys.stderr)
+        raise SystemExit(1)

@@ -45,9 +45,15 @@ At the exact two-crash comparison point, the correct model reaches 79 states and
 Run:
 
 ```sh
-python -S reproduce.py --phase model --output /tmp/receipt-model
-python -S verify_results.py --results /tmp/receipt-model
-python -S src/protocol_model.py --max-crashes 4 --output /tmp/model.json
+set -eu
+tmp=$(mktemp -d)
+python -S reproduce.py --phase model --output "$tmp/model"
+python -S verify_results.py --phase model --results "$tmp/model"
+rm -rf "$tmp"
 ```
+
+Run these commands from the standalone artifact root. `--phase model` writes `model.json` and `summary.json` directly into the selected output directory. The matching verifier recomputes the independent model, complete crash-sweep fields, shortest counterexamples, and summary; it neither reads nor creates `pilot/spec.json`. The default all-phase verifier instead expects a complete tree from `reproduce.py --phase all --output DIRECTORY`.
+
+`tests/test_evidence.py::ModelCommandTests` executes the command pair in an empty temporary directory. It verifies a successful clean result and nonzero exits after corrupting or removing either model record, then restores and rechecks the original records. No missing experiment stages are manufactured.
 
 The emitted lost-reply witness contains two worlds with the same durable sender observation: one with no effect and one with one effect whose reply was lost. A deterministic sender-only rule must make the same choice in both; fresh retry duplicates one world and never retrying strands the other. This establishes the need for some stable distinguishing fact under the assumptions, not the uniqueness of this API.

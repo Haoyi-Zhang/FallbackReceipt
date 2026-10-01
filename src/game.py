@@ -72,7 +72,7 @@ def nominal_unsafe(score: int) -> int:
 def successors(spec: dict[str, Any], state: State, action: str) -> list[tuple[State, int, dict[str, int]]]:
     """Return all declared adversarial outcomes for one controller action.
 
-    Each tuple is (next_state, immediate_physical_cost, outcome_record).  A crash
+    Each tuple is (next_state, immediate_certified_charge, outcome_record).  A crash
     is a receiver-closed canceled attempt or a lost reply to a completed attempt;
     either way the final logical action has at most one physical effect.
     """
