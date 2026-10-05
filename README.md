@@ -1,6 +1,6 @@
 # Receipt-Closed Fallback
 
-Companion artifact for **Receipt-Closed Fallback: Budgeted Recovery for Service Controllers**, prepared for ACM Transactions on Computer Systems (TOCS). This is an internal research artifact, not a claim of acceptance or approval by the named authors.
+Companion artifact for **Receipt-Closed Fallback: Budgeted Recovery for Service Controllers**, targeting ACM Transactions on Computer Systems (TOCS).
 
 The implementation connects a finite accept/fallback/reject selector to persistent local effects. A stable attempt closes as `DONE` (one bound effect) or `CANCELED` (no effect and future execution fenced). Recovery charges and tickets precede closure. A separately implemented certificate checker reconstructs the finite certified-charge optimum; another program replays complete event histories.
 
@@ -8,7 +8,7 @@ The Bellman objective is worst certified charge, not actual cost for a particula
 
 ## Requirements
 
-Python 3.11 or newer with standard-library SQLite, on a POSIX host for process crash tests. No packages, network access, model inference, GPU, cloud account, or private data are required. Experiments use at most four CPU affinities, synchronous crash workers, and four local race threads. The experiment runner limits address space to 3,250 MiB and CPU to 600 seconds per process. This is a finite/local prototype, not a distributed production implementation.
+Python 3.11 or newer with standard-library SQLite, on a POSIX host for process crash tests. Experiments use at most four CPU affinities, synchronous crash workers, and four local race threads. The experiment runner limits address space to 3,250 MiB and CPU to 600 seconds per process. This is a finite/local prototype, not a distributed production implementation.
 
 ## Run the artifact
 
@@ -19,7 +19,7 @@ python -S verify_all.py
 python -S verify_all.py --reproduce
 ```
 
-The first command runs all **80 tests**, reconstructs and checks retained results, recomputes exact comparisons, graph checks, and identity-retention checks, and runs the recovery example. The second also generates all ten experiment phases in a fresh temporary directory and compares logical results. A nonzero exit is a failed check. Success says nothing about author declarations, general correctness, or acceptance.
+The first command runs all **80 tests**, reconstructs and checks retained results, recomputes exact comparisons, graph checks, and identity-retention checks, and runs the recovery example. The second also generates all ten experiment phases in a fresh temporary directory and compares logical results. A nonzero exit is a failed check; finite checks do not establish general correctness.
 
 Individual entry points:
 
@@ -56,6 +56,8 @@ The two-crash protocol model contains 79 states and 91 edges; the four-crash mod
 The local implementation evidence comprises 30 fault schedules with complete replay, five expected negative controls, 30 strategy paths, 171 adapter executions, and 270 receiver races. The verifier requires the exact 62-file pilot/30-case database inventory, not a nonempty glob. All 31 pairs match their JSON bindings, states, ordered events, attempts and receiver terminal/effect records, with job counters and local adapter/target effects checked as well. Integrity, foreign-key, terminal-schema and one-pending-index checks pass without sidecars. All evidence reads use immutable, read-only SQLite connections; negative tests edit disposable copies only. Scaling and latency raw samples are retained; their quantiles are descriptive measurements, not production SLOs.
 
 ## Implementation and evidence map
+
+The trace grid's `planning_ms` times each complete policy branch: adaptive includes synthesis and checking for feasible cases, restricted policies include setup and synthesis without checking, and the recovery ablation includes true-model reevaluation. Those timings are not a synthesis-only comparison. The separate horizon-scaling campaign measures synthesis alone.
 
 - `src/game.py`: finite minimax synthesis and reachable strategy export.
 - `src/evidence_check.py`: exact database inventory and read-only database/JSON/local-effect correspondence, with no runtime constructors.
