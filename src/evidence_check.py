@@ -250,8 +250,13 @@ def verify_database_evidence(root: Path) -> dict[str, int]:
     """Require exactly the pilot pair plus 3 adapters x 10 fault-schedule pairs."""
     root = Path(root)
     expected = set(expected_database_paths())
+    # Optional retained workflow output is a separate cohort, not a substitute
+    # for any canonical database. Recognize only its exact two output layouts;
+    # do not exempt arbitrary *.db files or arbitrary directories named current.
+    current = {Path("current/reproduced") / p for p in expected}
+    current |= {Path("current/example") / name for name in ("controller.db", "receiver.db")}
     actual = {p.relative_to(root) for p in root.rglob("*.db")}
-    missing, extra = sorted(expected - actual), sorted(actual - expected)
+    missing, extra = sorted(expected - actual), sorted(actual - expected - current)
     require(not missing and not extra,
             f"database inventory mismatch; missing={[str(p) for p in missing]}; "
             f"unexpected={[str(p) for p in extra]}")

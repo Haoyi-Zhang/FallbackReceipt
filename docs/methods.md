@@ -42,6 +42,14 @@ The concurrency phase executes duplicate-execute, execute/close, and conflicting
 
 At phase completion, databases are checkpointed and closed. `verify_results.py` uses `src/evidence_check.py` to require exactly the pilot controller/receiver pair and ten named schedules for each of admission, cache and tier (62 databases). Missing or extra databases, missing case records, or WAL/SHM/journal sidecars are rejected. There is no JSON-only fallback. Connections use escaped `mode=ro&immutable=1` URIs and `PRAGMA query_only=ON`; no runtime constructor or schema-writing operation is invoked.
 
+Retained workflow output is a separate optional cohort: only the example pair
+under `current/example/` and the same exact pilot/fault database paths under
+`current/reproduced/` are recognized alongside the canonical packet. They never
+replace missing canonical files or increase its checked counts. Unlisted
+databases in either cohort or anywhere else remain errors; sidecar rejection
+is unchanged. Selecting `results/current/reproduced` as the verifier root checks
+that cohort's own complete 62-database packet rather than counting it twice.
+
 For every pair, the verifier checks integrity and foreign keys; bound specification/certificate, namespace, adapter and initial budget; controller state, ordered events and all attempt columns; reconstructed job state, recovery and attempt counters; terminal rows and full effect adapter/target/quantity bindings; and the admission queue, cache and tier side-effect tables. It compares the database-derived history to JSON and runs the existing replay checker on it. The pilot's two copies of each exported JSON record and all 30 schedule summaries must agree as well. `python -S verify_results.py --phase databases --results results` runs this exact packet check alone.
 
 `tests/test_evidence.py` checks unchanged bytes across read-only verification and mutates only temporary copies. It exercises all 62 one-at-a-time database omissions, DONE effect deletion for all three adapters, wrong effect/terminal/attempt targets, metadata bindings, states, events, counters and local side-effect tables. These are executed negative controls for packet consistency, not claims of damage to the retained originals, hostile tamper resistance, authenticated provenance, or cross-database real-time ordering. The supplied databases matched all 31 JSON histories in a read-only intake check.
@@ -60,7 +68,7 @@ The five sensitivity variants are unchanged inputs, recovery_time+1, both physic
 
 ## Current API boundary tests
 
-The runtime deep-copies and recursively freezes validated specification/certificate inputs before exposing read-only accessors. The replayer checks exact scalar kinds before comparing values, preventing float/int and Boolean/int aliases. The artifact contains 82 regression tests covering those failures, catalogue binding, refusal semantics, the comparator oracle, productive paths, retained-identity bounds, delayed-request cancellation fences, a full reply-loss example, and refusal to overwrite an existing reproduction directory. A cost-semantics regression also distinguishes fixed certified charge from variable admissible actual costs. Test inventory is not a measure of novelty or proof completeness, and does not imply that every test has run on every platform.
+The runtime deep-copies and recursively freezes validated specification/certificate inputs before exposing read-only accessors. The replayer checks exact scalar kinds before comparing values, preventing float/int and Boolean/int aliases. The artifact contains 84 regression tests covering those failures, catalogue binding, refusal semantics, the comparator oracle, productive paths, retained-identity bounds, delayed-request cancellation fences, a full reply-loss example, and refusal to overwrite an existing reproduction directory. A cost-semantics regression also distinguishes fixed certified charge from variable admissible actual costs. Two owned SQLite regressions check current-cohort storage compatibility and rejection of unlisted databases at historical and current roots. Test inventory is not a measure of novelty or proof completeness, and does not imply that every test has run on every platform.
 
 ## Reproduction interpretation
 

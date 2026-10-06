@@ -190,6 +190,62 @@ class EvidenceTests(unittest.TestCase):
             path.write_bytes(original)
 
 
+class CurrentRunStorageTests(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory(prefix="receipt-current-storage-")
+        self.addCleanup(self.tmp.cleanup)
+        self.root = Path(self.tmp.name)
+        for name in ("pilot", "faults"):
+            shutil.copytree(ROOT / "results" / name, self.root / name)
+
+    def owned_database(self, rel):
+        path = self.root / rel
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with closing(sqlite3.connect(path)) as db:
+            with db:
+                db.execute("CREATE TABLE owned_probe(value TEXT)")
+                db.execute("INSERT INTO owned_probe VALUES (?)", (rel,))
+        return path
+
+    def test_current_run_stores_do_not_expand_canonical_inventory(self):
+        paths = expected_database_paths()
+        before = {p: (self.root / p).read_bytes() for p in paths}
+        probes = [self.owned_database(rel) for rel in (
+            "current/example/controller.db", "current/example/receiver.db",
+            "current/reproduced/pilot/runtime/controller.db",
+            "current/reproduced/pilot/runtime/receiver.db",
+            "current/reproduced/faults/cases/tier-none/controller.db",
+            "current/reproduced/faults/cases/tier-none/receiver.db",
+        )]
+        current_before = {p: p.read_bytes() for p in probes}
+        self.assertEqual(verify_database_evidence(self.root), {
+            "sqlite_databases_checked": 62, "database_json_pairs_checked": 31,
+            "database_local_effect_pairs_checked": 31,
+        })
+        self.assertEqual(before, {p: (self.root / p).read_bytes() for p in paths})
+        self.assertEqual(current_before, {p: p.read_bytes() for p in probes})
+
+    def test_unknown_stores_at_historical_and_current_roots_are_rejected(self):
+        for rel in (
+            "pilot/runtime/unexpected.db", "pilot/unlisted/controller.db",
+            "faults/cases/tier-none/unexpected.db",
+            "faults/cases/unlisted/receiver.db",
+            "pilot/runtime/current/controller.db",
+            "current/example/unexpected.db",
+            "current/reproduced/faults/cases/unlisted/controller.db",
+            "current/unlisted/controller.db",
+        ):
+            with self.subTest(database=rel):
+                path = self.owned_database(rel)
+                try:
+                    with self.assertRaisesRegex(EvidenceError, "database inventory mismatch") as caught:
+                        verify_database_evidence(self.root)
+                    self.assertIn("unexpected=", str(caught.exception))
+                    self.assertIn(repr(str(Path(rel))), str(caught.exception))
+                finally:
+                    path.unlink()
+
+
 class ModelCommandTests(unittest.TestCase):
     def test_documented_flat_model_commands_and_corruptions(self):
         with tempfile.TemporaryDirectory(prefix="receipt-model-command-") as tmp:

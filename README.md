@@ -19,7 +19,7 @@ python -S verify_all.py
 python -S verify_all.py --reproduce
 ```
 
-The first command runs all **82 tests**, reconstructs and checks retained results, recomputes exact comparisons, graph checks, and identity-retention checks, and runs the recovery example. The second also generates all ten experiment phases in a fresh temporary directory and compares logical results. Complete reproduction refuses a nonempty output directory rather than replacing earlier results. A nonzero exit is a failed check; finite checks do not establish general correctness.
+The first command runs all **84 tests**, reconstructs and checks retained results, recomputes exact comparisons, graph checks, and identity-retention checks, and runs the recovery example. The second also generates all ten experiment phases in a fresh temporary directory and compares logical results. Complete reproduction refuses a nonempty output directory rather than replacing earlier results. A nonzero exit is a failed check; finite checks do not establish general correctness.
 
 Individual entry points:
 
@@ -58,6 +58,14 @@ The two-crash protocol model contains 79 states and 91 edges; the four-crash mod
 The local implementation evidence comprises 30 fault schedules with complete replay, five mechanism controls (two legal orderings and three failure-boundary controls), 30 strategy paths, 171 adapter executions, and 270 receiver races. The verifier requires the exact 62-file pilot/30-case database inventory, not a nonempty glob. All 31 pairs match their JSON bindings, states, ordered events, attempts and receiver terminal/effect records, with job counters and local adapter/target effects checked as well. Integrity, foreign-key, terminal-schema and one-pending-index checks pass without sidecars. All evidence reads use immutable, read-only SQLite connections; negative tests edit disposable copies only. Scaling and latency raw samples are retained; their quantiles are descriptive measurements, not production SLOs.
 
 ## Implementation and evidence map
+
+The optional retained workflow cohort has two recognized database layouts:
+`results/current/example/{controller,receiver}.db` and the exact pilot/fault
+database paths beneath `results/current/reproduced/`. These do not count toward
+or replace any of the 62 canonical databases. Unknown databases anywhere,
+including under either current-run layout, and SQLite sidecars still fail the
+packet check. To check the reproduced cohort itself, run
+`python -S verify_results.py --phase databases --results results/current/reproduced --compare results`.
 
 The trace grid's `planning_ms` times each complete policy branch: adaptive includes synthesis and checking for feasible cases, restricted policies include setup and synthesis without checking, and the recovery ablation includes true-model reevaluation. Those timings are not a synthesis-only comparison. The separate horizon-scaling campaign measures synthesis alone.
 
