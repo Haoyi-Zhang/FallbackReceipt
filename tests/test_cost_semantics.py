@@ -2,6 +2,7 @@
 import copy
 from pathlib import Path
 import sys
+import tempfile
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -19,6 +20,52 @@ def single_job(accept_cost=10, fallback_cost=5, late=0):
 
 
 class CostSemanticsTests(unittest.TestCase):
+    def test_fixed_sequence_charge_does_not_fix_actual_receiver_cost(self):
+        from open_loop import solve
+        from runtime import ControllerStore, ReceiverStore
+        from trace_check import check_runtime
+
+        spec = single_job()
+        spec["crashes"] = 1
+        cert = synthesize(spec)
+        fixed = solve(spec)
+        self.assertTrue(check(spec, cert))
+        self.assertEqual(fixed["actions"], ["fallback"])
+        self.assertEqual(fixed["worst_cost"], cert["worst_cost"])
+        actual_totals, certified_totals = [], []
+        # Two admissible executions; no causal cost effect of recovery is assumed.
+        for actual_cost, recover in ((1, False), (4, True)):
+            with self.subTest(actual_cost=actual_cost, recover=recover):
+                with tempfile.TemporaryDirectory() as td:
+                    root = Path(td)
+                    controller = ControllerStore(root / "controller.db", spec, cert)
+                    receiver = ReceiverStore(root / "receiver.db")
+                    try:
+                        key, action, envelope, _ = controller.reserve()
+                        self.assertEqual(action, fixed["actions"][0])
+                        self.assertEqual(envelope, 5)
+                        receipt = receiver.execute_once(
+                            key, *controller.attempt_descriptor(key), actual_cost, 0)
+                        if recover:
+                            controller.close()
+                            controller = ControllerStore(root / "controller.db", spec, cert)
+                            ticket = controller.record_recovery(key)
+                            receipt = receiver.close_attempt(key, ticket)
+                        controller.settle(receipt)
+                        self.assertTrue(check_runtime(spec, cert, controller.snapshot(),
+                                                      receiver.outcomes(), receiver.effects()))
+                        self.assertEqual(len(receiver.effects()), 1)
+                        actual_totals.append(sum(e[0] for e in receiver.effects().values()))
+                        certified_totals.append(spec["cost"] - controller.state()[5])
+                        self.assertEqual(controller.state()[2], spec["crashes"] - int(recover))
+                    finally:
+                        controller.close()
+                        receiver.close()
+        self.assertEqual(actual_totals, [1, 4])
+        self.assertEqual(certified_totals, [5, 5])
+        self.assertTrue(all(actual <= bound for actual, bound
+                            in zip(actual_totals, certified_totals)))
+
     def test_certified_optimum_need_not_minimize_actual_receiver_cost(self):
         spec = single_job()
         root = initial(spec)

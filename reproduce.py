@@ -13,7 +13,6 @@ import math
 import os
 import random
 import resource
-import shutil
 import sqlite3
 import statistics
 import subprocess
@@ -1006,14 +1005,16 @@ def main() -> None:
     p.add_argument("--phase", choices=[*PHASES, "all"], required=True)
     p.add_argument("--output", type=Path, required=True)
     a = p.parse_args()
-    bounded_environment()
+    if a.output.is_symlink():
+        p.error('output must not be a symbolic link')
     a.output.mkdir(parents=True, exist_ok=True)
+    if a.phase == 'all' and any(a.output.iterdir()):
+        p.error('complete reproduction requires an empty output directory')
+    bounded_environment()
     if a.phase == "all":
         for name, fn in PHASES.items():
             target = a.output / name
-            if target.exists():
-                shutil.rmtree(target)
-            target.mkdir(parents=True, exist_ok=True)
+            target.mkdir()
             fn(target)
     else:
         PHASES[a.phase](a.output)

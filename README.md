@@ -19,7 +19,7 @@ python -S verify_all.py
 python -S verify_all.py --reproduce
 ```
 
-The first command runs all **80 tests**, reconstructs and checks retained results, recomputes exact comparisons, graph checks, and identity-retention checks, and runs the recovery example. The second also generates all ten experiment phases in a fresh temporary directory and compares logical results. A nonzero exit is a failed check; finite checks do not establish general correctness.
+The first command runs all **82 tests**, reconstructs and checks retained results, recomputes exact comparisons, graph checks, and identity-retention checks, and runs the recovery example. The second also generates all ten experiment phases in a fresh temporary directory and compares logical results. Complete reproduction refuses a nonempty output directory rather than replacing earlier results. A nonzero exit is a failed check; finite checks do not establish general correctness.
 
 Individual entry points:
 
@@ -34,6 +34,8 @@ python -S examples/run_contract.py
 python -S src/game.py results/pilot/spec.json /tmp/receipt-policy.json
 python -S src/checker.py results/pilot/spec.json /tmp/receipt-policy.json
 ```
+
+The flat artifact repository also supplies `.github/workflows/scientific-checks.yml` for pushes to `main`, pull requests, or manual dispatch. It runs the finite checks and a fresh local ten-phase reproduction on Ubuntu 24.04, with a 900-second whole-check deadline, a 600-second per-process CPU limit, and a 3,250 MiB virtual-memory limit. Raw logs and fresh experiment output are uploaded even after a failed check. This workflow definition does not report an executed remote run.
 
 `examples/run_contract.py --output EMPTY_DIRECTORY` preserves the example databases and JSON history. An existing nonempty directory is refused. The example suppresses a reply after the first effect, reopens the controller, closes that same attempt, completes all three jobs, and rejects an incomplete exported history. It produces three effects, actual cost nine, and a valid history under certified worst cost ten. This example is not itself an OS crash experiment; the fault campaign uses separate process cut points.
 
@@ -53,7 +55,7 @@ Five exploratory fixed-budget perturbations cover 320 further comparisons. Feasi
 
 The two-crash protocol model contains 79 states and 91 edges; the four-crash model has 495 states and 633 edges. After removing further-crash transitions, every reached nonterminal state has a productive successor, and there is no productive cycle. All maximal productive paths terminate within six steps in the checked graphs. Idle/service-unavailable stuttering is excluded; fairness and bounded service times remain assumptions.
 
-The local implementation evidence comprises 30 fault schedules with complete replay, five expected negative controls, 30 strategy paths, 171 adapter executions, and 270 receiver races. The verifier requires the exact 62-file pilot/30-case database inventory, not a nonempty glob. All 31 pairs match their JSON bindings, states, ordered events, attempts and receiver terminal/effect records, with job counters and local adapter/target effects checked as well. Integrity, foreign-key, terminal-schema and one-pending-index checks pass without sidecars. All evidence reads use immutable, read-only SQLite connections; negative tests edit disposable copies only. Scaling and latency raw samples are retained; their quantiles are descriptive measurements, not production SLOs.
+The local implementation evidence comprises 30 fault schedules with complete replay, five mechanism controls (two legal orderings and three failure-boundary controls), 30 strategy paths, 171 adapter executions, and 270 receiver races. The verifier requires the exact 62-file pilot/30-case database inventory, not a nonempty glob. All 31 pairs match their JSON bindings, states, ordered events, attempts and receiver terminal/effect records, with job counters and local adapter/target effects checked as well. Integrity, foreign-key, terminal-schema and one-pending-index checks pass without sidecars. All evidence reads use immutable, read-only SQLite connections; negative tests edit disposable copies only. Scaling and latency raw samples are retained; their quantiles are descriptive measurements, not production SLOs.
 
 ## Implementation and evidence map
 

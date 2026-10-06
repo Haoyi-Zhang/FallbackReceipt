@@ -90,7 +90,11 @@ def catalogue(jobs: list[dict[str, int]], deadline: int,
 
 
 def solve(spec: dict[str, Any], schedules: Catalogue | None = None) -> dict:
-    """Return exact minimum physical cost among robust feasible fixed sequences."""
+    """Return exact minimum certified charge among robust feasible fixed sequences.
+
+    Actual receiver costs are only upper-bounded by the declared charges; this
+    comparator neither observes them nor assumes that their bounds are attained.
+    """
     validate_spec(spec)
     if schedules is None:
         schedules = catalogue(spec["jobs"], spec["deadline"], spec["recovery_time"])

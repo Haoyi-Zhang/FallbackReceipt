@@ -4,7 +4,7 @@ import sys
 import unittest
 import tempfile
 from pathlib import Path
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / 'src'))
@@ -142,6 +142,23 @@ class ComparisonTests(unittest.TestCase):
             self.assertEqual(result['actual_effects'],3)
             self.assertEqual(result['certified_worst_cost'],10)
             self.assertEqual(result['actual_cost'],9)
+
+    def test_complete_reproduction_refuses_existing_outputs(self):
+        import reproduce
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            marker = root / 'pilot' / 'keep.txt'
+            marker.parent.mkdir()
+            marker.write_text('existing result', encoding='utf-8')
+            with patch.object(sys, 'argv', ['reproduce.py', '--phase', 'all', '--output', td]), \
+                    patch.object(reproduce, 'bounded_environment') as limits, \
+                    patch.dict(reproduce.PHASES, {'pilot': Mock()}):
+                with self.assertRaises(SystemExit) as failure:
+                    reproduce.main()
+                self.assertEqual(failure.exception.code, 2)
+                limits.assert_not_called()
+                reproduce.PHASES['pilot'].assert_not_called()
+            self.assertEqual(marker.read_text(encoding='utf-8'), 'existing result')
 
     def test_crash_driver_reader_closes_sqlite_connections(self):
         import sqlite3

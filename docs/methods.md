@@ -32,7 +32,7 @@ Each of adaptive, always-accept, threshold-1, threshold-2, always-fallback, and 
 
 A persistent controller namespace and durable sequence create attempt identifiers unique across controllers. Each reservation immutably binds identifier, adapter, target, and envelope. Recovery atomically increments the job and attempt recovery counters and stores a fresh 32-hex ticket before `close`; the receiver echoes that ticket, and settlement requires exact match and receipt origin.
 
-The fault phase runs ten owned cut schedules on each of admission, cache, and tier adapters. Exit code 73 denotes the injected crash. Every schedule retains a complete event history plus controller/receiver database snapshots, is completed by bounded clean restarts, and is replayed independently. Five negative controls target fresh-ID duplication, unfenced negative query, uncharged recovery, a new attempt while pending, and progress after fault-budget exhaustion.
+The fault phase runs ten owned cut schedules on each of admission, cache, and tier adapters. Exit code 73 denotes the injected crash. Every schedule retains a complete event history plus controller/receiver database snapshots, is completed by bounded clean restarts, and is replayed independently. Its five mechanism controls comprise two legal operation orderings (close before execute and execute before close), plus fresh-ID duplication, release without a receiver fence, and reservation without completion. The independent protocol model separately checks unfenced queries and uncharged settlement; unit tests separately check reservation while pending and fault-budget exhaustion.
 
 The refinement phase enumerates all 30 adversarial paths through the pilot strategy, then runs each physical step over all three adapters as applicable (171 executions). It realizes requested recovery counts with canceled attempts or post-effect lost replies and requires replay to reconstruct the exact abstract path.
 
@@ -60,7 +60,7 @@ The five sensitivity variants are unchanged inputs, recovery_time+1, both physic
 
 ## Current API boundary tests
 
-The runtime deep-copies and recursively freezes validated specification/certificate inputs before exposing read-only accessors. The replayer checks exact scalar kinds before comparing values, preventing float/int and Boolean/int aliases. The 60 regression tests cover those failures, catalogue binding, refusal semantics, the comparator oracle, productive paths, retained-identity bounds, delayed-request cancellation fences, and a full reply-loss example. Test count is coverage evidence, not a measure of novelty or proof completeness.
+The runtime deep-copies and recursively freezes validated specification/certificate inputs before exposing read-only accessors. The replayer checks exact scalar kinds before comparing values, preventing float/int and Boolean/int aliases. The artifact contains 82 regression tests covering those failures, catalogue binding, refusal semantics, the comparator oracle, productive paths, retained-identity bounds, delayed-request cancellation fences, a full reply-loss example, and refusal to overwrite an existing reproduction directory. A cost-semantics regression also distinguishes fixed certified charge from variable admissible actual costs. Test inventory is not a measure of novelty or proof completeness, and does not imply that every test has run on every platform.
 
 ## Reproduction interpretation
 
