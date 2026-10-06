@@ -1,0 +1,115 @@
+{
+  "checked_claims": {
+    "concurrency_cases": 270,
+    "database_json_pairs_checked": 31,
+    "database_local_effect_pairs_checked": 31,
+    "fault_controls": 5,
+    "fault_runtime_replays": 30,
+    "fault_schedules": 30,
+    "latency_samples_per_method": 2048,
+    "micro_exhaustive_cases": 23040,
+    "micro_exhaustive_feasible": 16864,
+    "micro_exhaustive_mismatches": 0,
+    "oracle_cases": 1200,
+    "oracle_feasible": 911,
+    "oracle_mismatches": 0,
+    "pilot_optimum": 10,
+    "protocol_crash_sweep": {
+      "0": {
+        "edges": 4,
+        "max_completion_steps": 4,
+        "states": 5
+      },
+      "1": {
+        "edges": 24,
+        "max_completion_steps": 6,
+        "states": 23
+      },
+      "2": {
+        "edges": 91,
+        "max_completion_steps": 6,
+        "states": 79
+      },
+      "3": {
+        "edges": 260,
+        "max_completion_steps": 6,
+        "states": 211
+      },
+      "4": {
+        "edges": 633,
+        "max_completion_steps": 6,
+        "states": 495
+      }
+    },
+    "protocol_model_edges": 91,
+    "protocol_model_states": 79,
+    "protocol_mutant_counterexamples": {
+      "fresh_retry": {
+        "duplicate_effect": 8
+      },
+      "query_without_fence": {
+        "duplicate_effect": 8
+      },
+      "send_before_reserve": {
+        "duplicate_effect": 6,
+        "effect_without_durable_reservation": 2
+      },
+      "settle_before_charge": {
+        "settled_before_recovery_charge": 6
+      }
+    },
+    "refinement_executions": 171,
+    "refinement_paths": 30,
+    "scaling_max_states": {
+      "10": 8326,
+      "12": 11238,
+      "4": 480,
+      "6": 2112,
+      "8": 4284
+    },
+    "semantic_mutants": {
+      "ignore_recovery_time": {
+        "cases": 296,
+        "rejected": 49
+      },
+      "invert_score_classes": {
+        "cases": 296,
+        "rejected": 132
+      }
+    },
+    "sqlite_databases_checked": 62,
+    "structural_value_mutants": 2072,
+    "trace_adaptive_only_vs_any_fixed": {
+      "all": 22,
+      "code": 12,
+      "conversation": 10
+    },
+    "trace_feasible": {
+      "adaptive": 345,
+      "always_accept": 287,
+      "always_fallback": 117,
+      "ignore_recovery": 153,
+      "threshold_1": 248,
+      "threshold_2": 105
+    },
+    "trace_feasible_by_source": {
+      "code": {
+        "adaptive": 172,
+        "always_accept": 144,
+        "always_fallback": 57,
+        "ignore_recovery": 80,
+        "threshold_1": 125,
+        "threshold_2": 54
+      },
+      "conversation": {
+        "adaptive": 173,
+        "always_accept": 143,
+        "always_fallback": 60,
+        "ignore_recovery": 73,
+        "threshold_1": 123,
+        "threshold_2": 51
+      }
+    }
+  },
+  "timing_equality_not_required": true
+}
