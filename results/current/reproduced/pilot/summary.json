@@ -1,0 +1,12 @@
+{
+  "certificate_valid": true,
+  "cpu_seconds": 0.010411429,
+  "max_rss_kib": 24856,
+  "oracle_cost": 10,
+  "policy_rows": 16,
+  "runtime_attempts": 3,
+  "runtime_effects": 3,
+  "runtime_valid": true,
+  "visited_states": 104,
+  "wall_seconds": 0.13690690099999614
+}

@@ -1,0 +1,11 @@
+{
+  "adapters": 3,
+  "canceled_execute_close_races": 81,
+  "cases": 270,
+  "cpu_seconds": 1.0188690820000001,
+  "done_execute_close_races": 9,
+  "max_rss_kib": 44696,
+  "passed": 270,
+  "repetitions_per_kind": 30,
+  "wall_seconds": 3.3630925880000007
+}

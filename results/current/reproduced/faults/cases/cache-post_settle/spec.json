@@ -1,0 +1,32 @@
+{
+  "cost": 16,
+  "crashes": 2,
+  "deadline": 10,
+  "drift": 1,
+  "jobs": [
+    {
+      "accept_cost": 2,
+      "accept_time": 2,
+      "fallback_cost": 4,
+      "fallback_time": 4,
+      "score": 2
+    },
+    {
+      "accept_cost": 2,
+      "accept_time": 2,
+      "fallback_cost": 5,
+      "fallback_time": 4,
+      "score": 0
+    },
+    {
+      "accept_cost": 3,
+      "accept_time": 3,
+      "fallback_cost": 5,
+      "fallback_time": 5,
+      "score": 1
+    }
+  ],
+  "late": 0,
+  "recovery_time": 2,
+  "unsafe": 1
+}

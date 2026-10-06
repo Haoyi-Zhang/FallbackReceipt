@@ -1,0 +1,80 @@
+[
+  {
+    "canceled": {
+      "adapter": null,
+      "cost": 0,
+      "id": "old",
+      "job": null,
+      "status": "canceled",
+      "ticket": "00000000000000000000000000000000",
+      "unsafe": 0,
+      "via": "close"
+    },
+    "effects": 0,
+    "late_execute": {
+      "adapter": null,
+      "cost": 0,
+      "id": "old",
+      "job": null,
+      "status": "canceled",
+      "ticket": null,
+      "unsafe": 0,
+      "via": "execute"
+    },
+    "name": "close_before_execute",
+    "passes": true
+  },
+  {
+    "done": {
+      "adapter": "admission",
+      "cost": 3,
+      "id": "old",
+      "job": "job",
+      "status": "done",
+      "ticket": null,
+      "unsafe": 1,
+      "via": "execute"
+    },
+    "effects": 1,
+    "name": "execute_before_close",
+    "passes": true,
+    "recovered": {
+      "adapter": "admission",
+      "cost": 3,
+      "id": "old",
+      "job": "job",
+      "status": "done",
+      "ticket": "11111111111111111111111111111111",
+      "unsafe": 1,
+      "via": "close"
+    }
+  },
+  {
+    "effects": 2,
+    "name": "fresh_identifiers",
+    "passes": true
+  },
+  {
+    "actual": [
+      6,
+      2
+    ],
+    "declared_single_attempt_budget": [
+      4,
+      1
+    ],
+    "effects": 2,
+    "name": "release_without_fence",
+    "passes": true
+  },
+  {
+    "effects": 1,
+    "logical_completion": false,
+    "name": "reservation_only",
+    "passes": true,
+    "pending_liability": [
+      4,
+      1
+    ]
+  }
+]

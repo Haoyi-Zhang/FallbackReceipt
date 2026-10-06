@@ -1,0 +1,14 @@
+{
+  "context_q33": 583,
+  "context_q67": 2647,
+  "context_unit": 1650,
+  "deadline": 4,
+  "gap_q33_ms": 48,
+  "gap_q67_ms": 169,
+  "generated_q33": 9,
+  "generated_q67": 18,
+  "generated_unit": 13,
+  "recovery_time": 2,
+  "rows": 128,
+  "schema": 2
+}

@@ -1,0 +1,10 @@
+{
+  "adapters": 3,
+  "controls": 5,
+  "controls_passed": 5,
+  "cpu_seconds": 0.29735487299999974,
+  "max_rss_kib": 44696,
+  "schedules": 30,
+  "valid_schedules": 30,
+  "wall_seconds": 5.601207894999995
+}

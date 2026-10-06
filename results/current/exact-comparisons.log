@@ -1,0 +1,115 @@
+{
+  "open_loop": {
+    "contracts": 576,
+    "jobs_per_contract": 8,
+    "sequences_per_contract": 6561,
+    "adaptive_feasible": 345,
+    "open_loop_feasible": 345,
+    "adaptive_only": 0,
+    "common_feasible": 345,
+    "adaptive_lower_cost": 0
+  },
+  "baseline_crosscheck": {
+    "seed": 20260923,
+    "instances": 240,
+    "fixed_sequences": 3120,
+    "mismatches": 0,
+    "horizons": [
+      1,
+      2,
+      3
+    ],
+    "drift_and_crash_budgets": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "recovery_times": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "progress": [
+    {
+      "crash_bound": 0,
+      "states": 5,
+      "edges": 4,
+      "nonterminal_dead_ends": 0,
+      "productive_cycles": 0,
+      "longest_no_further_crash_path": 4
+    },
+    {
+      "crash_bound": 1,
+      "states": 23,
+      "edges": 24,
+      "nonterminal_dead_ends": 0,
+      "productive_cycles": 0,
+      "longest_no_further_crash_path": 6
+    },
+    {
+      "crash_bound": 2,
+      "states": 79,
+      "edges": 91,
+      "nonterminal_dead_ends": 0,
+      "productive_cycles": 0,
+      "longest_no_further_crash_path": 6
+    },
+    {
+      "crash_bound": 3,
+      "states": 211,
+      "edges": 260,
+      "nonterminal_dead_ends": 0,
+      "productive_cycles": 0,
+      "longest_no_further_crash_path": 6
+    },
+    {
+      "crash_bound": 4,
+      "states": 495,
+      "edges": 633,
+      "nonterminal_dead_ends": 0,
+      "productive_cycles": 0,
+      "longest_no_further_crash_path": 6
+    }
+  ],
+  "parameter_sensitivity": {
+    "base": {
+      "contracts": 64,
+      "adaptive_feasible": 45,
+      "open_loop_feasible": 45,
+      "adaptive_only": 0,
+      "adaptive_lower_cost": 0
+    },
+    "recovery_plus_one": {
+      "contracts": 64,
+      "adaptive_feasible": 45,
+      "open_loop_feasible": 45,
+      "adaptive_only": 0,
+      "adaptive_lower_cost": 0
+    },
+    "time_plus_one": {
+      "contracts": 64,
+      "adaptive_feasible": 37,
+      "open_loop_feasible": 37,
+      "adaptive_only": 0,
+      "adaptive_lower_cost": 0
+    },
+    "cost_plus_one": {
+      "contracts": 64,
+      "adaptive_feasible": 41,
+      "open_loop_feasible": 41,
+      "adaptive_only": 0,
+      "adaptive_lower_cost": 0
+    },
+    "score_rotation": {
+      "contracts": 64,
+      "adaptive_feasible": 52,
+      "open_loop_feasible": 52,
+      "adaptive_only": 0,
+      "adaptive_lower_cost": 0
+    }
+  },
+  "verified": true
+}

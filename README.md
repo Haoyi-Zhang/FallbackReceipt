@@ -88,3 +88,10 @@ The public excerpts contribute request order, timestamps, and token counts only.
 ## Retained identity evidence
 
 For one completed n-job contract with F charged recoveries, attempt identifiers are bounded by n+F. The check replays 31 full histories and separately validates the counts in 171 refinement rows; three full histories attain the bound. Each of three local negative controls retains a cancellation across a receiver reopen (zero delayed effects), then deliberately erases that owned tombstone (one delayed effect). This demonstrates an assumption boundary, not a supported reclamation operation or a global storage bound.
+
+The fresh Ubuntu full run passes all 82 tests and completes all ten experiment
+phases. Its logs and 62 SQLite database files are retained under
+`results/current/`; two large logs/CSV files are losslessly gzip-compressed.
+`fresh-result-check.log` records equality of the logical claim fields with the
+canonical `results/` campaign. Timing and race-winner records remain distinct
+host cohorts; the paper's existing timing macros use the canonical data.

@@ -1,0 +1,608 @@
+{
+  "feasible": true,
+  "policy": {
+    "0,1,2,1,0,16": {
+      "action": "accept",
+      "outcomes": [
+        {
+          "charge": 2,
+          "continuation": 7,
+          "meta": {
+            "cost": 2,
+            "crashes": 0,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "1,1,2,1,0,14"
+        },
+        {
+          "charge": 2,
+          "continuation": 7,
+          "meta": {
+            "cost": 2,
+            "crashes": 1,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "1,1,1,1,0,14"
+        },
+        {
+          "charge": 2,
+          "continuation": 7,
+          "meta": {
+            "cost": 2,
+            "crashes": 2,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "1,1,0,1,0,14"
+        },
+        {
+          "charge": 2,
+          "continuation": 8,
+          "meta": {
+            "cost": 2,
+            "crashes": 0,
+            "flip": 1,
+            "late": 0,
+            "unsafe": 1
+          },
+          "next": "1,0,2,0,0,14"
+        },
+        {
+          "charge": 2,
+          "continuation": 8,
+          "meta": {
+            "cost": 2,
+            "crashes": 1,
+            "flip": 1,
+            "late": 0,
+            "unsafe": 1
+          },
+          "next": "1,0,1,0,0,14"
+        },
+        {
+          "charge": 2,
+          "continuation": 8,
+          "meta": {
+            "cost": 2,
+            "crashes": 2,
+            "flip": 1,
+            "late": 0,
+            "unsafe": 1
+          },
+          "next": "1,0,0,0,0,14"
+        }
+      ],
+      "worst_cost": 10
+    },
+    "1,0,0,0,0,14": {
+      "action": "fallback",
+      "outcomes": [
+        {
+          "charge": 5,
+          "continuation": 3,
+          "meta": {
+            "cost": 5,
+            "crashes": 0,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "2,0,0,0,0,9"
+        }
+      ],
+      "worst_cost": 8
+    },
+    "1,0,1,0,0,14": {
+      "action": "fallback",
+      "outcomes": [
+        {
+          "charge": 5,
+          "continuation": 3,
+          "meta": {
+            "cost": 5,
+            "crashes": 0,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "2,0,1,0,0,9"
+        },
+        {
+          "charge": 5,
+          "continuation": 3,
+          "meta": {
+            "cost": 5,
+            "crashes": 1,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "2,0,0,0,0,9"
+        }
+      ],
+      "worst_cost": 8
+    },
+    "1,0,2,0,0,14": {
+      "action": "fallback",
+      "outcomes": [
+        {
+          "charge": 5,
+          "continuation": 3,
+          "meta": {
+            "cost": 5,
+            "crashes": 0,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "2,0,2,0,0,9"
+        },
+        {
+          "charge": 5,
+          "continuation": 3,
+          "meta": {
+            "cost": 5,
+            "crashes": 1,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "2,0,1,0,0,9"
+        },
+        {
+          "charge": 5,
+          "continuation": 3,
+          "meta": {
+            "cost": 5,
+            "crashes": 2,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "2,0,0,0,0,9"
+        }
+      ],
+      "worst_cost": 8
+    },
+    "1,1,0,1,0,14": {
+      "action": "accept",
+      "outcomes": [
+        {
+          "charge": 2,
+          "continuation": 5,
+          "meta": {
+            "cost": 2,
+            "crashes": 0,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 1
+          },
+          "next": "2,1,0,0,0,12"
+        },
+        {
+          "charge": 2,
+          "continuation": 3,
+          "meta": {
+            "cost": 2,
+            "crashes": 0,
+            "flip": 1,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "2,0,0,1,0,12"
+        }
+      ],
+      "worst_cost": 7
+    },
+    "1,1,1,1,0,14": {
+      "action": "accept",
+      "outcomes": [
+        {
+          "charge": 2,
+          "continuation": 5,
+          "meta": {
+            "cost": 2,
+            "crashes": 0,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 1
+          },
+          "next": "2,1,1,0,0,12"
+        },
+        {
+          "charge": 2,
+          "continuation": 5,
+          "meta": {
+            "cost": 2,
+            "crashes": 1,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 1
+          },
+          "next": "2,1,0,0,0,12"
+        },
+        {
+          "charge": 2,
+          "continuation": 3,
+          "meta": {
+            "cost": 2,
+            "crashes": 0,
+            "flip": 1,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "2,0,1,1,0,12"
+        },
+        {
+          "charge": 2,
+          "continuation": 3,
+          "meta": {
+            "cost": 2,
+            "crashes": 1,
+            "flip": 1,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "2,0,0,1,0,12"
+        }
+      ],
+      "worst_cost": 7
+    },
+    "1,1,2,1,0,14": {
+      "action": "accept",
+      "outcomes": [
+        {
+          "charge": 2,
+          "continuation": 5,
+          "meta": {
+            "cost": 2,
+            "crashes": 0,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 1
+          },
+          "next": "2,1,2,0,0,12"
+        },
+        {
+          "charge": 2,
+          "continuation": 5,
+          "meta": {
+            "cost": 2,
+            "crashes": 1,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 1
+          },
+          "next": "2,1,1,0,0,12"
+        },
+        {
+          "charge": 2,
+          "continuation": 5,
+          "meta": {
+            "cost": 2,
+            "crashes": 2,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 1
+          },
+          "next": "2,1,0,0,0,12"
+        },
+        {
+          "charge": 2,
+          "continuation": 3,
+          "meta": {
+            "cost": 2,
+            "crashes": 0,
+            "flip": 1,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "2,0,2,1,0,12"
+        },
+        {
+          "charge": 2,
+          "continuation": 3,
+          "meta": {
+            "cost": 2,
+            "crashes": 1,
+            "flip": 1,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "2,0,1,1,0,12"
+        },
+        {
+          "charge": 2,
+          "continuation": 3,
+          "meta": {
+            "cost": 2,
+            "crashes": 2,
+            "flip": 1,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "2,0,0,1,0,12"
+        }
+      ],
+      "worst_cost": 7
+    },
+    "2,0,0,0,0,9": {
+      "action": "accept",
+      "outcomes": [
+        {
+          "charge": 3,
+          "continuation": 0,
+          "meta": {
+            "cost": 3,
+            "crashes": 0,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "3,0,0,0,0,6"
+        }
+      ],
+      "worst_cost": 3
+    },
+    "2,0,0,1,0,12": {
+      "action": "accept",
+      "outcomes": [
+        {
+          "charge": 3,
+          "continuation": 0,
+          "meta": {
+            "cost": 3,
+            "crashes": 0,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "3,0,0,1,0,9"
+        }
+      ],
+      "worst_cost": 3
+    },
+    "2,0,1,0,0,9": {
+      "action": "accept",
+      "outcomes": [
+        {
+          "charge": 3,
+          "continuation": 0,
+          "meta": {
+            "cost": 3,
+            "crashes": 0,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "3,0,1,0,0,6"
+        },
+        {
+          "charge": 3,
+          "continuation": 0,
+          "meta": {
+            "cost": 3,
+            "crashes": 1,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "3,0,0,0,0,6"
+        }
+      ],
+      "worst_cost": 3
+    },
+    "2,0,1,1,0,12": {
+      "action": "accept",
+      "outcomes": [
+        {
+          "charge": 3,
+          "continuation": 0,
+          "meta": {
+            "cost": 3,
+            "crashes": 0,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "3,0,1,1,0,9"
+        },
+        {
+          "charge": 3,
+          "continuation": 0,
+          "meta": {
+            "cost": 3,
+            "crashes": 1,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "3,0,0,1,0,9"
+        }
+      ],
+      "worst_cost": 3
+    },
+    "2,0,2,0,0,9": {
+      "action": "accept",
+      "outcomes": [
+        {
+          "charge": 3,
+          "continuation": 0,
+          "meta": {
+            "cost": 3,
+            "crashes": 0,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "3,0,2,0,0,6"
+        },
+        {
+          "charge": 3,
+          "continuation": 0,
+          "meta": {
+            "cost": 3,
+            "crashes": 1,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "3,0,1,0,0,6"
+        },
+        {
+          "charge": 3,
+          "continuation": 0,
+          "meta": {
+            "cost": 3,
+            "crashes": 2,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "3,0,0,0,0,6"
+        }
+      ],
+      "worst_cost": 3
+    },
+    "2,0,2,1,0,12": {
+      "action": "accept",
+      "outcomes": [
+        {
+          "charge": 3,
+          "continuation": 0,
+          "meta": {
+            "cost": 3,
+            "crashes": 0,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "3,0,2,1,0,9"
+        },
+        {
+          "charge": 3,
+          "continuation": 0,
+          "meta": {
+            "cost": 3,
+            "crashes": 1,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "3,0,1,1,0,9"
+        },
+        {
+          "charge": 3,
+          "continuation": 0,
+          "meta": {
+            "cost": 3,
+            "crashes": 2,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "3,0,0,1,0,9"
+        }
+      ],
+      "worst_cost": 3
+    },
+    "2,1,0,0,0,12": {
+      "action": "fallback",
+      "outcomes": [
+        {
+          "charge": 5,
+          "continuation": 0,
+          "meta": {
+            "cost": 5,
+            "crashes": 0,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "3,1,0,0,0,7"
+        }
+      ],
+      "worst_cost": 5
+    },
+    "2,1,1,0,0,12": {
+      "action": "fallback",
+      "outcomes": [
+        {
+          "charge": 5,
+          "continuation": 0,
+          "meta": {
+            "cost": 5,
+            "crashes": 0,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "3,1,1,0,0,7"
+        },
+        {
+          "charge": 5,
+          "continuation": 0,
+          "meta": {
+            "cost": 5,
+            "crashes": 1,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "3,1,0,0,0,7"
+        }
+      ],
+      "worst_cost": 5
+    },
+    "2,1,2,0,0,12": {
+      "action": "fallback",
+      "outcomes": [
+        {
+          "charge": 5,
+          "continuation": 0,
+          "meta": {
+            "cost": 5,
+            "crashes": 0,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "3,1,2,0,0,7"
+        },
+        {
+          "charge": 5,
+          "continuation": 0,
+          "meta": {
+            "cost": 5,
+            "crashes": 1,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "3,1,1,0,0,7"
+        },
+        {
+          "charge": 5,
+          "continuation": 0,
+          "meta": {
+            "cost": 5,
+            "crashes": 2,
+            "flip": 0,
+            "late": 0,
+            "unsafe": 0
+          },
+          "next": "3,1,0,0,0,7"
+        }
+      ],
+      "worst_cost": 5
+    }
+  },
+  "schema": 2,
+  "visited_states": 104,
+  "worst_cost": 10
+}

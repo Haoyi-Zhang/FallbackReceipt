@@ -1,0 +1,16 @@
+{
+  "actual_cost": 9,
+  "actual_effects": 3,
+  "certified_worst_cost": 10,
+  "final_state": [
+    3,
+    1,
+    1,
+    0,
+    0,
+    7
+  ],
+  "incomplete_rejected": true,
+  "recovered_attempt": "example-j0-a0",
+  "valid": true
+}

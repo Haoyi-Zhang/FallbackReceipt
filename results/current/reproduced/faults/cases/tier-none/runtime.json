@@ -1,0 +1,280 @@
+{
+  "adapter": "tier",
+  "cuts": [],
+  "effects": {
+    "artifact-run-j0-a0": [
+      2,
+      0
+    ],
+    "artifact-run-j1-a0": [
+      2,
+      1
+    ],
+    "artifact-run-j2-a0": [
+      5,
+      0
+    ]
+  },
+  "launches": [
+    {
+      "cut": "none",
+      "exit": 0,
+      "stderr": "",
+      "stdout": "{\"adapter\": \"tier\", \"attempts\": {\"artifact-run-j0-a0\": {\"action\": \"accept\", \"actual\": [2, 0], \"adapter\": \"tier\", \"job\": 0, \"recoveries\": 0, \"status\": \"done\", \"target\": \"job-0\", \"ticket\": null, \"upper\": [2, 1]}}, \"controller_id\": \"artifact-run\", \"done\": false, \"events\": [{\"action\": \"accept\", \"job\": 0, \"kind\": \"select\", \"state\": [0, 1, 2, 1, 0, 16]}, {\"action\": \"accept\", \"adapter\": \"tier\", \"id\": \"artifact-run-j0-a0\", \"job\": 0, \"kind\": \"reserve\", \"target\": \"job-0\", \"upper\": [2, 1]}, {\"actual\": [2, 0], \"adapter\": \"tier\", \"charge\": 2, \"crashes\": 0, \"id\": \"artifact-run-j0-a0\", \"kind\": \"settle\", \"late\": 0, \"next\": [1, 1, 2, 1, 0, 14], \"status\": \"done\", \"target\": \"job-0\", \"ticket\": null, \"via\": \"execute\"}], \"state\": [1, 1, 2, 1, 0, 14]}\n",
+      "wall_seconds": 0.05121236400000129
+    },
+    {
+      "cut": "none",
+      "exit": 0,
+      "stderr": "",
+      "stdout": "{\"adapter\": \"tier\", \"attempts\": {\"artifact-run-j0-a0\": {\"action\": \"accept\", \"actual\": [2, 0], \"adapter\": \"tier\", \"job\": 0, \"recoveries\": 0, \"status\": \"done\", \"target\": \"job-0\", \"ticket\": null, \"upper\": [2, 1]}, \"artifact-run-j1-a0\": {\"action\": \"accept\", \"actual\": [2, 1], \"adapter\": \"tier\", \"job\": 1, \"recoveries\": 0, \"status\": \"done\", \"target\": \"job-1\", \"ticket\": null, \"upper\": [2, 1]}}, \"controller_id\": \"artifact-run\", \"done\": false, \"events\": [{\"action\": \"accept\", \"job\": 0, \"kind\": \"select\", \"state\": [0, 1, 2, 1, 0, 16]}, {\"action\": \"accept\", \"adapter\": \"tier\", \"id\": \"artifact-run-j0-a0\", \"job\": 0, \"kind\": \"reserve\", \"target\": \"job-0\", \"upper\": [2, 1]}, {\"actual\": [2, 0], \"adapter\": \"tier\", \"charge\": 2, \"crashes\": 0, \"id\": \"artifact-run-j0-a0\", \"kind\": \"settle\", \"late\": 0, \"next\": [1, 1, 2, 1, 0, 14], \"status\": \"done\", \"target\": \"job-0\", \"ticket\": null, \"via\": \"execute\"}, {\"action\": \"accept\", \"job\": 1, \"kind\": \"select\", \"state\": [1, 1, 2, 1, 0, 14]}, {\"action\": \"accept\", \"adapter\": \"tier\", \"id\": \"artifact-run-j1-a0\", \"job\": 1, \"kind\": \"reserve\", \"target\": \"job-1\", \"upper\": [2, 1]}, {\"actual\": [2, 1], \"adapter\": \"tier\", \"charge\": 2, \"crashes\": 0, \"id\": \"artifact-run-j1-a0\", \"kind\": \"settle\", \"late\": 0, \"next\": [2, 1, 2, 0, 0, 12], \"status\": \"done\", \"target\": \"job-1\", \"ticket\": null, \"via\": \"execute\"}], \"state\": [2, 1, 2, 0, 0, 12]}\n",
+      "wall_seconds": 0.04240969899999669
+    },
+    {
+      "cut": "none",
+      "exit": 0,
+      "stderr": "",
+      "stdout": "{\"adapter\": \"tier\", \"attempts\": {\"artifact-run-j0-a0\": {\"action\": \"accept\", \"actual\": [2, 0], \"adapter\": \"tier\", \"job\": 0, \"recoveries\": 0, \"status\": \"done\", \"target\": \"job-0\", \"ticket\": null, \"upper\": [2, 1]}, \"artifact-run-j1-a0\": {\"action\": \"accept\", \"actual\": [2, 1], \"adapter\": \"tier\", \"job\": 1, \"recoveries\": 0, \"status\": \"done\", \"target\": \"job-1\", \"ticket\": null, \"upper\": [2, 1]}, \"artifact-run-j2-a0\": {\"action\": \"fallback\", \"actual\": [5, 0], \"adapter\": \"tier\", \"job\": 2, \"recoveries\": 0, \"status\": \"done\", \"target\": \"job-2\", \"ticket\": null, \"upper\": [5, 0]}}, \"controller_id\": \"artifact-run\", \"done\": true, \"events\": [{\"action\": \"accept\", \"job\": 0, \"kind\": \"select\", \"state\": [0, 1, 2, 1, 0, 16]}, {\"action\": \"accept\", \"adapter\": \"tier\", \"id\": \"artifact-run-j0-a0\", \"job\": 0, \"kind\": \"reserve\", \"target\": \"job-0\", \"upper\": [2, 1]}, {\"actual\": [2, 0], \"adapter\": \"tier\", \"charge\": 2, \"crashes\": 0, \"id\": \"artifact-run-j0-a0\", \"kind\": \"settle\", \"late\": 0, \"next\": [1, 1, 2, 1, 0, 14], \"status\": \"done\", \"target\": \"job-0\", \"ticket\": null, \"via\": \"execute\"}, {\"action\": \"accept\", \"job\": 1, \"kind\": \"select\", \"state\": [1, 1, 2, 1, 0, 14]}, {\"action\": \"accept\", \"adapter\": \"tier\", \"id\": \"artifact-run-j1-a0\", \"job\": 1, \"kind\": \"reserve\", \"target\": \"job-1\", \"upper\": [2, 1]}, {\"actual\": [2, 1], \"adapter\": \"tier\", \"charge\": 2, \"crashes\": 0, \"id\": \"artifact-run-j1-a0\", \"kind\": \"settle\", \"late\": 0, \"next\": [2, 1, 2, 0, 0, 12], \"status\": \"done\", \"target\": \"job-1\", \"ticket\": null, \"via\": \"execute\"}, {\"action\": \"fallback\", \"job\": 2, \"kind\": \"select\", \"state\": [2, 1, 2, 0, 0, 12]}, {\"action\": \"fallback\", \"adapter\": \"tier\", \"id\": \"artifact-run-j2-a0\", \"job\": 2, \"kind\": \"reserve\", \"target\": \"job-2\", \"upper\": [5, 0]}, {\"actual\": [5, 0], \"adapter\": \"tier\", \"charge\": 5, \"crashes\": 0, \"id\": \"artifact-run-j2-a0\", \"kind\": \"settle\", \"late\": 0, \"next\": [3, 1, 2, 0, 0, 7], \"status\": \"done\", \"target\": \"job-2\", \"ticket\": null, \"via\": \"execute\"}], \"state\": [3, 1, 2, 0, 0, 7]}\n",
+      "wall_seconds": 0.041887591000005386
+    }
+  ],
+  "receiver_outcomes": {
+    "artifact-run-j0-a0": {
+      "adapter": "tier",
+      "cost": 2,
+      "job": "job-0",
+      "status": "done",
+      "unsafe": 0
+    },
+    "artifact-run-j1-a0": {
+      "adapter": "tier",
+      "cost": 2,
+      "job": "job-1",
+      "status": "done",
+      "unsafe": 1
+    },
+    "artifact-run-j2-a0": {
+      "adapter": "tier",
+      "cost": 5,
+      "job": "job-2",
+      "status": "done",
+      "unsafe": 0
+    }
+  },
+  "snapshot": {
+    "adapter": "tier",
+    "attempts": {
+      "artifact-run-j0-a0": {
+        "action": "accept",
+        "actual": [
+          2,
+          0
+        ],
+        "adapter": "tier",
+        "job": 0,
+        "recoveries": 0,
+        "status": "done",
+        "target": "job-0",
+        "ticket": null,
+        "upper": [
+          2,
+          1
+        ]
+      },
+      "artifact-run-j1-a0": {
+        "action": "accept",
+        "actual": [
+          2,
+          1
+        ],
+        "adapter": "tier",
+        "job": 1,
+        "recoveries": 0,
+        "status": "done",
+        "target": "job-1",
+        "ticket": null,
+        "upper": [
+          2,
+          1
+        ]
+      },
+      "artifact-run-j2-a0": {
+        "action": "fallback",
+        "actual": [
+          5,
+          0
+        ],
+        "adapter": "tier",
+        "job": 2,
+        "recoveries": 0,
+        "status": "done",
+        "target": "job-2",
+        "ticket": null,
+        "upper": [
+          5,
+          0
+        ]
+      }
+    },
+    "controller_id": "artifact-run",
+    "done": true,
+    "events": [
+      {
+        "action": "accept",
+        "job": 0,
+        "kind": "select",
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "accept",
+        "adapter": "tier",
+        "id": "artifact-run-j0-a0",
+        "job": 0,
+        "kind": "reserve",
+        "target": "job-0",
+        "upper": [
+          2,
+          1
+        ]
+      },
+      {
+        "actual": [
+          2,
+          0
+        ],
+        "adapter": "tier",
+        "charge": 2,
+        "crashes": 0,
+        "id": "artifact-run-j0-a0",
+        "kind": "settle",
+        "late": 0,
+        "next": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          14
+        ],
+        "status": "done",
+        "target": "job-0",
+        "ticket": null,
+        "via": "execute"
+      },
+      {
+        "action": "accept",
+        "job": 1,
+        "kind": "select",
+        "state": [
+          1,
+          1,
+          2,
+          1,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "accept",
+        "adapter": "tier",
+        "id": "artifact-run-j1-a0",
+        "job": 1,
+        "kind": "reserve",
+        "target": "job-1",
+        "upper": [
+          2,
+          1
+        ]
+      },
+      {
+        "actual": [
+          2,
+          1
+        ],
+        "adapter": "tier",
+        "charge": 2,
+        "crashes": 0,
+        "id": "artifact-run-j1-a0",
+        "kind": "settle",
+        "late": 0,
+        "next": [
+          2,
+          1,
+          2,
+          0,
+          0,
+          12
+        ],
+        "status": "done",
+        "target": "job-1",
+        "ticket": null,
+        "via": "execute"
+      },
+      {
+        "action": "fallback",
+        "job": 2,
+        "kind": "select",
+        "state": [
+          2,
+          1,
+          2,
+          0,
+          0,
+          12
+        ]
+      },
+      {
+        "action": "fallback",
+        "adapter": "tier",
+        "id": "artifact-run-j2-a0",
+        "job": 2,
+        "kind": "reserve",
+        "target": "job-2",
+        "upper": [
+          5,
+          0
+        ]
+      },
+      {
+        "actual": [
+          5,
+          0
+        ],
+        "adapter": "tier",
+        "charge": 5,
+        "crashes": 0,
+        "id": "artifact-run-j2-a0",
+        "kind": "settle",
+        "late": 0,
+        "next": [
+          3,
+          1,
+          2,
+          0,
+          0,
+          7
+        ],
+        "status": "done",
+        "target": "job-2",
+        "ticket": null,
+        "via": "execute"
+      }
+    ],
+    "state": [
+      3,
+      1,
+      2,
+      0,
+      0,
+      7
+    ]
+  },
+  "valid": true
+}

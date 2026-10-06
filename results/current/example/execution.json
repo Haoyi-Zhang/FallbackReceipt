@@ -1,0 +1,903 @@
+{
+  "certificate": {
+    "feasible": true,
+    "policy": {
+      "0,1,2,1,0,16": {
+        "action": "accept",
+        "outcomes": [
+          {
+            "charge": 2,
+            "continuation": 7,
+            "meta": {
+              "cost": 2,
+              "crashes": 0,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "1,1,2,1,0,14"
+          },
+          {
+            "charge": 2,
+            "continuation": 7,
+            "meta": {
+              "cost": 2,
+              "crashes": 1,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "1,1,1,1,0,14"
+          },
+          {
+            "charge": 2,
+            "continuation": 7,
+            "meta": {
+              "cost": 2,
+              "crashes": 2,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "1,1,0,1,0,14"
+          },
+          {
+            "charge": 2,
+            "continuation": 8,
+            "meta": {
+              "cost": 2,
+              "crashes": 0,
+              "flip": 1,
+              "late": 0,
+              "unsafe": 1
+            },
+            "next": "1,0,2,0,0,14"
+          },
+          {
+            "charge": 2,
+            "continuation": 8,
+            "meta": {
+              "cost": 2,
+              "crashes": 1,
+              "flip": 1,
+              "late": 0,
+              "unsafe": 1
+            },
+            "next": "1,0,1,0,0,14"
+          },
+          {
+            "charge": 2,
+            "continuation": 8,
+            "meta": {
+              "cost": 2,
+              "crashes": 2,
+              "flip": 1,
+              "late": 0,
+              "unsafe": 1
+            },
+            "next": "1,0,0,0,0,14"
+          }
+        ],
+        "worst_cost": 10
+      },
+      "1,0,0,0,0,14": {
+        "action": "fallback",
+        "outcomes": [
+          {
+            "charge": 5,
+            "continuation": 3,
+            "meta": {
+              "cost": 5,
+              "crashes": 0,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "2,0,0,0,0,9"
+          }
+        ],
+        "worst_cost": 8
+      },
+      "1,0,1,0,0,14": {
+        "action": "fallback",
+        "outcomes": [
+          {
+            "charge": 5,
+            "continuation": 3,
+            "meta": {
+              "cost": 5,
+              "crashes": 0,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "2,0,1,0,0,9"
+          },
+          {
+            "charge": 5,
+            "continuation": 3,
+            "meta": {
+              "cost": 5,
+              "crashes": 1,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "2,0,0,0,0,9"
+          }
+        ],
+        "worst_cost": 8
+      },
+      "1,0,2,0,0,14": {
+        "action": "fallback",
+        "outcomes": [
+          {
+            "charge": 5,
+            "continuation": 3,
+            "meta": {
+              "cost": 5,
+              "crashes": 0,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "2,0,2,0,0,9"
+          },
+          {
+            "charge": 5,
+            "continuation": 3,
+            "meta": {
+              "cost": 5,
+              "crashes": 1,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "2,0,1,0,0,9"
+          },
+          {
+            "charge": 5,
+            "continuation": 3,
+            "meta": {
+              "cost": 5,
+              "crashes": 2,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "2,0,0,0,0,9"
+          }
+        ],
+        "worst_cost": 8
+      },
+      "1,1,0,1,0,14": {
+        "action": "accept",
+        "outcomes": [
+          {
+            "charge": 2,
+            "continuation": 5,
+            "meta": {
+              "cost": 2,
+              "crashes": 0,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 1
+            },
+            "next": "2,1,0,0,0,12"
+          },
+          {
+            "charge": 2,
+            "continuation": 3,
+            "meta": {
+              "cost": 2,
+              "crashes": 0,
+              "flip": 1,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "2,0,0,1,0,12"
+          }
+        ],
+        "worst_cost": 7
+      },
+      "1,1,1,1,0,14": {
+        "action": "accept",
+        "outcomes": [
+          {
+            "charge": 2,
+            "continuation": 5,
+            "meta": {
+              "cost": 2,
+              "crashes": 0,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 1
+            },
+            "next": "2,1,1,0,0,12"
+          },
+          {
+            "charge": 2,
+            "continuation": 5,
+            "meta": {
+              "cost": 2,
+              "crashes": 1,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 1
+            },
+            "next": "2,1,0,0,0,12"
+          },
+          {
+            "charge": 2,
+            "continuation": 3,
+            "meta": {
+              "cost": 2,
+              "crashes": 0,
+              "flip": 1,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "2,0,1,1,0,12"
+          },
+          {
+            "charge": 2,
+            "continuation": 3,
+            "meta": {
+              "cost": 2,
+              "crashes": 1,
+              "flip": 1,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "2,0,0,1,0,12"
+          }
+        ],
+        "worst_cost": 7
+      },
+      "1,1,2,1,0,14": {
+        "action": "accept",
+        "outcomes": [
+          {
+            "charge": 2,
+            "continuation": 5,
+            "meta": {
+              "cost": 2,
+              "crashes": 0,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 1
+            },
+            "next": "2,1,2,0,0,12"
+          },
+          {
+            "charge": 2,
+            "continuation": 5,
+            "meta": {
+              "cost": 2,
+              "crashes": 1,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 1
+            },
+            "next": "2,1,1,0,0,12"
+          },
+          {
+            "charge": 2,
+            "continuation": 5,
+            "meta": {
+              "cost": 2,
+              "crashes": 2,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 1
+            },
+            "next": "2,1,0,0,0,12"
+          },
+          {
+            "charge": 2,
+            "continuation": 3,
+            "meta": {
+              "cost": 2,
+              "crashes": 0,
+              "flip": 1,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "2,0,2,1,0,12"
+          },
+          {
+            "charge": 2,
+            "continuation": 3,
+            "meta": {
+              "cost": 2,
+              "crashes": 1,
+              "flip": 1,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "2,0,1,1,0,12"
+          },
+          {
+            "charge": 2,
+            "continuation": 3,
+            "meta": {
+              "cost": 2,
+              "crashes": 2,
+              "flip": 1,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "2,0,0,1,0,12"
+          }
+        ],
+        "worst_cost": 7
+      },
+      "2,0,0,0,0,9": {
+        "action": "accept",
+        "outcomes": [
+          {
+            "charge": 3,
+            "continuation": 0,
+            "meta": {
+              "cost": 3,
+              "crashes": 0,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "3,0,0,0,0,6"
+          }
+        ],
+        "worst_cost": 3
+      },
+      "2,0,0,1,0,12": {
+        "action": "accept",
+        "outcomes": [
+          {
+            "charge": 3,
+            "continuation": 0,
+            "meta": {
+              "cost": 3,
+              "crashes": 0,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "3,0,0,1,0,9"
+          }
+        ],
+        "worst_cost": 3
+      },
+      "2,0,1,0,0,9": {
+        "action": "accept",
+        "outcomes": [
+          {
+            "charge": 3,
+            "continuation": 0,
+            "meta": {
+              "cost": 3,
+              "crashes": 0,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "3,0,1,0,0,6"
+          },
+          {
+            "charge": 3,
+            "continuation": 0,
+            "meta": {
+              "cost": 3,
+              "crashes": 1,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "3,0,0,0,0,6"
+          }
+        ],
+        "worst_cost": 3
+      },
+      "2,0,1,1,0,12": {
+        "action": "accept",
+        "outcomes": [
+          {
+            "charge": 3,
+            "continuation": 0,
+            "meta": {
+              "cost": 3,
+              "crashes": 0,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "3,0,1,1,0,9"
+          },
+          {
+            "charge": 3,
+            "continuation": 0,
+            "meta": {
+              "cost": 3,
+              "crashes": 1,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "3,0,0,1,0,9"
+          }
+        ],
+        "worst_cost": 3
+      },
+      "2,0,2,0,0,9": {
+        "action": "accept",
+        "outcomes": [
+          {
+            "charge": 3,
+            "continuation": 0,
+            "meta": {
+              "cost": 3,
+              "crashes": 0,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "3,0,2,0,0,6"
+          },
+          {
+            "charge": 3,
+            "continuation": 0,
+            "meta": {
+              "cost": 3,
+              "crashes": 1,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "3,0,1,0,0,6"
+          },
+          {
+            "charge": 3,
+            "continuation": 0,
+            "meta": {
+              "cost": 3,
+              "crashes": 2,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "3,0,0,0,0,6"
+          }
+        ],
+        "worst_cost": 3
+      },
+      "2,0,2,1,0,12": {
+        "action": "accept",
+        "outcomes": [
+          {
+            "charge": 3,
+            "continuation": 0,
+            "meta": {
+              "cost": 3,
+              "crashes": 0,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "3,0,2,1,0,9"
+          },
+          {
+            "charge": 3,
+            "continuation": 0,
+            "meta": {
+              "cost": 3,
+              "crashes": 1,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "3,0,1,1,0,9"
+          },
+          {
+            "charge": 3,
+            "continuation": 0,
+            "meta": {
+              "cost": 3,
+              "crashes": 2,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "3,0,0,1,0,9"
+          }
+        ],
+        "worst_cost": 3
+      },
+      "2,1,0,0,0,12": {
+        "action": "fallback",
+        "outcomes": [
+          {
+            "charge": 5,
+            "continuation": 0,
+            "meta": {
+              "cost": 5,
+              "crashes": 0,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "3,1,0,0,0,7"
+          }
+        ],
+        "worst_cost": 5
+      },
+      "2,1,1,0,0,12": {
+        "action": "fallback",
+        "outcomes": [
+          {
+            "charge": 5,
+            "continuation": 0,
+            "meta": {
+              "cost": 5,
+              "crashes": 0,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "3,1,1,0,0,7"
+          },
+          {
+            "charge": 5,
+            "continuation": 0,
+            "meta": {
+              "cost": 5,
+              "crashes": 1,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "3,1,0,0,0,7"
+          }
+        ],
+        "worst_cost": 5
+      },
+      "2,1,2,0,0,12": {
+        "action": "fallback",
+        "outcomes": [
+          {
+            "charge": 5,
+            "continuation": 0,
+            "meta": {
+              "cost": 5,
+              "crashes": 0,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "3,1,2,0,0,7"
+          },
+          {
+            "charge": 5,
+            "continuation": 0,
+            "meta": {
+              "cost": 5,
+              "crashes": 1,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "3,1,1,0,0,7"
+          },
+          {
+            "charge": 5,
+            "continuation": 0,
+            "meta": {
+              "cost": 5,
+              "crashes": 2,
+              "flip": 0,
+              "late": 0,
+              "unsafe": 0
+            },
+            "next": "3,1,0,0,0,7"
+          }
+        ],
+        "worst_cost": 5
+      }
+    },
+    "schema": 2,
+    "visited_states": 104,
+    "worst_cost": 10
+  },
+  "effects": {
+    "example-j0-a0": [
+      2,
+      0
+    ],
+    "example-j1-a0": [
+      2,
+      1
+    ],
+    "example-j2-a0": [
+      5,
+      0
+    ]
+  },
+  "incomplete_rejected": true,
+  "receiver_outcomes": {
+    "example-j0-a0": {
+      "adapter": "admission",
+      "cost": 2,
+      "job": "job-0",
+      "status": "done",
+      "unsafe": 0
+    },
+    "example-j1-a0": {
+      "adapter": "admission",
+      "cost": 2,
+      "job": "job-1",
+      "status": "done",
+      "unsafe": 1
+    },
+    "example-j2-a0": {
+      "adapter": "admission",
+      "cost": 5,
+      "job": "job-2",
+      "status": "done",
+      "unsafe": 0
+    }
+  },
+  "snapshot": {
+    "adapter": "admission",
+    "attempts": {
+      "example-j0-a0": {
+        "action": "accept",
+        "actual": [
+          2,
+          0
+        ],
+        "adapter": "admission",
+        "job": 0,
+        "recoveries": 1,
+        "status": "done",
+        "target": "job-0",
+        "ticket": "df5199367d9b41eabe864228cb0936d9",
+        "upper": [
+          2,
+          1
+        ]
+      },
+      "example-j1-a0": {
+        "action": "accept",
+        "actual": [
+          2,
+          1
+        ],
+        "adapter": "admission",
+        "job": 1,
+        "recoveries": 0,
+        "status": "done",
+        "target": "job-1",
+        "ticket": null,
+        "upper": [
+          2,
+          1
+        ]
+      },
+      "example-j2-a0": {
+        "action": "fallback",
+        "actual": [
+          5,
+          0
+        ],
+        "adapter": "admission",
+        "job": 2,
+        "recoveries": 0,
+        "status": "done",
+        "target": "job-2",
+        "ticket": null,
+        "upper": [
+          5,
+          0
+        ]
+      }
+    },
+    "controller_id": "example",
+    "done": true,
+    "events": [
+      {
+        "action": "accept",
+        "job": 0,
+        "kind": "select",
+        "state": [
+          0,
+          1,
+          2,
+          1,
+          0,
+          16
+        ]
+      },
+      {
+        "action": "accept",
+        "adapter": "admission",
+        "id": "example-j0-a0",
+        "job": 0,
+        "kind": "reserve",
+        "target": "job-0",
+        "upper": [
+          2,
+          1
+        ]
+      },
+      {
+        "id": "example-j0-a0",
+        "job": 0,
+        "kind": "recover",
+        "recoveries": 1,
+        "ticket": "df5199367d9b41eabe864228cb0936d9"
+      },
+      {
+        "actual": [
+          2,
+          0
+        ],
+        "adapter": "admission",
+        "charge": 2,
+        "crashes": 1,
+        "id": "example-j0-a0",
+        "kind": "settle",
+        "late": 0,
+        "next": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          14
+        ],
+        "status": "done",
+        "target": "job-0",
+        "ticket": "df5199367d9b41eabe864228cb0936d9",
+        "via": "close"
+      },
+      {
+        "action": "accept",
+        "job": 1,
+        "kind": "select",
+        "state": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          14
+        ]
+      },
+      {
+        "action": "accept",
+        "adapter": "admission",
+        "id": "example-j1-a0",
+        "job": 1,
+        "kind": "reserve",
+        "target": "job-1",
+        "upper": [
+          2,
+          1
+        ]
+      },
+      {
+        "actual": [
+          2,
+          1
+        ],
+        "adapter": "admission",
+        "charge": 2,
+        "crashes": 0,
+        "id": "example-j1-a0",
+        "kind": "settle",
+        "late": 0,
+        "next": [
+          2,
+          1,
+          1,
+          0,
+          0,
+          12
+        ],
+        "status": "done",
+        "target": "job-1",
+        "ticket": null,
+        "via": "execute"
+      },
+      {
+        "action": "fallback",
+        "job": 2,
+        "kind": "select",
+        "state": [
+          2,
+          1,
+          1,
+          0,
+          0,
+          12
+        ]
+      },
+      {
+        "action": "fallback",
+        "adapter": "admission",
+        "id": "example-j2-a0",
+        "job": 2,
+        "kind": "reserve",
+        "target": "job-2",
+        "upper": [
+          5,
+          0
+        ]
+      },
+      {
+        "actual": [
+          5,
+          0
+        ],
+        "adapter": "admission",
+        "charge": 5,
+        "crashes": 0,
+        "id": "example-j2-a0",
+        "kind": "settle",
+        "late": 0,
+        "next": [
+          3,
+          1,
+          1,
+          0,
+          0,
+          7
+        ],
+        "status": "done",
+        "target": "job-2",
+        "ticket": null,
+        "via": "execute"
+      }
+    ],
+    "state": [
+      3,
+      1,
+      1,
+      0,
+      0,
+      7
+    ]
+  },
+  "spec": {
+    "cost": 16,
+    "crashes": 2,
+    "deadline": 10,
+    "drift": 1,
+    "jobs": [
+      {
+        "accept_cost": 2,
+        "accept_time": 2,
+        "fallback_cost": 4,
+        "fallback_time": 4,
+        "score": 2
+      },
+      {
+        "accept_cost": 2,
+        "accept_time": 2,
+        "fallback_cost": 5,
+        "fallback_time": 4,
+        "score": 0
+      },
+      {
+        "accept_cost": 3,
+        "accept_time": 3,
+        "fallback_cost": 5,
+        "fallback_time": 5,
+        "score": 1
+      }
+    ],
+    "late": 0,
+    "recovery_time": 2,
+    "unsafe": 1
+  },
+  "valid": true
+}

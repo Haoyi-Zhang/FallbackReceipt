@@ -1,0 +1,13 @@
+{
+  "adapters": 3,
+  "all_valid": true,
+  "cpu_seconds": 1.1381612519999997,
+  "executions": 171,
+  "max_rss_kib": 44696,
+  "paths_with_drift_flip": 20,
+  "paths_with_recovery": 27,
+  "strategy_paths": 30,
+  "total_canceled_attempts": 162,
+  "total_post_effect_recoveries": 108,
+  "wall_seconds": 3.1209398849999985
+}
