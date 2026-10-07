@@ -12,7 +12,10 @@ import json
 import math
 import os
 import random
-import resource
+try:
+    import resource
+except ModuleNotFoundError:
+    resource = None
 import sqlite3
 import statistics
 import subprocess
@@ -36,6 +39,8 @@ from workload import calibrate, load_rows, make_spec, to_job, windows
 
 def bounded_environment() -> None:
     # Serial Python plus one synchronous child.  No stress test or external work.
+    if resource is None:
+        raise RuntimeError('Full reproduction requires Unix resource limits; the finite model phase is portable.')
     resource.setrlimit(resource.RLIMIT_AS, (3_250 * 1024**2, 3_250 * 1024**2))
     resource.setrlimit(resource.RLIMIT_CPU, (600, 600))
     if hasattr(os, "sched_setaffinity"):
@@ -70,12 +75,35 @@ def percentile(values: list[float], q: float) -> float:
     return xs[lo] * (hi - pos) + xs[hi] * (pos - lo)
 
 
+def peak_rss_kib() -> int:
+    if resource is not None:
+        return int(resource.getrusage(resource.RUSAGE_SELF).ru_maxrss)
+    # The small portable model phase records a real Windows peak working set.
+    # Full reproduction still requires Unix CPU/address-space limits.
+    import ctypes
+    from ctypes import wintypes
+    class MemoryCounters(ctypes.Structure):
+        _fields_ = [('cb', wintypes.DWORD), ('PageFaultCount', wintypes.DWORD)] + [
+            (name, ctypes.c_size_t) for name in ('PeakWorkingSetSize', 'WorkingSetSize',
+             'QuotaPeakPagedPoolUsage', 'QuotaPagedPoolUsage', 'QuotaPeakNonPagedPoolUsage',
+             'QuotaNonPagedPoolUsage', 'PagefileUsage', 'PeakPagefileUsage')]
+    counters = MemoryCounters()
+    counters.cb = ctypes.sizeof(counters)
+    current = ctypes.windll.kernel32.GetCurrentProcess
+    current.restype = wintypes.HANDLE
+    info = ctypes.windll.psapi.GetProcessMemoryInfo
+    info.argtypes = [wintypes.HANDLE, ctypes.POINTER(MemoryCounters), wintypes.DWORD]
+    info.restype = wintypes.BOOL
+    if not info(current(), ctypes.byref(counters), counters.cb):
+        raise ctypes.WinError()
+    return int(counters.PeakWorkingSetSize // 1024)
+
+
 def phase_record(start_wall: float, start_cpu: float) -> dict[str, float | int]:
-    usage = resource.getrusage(resource.RUSAGE_SELF)
     return {
         "wall_seconds": time.perf_counter() - start_wall,
         "cpu_seconds": time.process_time() - start_cpu,
-        "max_rss_kib": int(usage.ru_maxrss),
+        "max_rss_kib": peak_rss_kib(),
     }
 
 
@@ -1010,7 +1038,8 @@ def main() -> None:
     a.output.mkdir(parents=True, exist_ok=True)
     if a.phase == 'all' and any(a.output.iterdir()):
         p.error('complete reproduction requires an empty output directory')
-    bounded_environment()
+    if resource is not None or a.phase != 'model':
+        bounded_environment()
     if a.phase == "all":
         for name, fn in PHASES.items():
             target = a.output / name

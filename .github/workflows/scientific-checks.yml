@@ -39,6 +39,7 @@ jobs:
             python -B -S "$@" 2>&1 | tee "$RAW/$label.log"
           }
           run tests -m unittest discover -s tests -v
+          run frontier-limits -m unittest discover -s regressions -p test_frontier_limits.py -v
           run retained-results verify_results.py --results results
           run exact-comparisons comparisons.py --verify
           run retained-identities retention_checks.py --verify

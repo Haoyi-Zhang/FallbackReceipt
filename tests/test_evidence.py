@@ -1,6 +1,7 @@
 """Evidence completeness regressions. Every mutation is made in a disposable copy."""
 from contextlib import closing
 import json
+import os
 from pathlib import Path
 import shutil
 import sqlite3
@@ -22,7 +23,7 @@ class EvidenceTests(unittest.TestCase):
         cls.tmp = tempfile.TemporaryDirectory(prefix="receipt-evidence-")
         cls.addClassCleanup(cls.tmp.cleanup)
         # Include URI-significant characters to exercise a correctly escaped URI.
-        cls.root = Path(cls.tmp.name) / "packet #? read only"
+        cls.root = Path(cls.tmp.name) / ("packet # read only" if os.name == 'nt' else "packet #? read only")
         shutil.copytree(ROOT / "results", cls.root)
 
     def sql_rejected(self, rel, statement, parameters=(), message=""):

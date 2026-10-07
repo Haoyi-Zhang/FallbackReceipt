@@ -19,7 +19,7 @@ python -S verify_all.py
 python -S verify_all.py --reproduce
 ```
 
-The first command runs all **84 tests**, reconstructs and checks retained results, recomputes exact comparisons, graph checks, and identity-retention checks, and runs the recovery example. The second also generates all ten experiment phases in a fresh temporary directory and compares logical results. Complete reproduction refuses a nonempty output directory rather than replacing earlier results. A nonzero exit is a failed check; finite checks do not establish general correctness.
+The first command schedules **87 tests in `tests/` plus six portable frontier-limit regressions**, reconstructs and checks retained results, recomputes exact comparisons, graph checks, and identity-retention checks, and runs the recovery example. The second also generates all ten experiment phases in a fresh temporary directory and compares logical results. Complete reproduction refuses a nonempty output directory rather than replacing earlier results. A nonzero exit is a failed check; finite checks do not establish general correctness. The dated 82/84-test receipts remain evidence of their original cohorts, not receipts for this expanded schedule.
 
 Individual entry points:
 
@@ -45,7 +45,45 @@ The standalone artifact does not need the manuscript directory. In the full proj
 python -S verify_all.py --paper ../paper
 ```
 
-## What the retained evidence says
+## Fixed-sequence compiler
+
+`src/frontier.py` compiles an exact open-loop sequence using compositional
+unsafe/lateness envelopes and dominance pruning rather than all 3^n schedules.
+`proofs/frontier.md` proves envelope composition and safe pruning. This output
+is a fixed action list, not an adaptive strategy certificate: the persistent
+runtime's existing strategy-checking interface is unchanged.
+
+```sh
+python -B src/frontier.py results/pilot/spec.json
+python -B -m unittest discover -s tests -p test_frontier.py
+python -B -m unittest discover -s regressions -p test_frontier_limits.py -v
+python -B frontier_campaign.py --output frontier-results
+```
+
+Use a JSON contract with the same eight fields as `src/open_loop.py`. The tests cover
+3,024 exhaustive small contracts. The campaign retains 256 random comparisons,
+all 576 original workload-shaped contracts, four paired timing configurations,
+and 24 fully specified 16/32-job scale cases. All optimum/feasibility comparisons
+agree. The larger cases scale lateness budgets explicitly. The compiler has
+resource guards and potentially exponential frontiers; it is not an unrestricted
+polynomial solver or evidence that feedback beats the optimal fixed sequence.
+
+The six supplemental regressions distinguish frontier-width refusal from true
+infeasibility, require the width ceiling after hard-budget filtering and
+dominance, and preserve exact witness/counter and diagnostic meanings. A
+test-local enumerator checks 1,152 owned one-to-three-job contracts by listing
+legal flip/recovery worlds, without using either compiler's envelope helpers.
+Both `verify_all.py` and scientific CI explicitly schedule this module; core
+`tests/` discovery alone does not run it. Production code and the retained
+campaign, comparison denominators, and timing records are unchanged.
+
+## Retained runtime and policy evidence
+
+The fixed-sequence compiler and unit tests run on standard Python on Windows
+as well as Linux. The small `reproduce.py --phase model` graph check is also
+portable and records actual peak working-set usage on Windows. Full timed
+reproduction remains Linux/Unix-only because it uses CPU/address-space limits;
+unsupported hosts fail explicitly rather than silently dropping those limits.
 
 The finite selector agrees with an uncached tree oracle on 1,200 generated cases (911 feasible) and 23,040 exhaustive micro-cases (16,864 feasible). The checker rejects 2,072 of 2,072 structural/value mutations. Semantic producer changes are separate: 49/296 recovery changes and 132/296 score changes are incompatible; unchanged valid certificates are not false negatives.
 

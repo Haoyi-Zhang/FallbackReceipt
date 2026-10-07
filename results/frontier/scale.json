@@ -1,0 +1,5234 @@
+[
+  {
+    "source": "code",
+    "jobs": 16,
+    "window": 0,
+    "elapsed_ns": 1351700,
+    "specification": {
+      "jobs": [
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 1,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 1,
+          "fallback_time": 3
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 2,
+          "accept_cost": 2,
+          "fallback_cost": 3,
+          "accept_time": 1,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 0,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        }
+      ],
+      "drift": 1,
+      "crashes": 1,
+      "unsafe": 2,
+      "late": 6,
+      "cost": 85,
+      "recovery_time": 2,
+      "deadline": 4
+    },
+    "feasible": true,
+    "worst_cost": 38,
+    "actions": [
+      "reject",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "reject",
+      "reject",
+      "accept"
+    ],
+    "expanded_labels": 306,
+    "dominated_labels": 163,
+    "maximum_frontier": 9,
+    "frontier_widths": [
+      2,
+      5,
+      5,
+      5,
+      7,
+      9,
+      9,
+      9,
+      9,
+      8,
+      8,
+      8,
+      8,
+      5,
+      4,
+      4
+    ]
+  },
+  {
+    "source": "code",
+    "jobs": 16,
+    "window": 1,
+    "elapsed_ns": 2179500,
+    "specification": {
+      "jobs": [
+        {
+          "score": 1,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 0,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 1,
+          "fallback_time": 2
+        }
+      ],
+      "drift": 1,
+      "crashes": 1,
+      "unsafe": 1,
+      "late": 6,
+      "cost": 91,
+      "recovery_time": 2,
+      "deadline": 4
+    },
+    "feasible": true,
+    "worst_cost": 42,
+    "actions": [
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "reject",
+      "accept",
+      "reject",
+      "reject",
+      "reject",
+      "accept"
+    ],
+    "expanded_labels": 426,
+    "dominated_labels": 225,
+    "maximum_frontier": 15,
+    "frontier_widths": [
+      3,
+      6,
+      7,
+      10,
+      12,
+      14,
+      15,
+      13,
+      12,
+      12,
+      9,
+      9,
+      7,
+      6,
+      6,
+      6
+    ]
+  },
+  {
+    "source": "code",
+    "jobs": 16,
+    "window": 2,
+    "elapsed_ns": 2786100,
+    "specification": {
+      "jobs": [
+        {
+          "score": 1,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 1,
+          "fallback_time": 3
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 1,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        }
+      ],
+      "drift": 1,
+      "crashes": 1,
+      "unsafe": 1,
+      "late": 6,
+      "cost": 81,
+      "recovery_time": 2,
+      "deadline": 4
+    },
+    "feasible": true,
+    "worst_cost": 35,
+    "actions": [
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "reject",
+      "accept",
+      "reject",
+      "reject"
+    ],
+    "expanded_labels": 492,
+    "dominated_labels": 284,
+    "maximum_frontier": 13,
+    "frontier_widths": [
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      13,
+      13,
+      13,
+      13,
+      12,
+      12,
+      13,
+      13,
+      13,
+      13
+    ]
+  },
+  {
+    "source": "code",
+    "jobs": 16,
+    "window": 3,
+    "elapsed_ns": 2475700,
+    "specification": {
+      "jobs": [
+        {
+          "score": 2,
+          "accept_cost": 2,
+          "fallback_cost": 3,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 2,
+          "fallback_cost": 3,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 1,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 2,
+          "fallback_time": 3
+        }
+      ],
+      "drift": 1,
+      "crashes": 1,
+      "unsafe": 1,
+      "late": 6,
+      "cost": 79,
+      "recovery_time": 2,
+      "deadline": 4
+    },
+    "feasible": true,
+    "worst_cost": 33,
+    "actions": [
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "reject",
+      "accept",
+      "reject",
+      "reject",
+      "accept",
+      "reject",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "accept"
+    ],
+    "expanded_labels": 459,
+    "dominated_labels": 254,
+    "maximum_frontier": 14,
+    "frontier_widths": [
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      14,
+      14,
+      12,
+      12,
+      11,
+      11,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "source": "code",
+    "jobs": 16,
+    "window": 4,
+    "elapsed_ns": 1773300,
+    "specification": {
+      "jobs": [
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 1,
+          "fallback_time": 3
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 1,
+          "fallback_time": 3
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 2,
+          "fallback_cost": 3,
+          "accept_time": 1,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 0,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 0,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        }
+      ],
+      "drift": 1,
+      "crashes": 1,
+      "unsafe": 4,
+      "late": 6,
+      "cost": 89,
+      "recovery_time": 2,
+      "deadline": 4
+    },
+    "feasible": true,
+    "worst_cost": 40,
+    "actions": [
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "reject",
+      "reject",
+      "accept"
+    ],
+    "expanded_labels": 369,
+    "dominated_labels": 201,
+    "maximum_frontier": 13,
+    "frontier_widths": [
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      11,
+      10,
+      10,
+      9,
+      8,
+      8,
+      8,
+      6,
+      4,
+      4
+    ]
+  },
+  {
+    "source": "code",
+    "jobs": 16,
+    "window": 5,
+    "elapsed_ns": 1480100,
+    "specification": {
+      "jobs": [
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 2,
+          "accept_cost": 2,
+          "fallback_cost": 3,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 0,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 2,
+          "fallback_cost": 3,
+          "accept_time": 1,
+          "fallback_time": 3
+        },
+        {
+          "score": 2,
+          "accept_cost": 2,
+          "fallback_cost": 3,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 1,
+          "fallback_time": 2
+        }
+      ],
+      "drift": 1,
+      "crashes": 1,
+      "unsafe": 4,
+      "late": 6,
+      "cost": 83,
+      "recovery_time": 2,
+      "deadline": 4
+    },
+    "feasible": true,
+    "worst_cost": 35,
+    "actions": [
+      "accept",
+      "reject",
+      "reject",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "accept"
+    ],
+    "expanded_labels": 318,
+    "dominated_labels": 176,
+    "maximum_frontier": 14,
+    "frontier_widths": [
+      3,
+      5,
+      7,
+      9,
+      12,
+      14,
+      10,
+      8,
+      8,
+      5,
+      5,
+      5,
+      5,
+      5,
+      4,
+      4
+    ]
+  },
+  {
+    "source": "code",
+    "jobs": 16,
+    "window": 6,
+    "elapsed_ns": 1416300,
+    "specification": {
+      "jobs": [
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 1,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 2,
+          "accept_cost": 2,
+          "fallback_cost": 3,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 2,
+          "accept_cost": 2,
+          "fallback_cost": 3,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 2,
+          "fallback_cost": 3,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 0,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 0,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        }
+      ],
+      "drift": 1,
+      "crashes": 1,
+      "unsafe": 3,
+      "late": 6,
+      "cost": 82,
+      "recovery_time": 2,
+      "deadline": 4
+    },
+    "feasible": true,
+    "worst_cost": 35,
+    "actions": [
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "reject",
+      "reject",
+      "reject",
+      "accept",
+      "accept"
+    ],
+    "expanded_labels": 315,
+    "dominated_labels": 166,
+    "maximum_frontier": 10,
+    "frontier_widths": [
+      3,
+      4,
+      5,
+      7,
+      9,
+      10,
+      10,
+      10,
+      8,
+      9,
+      9,
+      7,
+      5,
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "source": "code",
+    "jobs": 16,
+    "window": 7,
+    "elapsed_ns": 1858800,
+    "specification": {
+      "jobs": [
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 1,
+          "fallback_time": 3
+        },
+        {
+          "score": 0,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 1,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 1,
+          "fallback_time": 3
+        },
+        {
+          "score": 2,
+          "accept_cost": 2,
+          "fallback_cost": 3,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 0,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 2,
+          "fallback_cost": 3,
+          "accept_time": 2,
+          "fallback_time": 4
+        }
+      ],
+      "drift": 1,
+      "crashes": 1,
+      "unsafe": 2,
+      "late": 6,
+      "cost": 83,
+      "recovery_time": 2,
+      "deadline": 4
+    },
+    "feasible": true,
+    "worst_cost": 38,
+    "actions": [
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "reject",
+      "reject",
+      "reject",
+      "accept"
+    ],
+    "expanded_labels": 372,
+    "dominated_labels": 204,
+    "maximum_frontier": 12,
+    "frontier_widths": [
+      3,
+      5,
+      7,
+      10,
+      12,
+      12,
+      11,
+      10,
+      10,
+      9,
+      8,
+      8,
+      7,
+      6,
+      5,
+      5
+    ]
+  },
+  {
+    "source": "code",
+    "jobs": 32,
+    "window": 0,
+    "elapsed_ns": 9675500,
+    "specification": {
+      "jobs": [
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 1,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 1,
+          "fallback_time": 3
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 2,
+          "accept_cost": 2,
+          "fallback_cost": 3,
+          "accept_time": 1,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 0,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 0,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 1,
+          "fallback_time": 2
+        }
+      ],
+      "drift": 1,
+      "crashes": 1,
+      "unsafe": 3,
+      "late": 12,
+      "cost": 175,
+      "recovery_time": 2,
+      "deadline": 4
+    },
+    "feasible": true,
+    "worst_cost": 74,
+    "actions": [
+      "reject",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "reject",
+      "reject",
+      "accept",
+      "reject",
+      "reject",
+      "reject",
+      "accept"
+    ],
+    "expanded_labels": 1341,
+    "dominated_labels": 804,
+    "maximum_frontier": 22,
+    "frontier_widths": [
+      2,
+      5,
+      5,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      17,
+      20,
+      22,
+      22,
+      19,
+      18,
+      18,
+      18,
+      18,
+      17,
+      18,
+      18,
+      18,
+      19,
+      18,
+      16,
+      15,
+      12,
+      12,
+      11,
+      11,
+      11,
+      11
+    ]
+  },
+  {
+    "source": "code",
+    "jobs": 32,
+    "window": 1,
+    "elapsed_ns": 17804000,
+    "specification": {
+      "jobs": [
+        {
+          "score": 1,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 1,
+          "fallback_time": 3
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 1,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 2,
+          "fallback_cost": 3,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 2,
+          "fallback_cost": 3,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 1,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 2,
+          "fallback_time": 3
+        }
+      ],
+      "drift": 1,
+      "crashes": 1,
+      "unsafe": 1,
+      "late": 12,
+      "cost": 160,
+      "recovery_time": 2,
+      "deadline": 4
+    },
+    "feasible": true,
+    "worst_cost": 68,
+    "actions": [
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "reject",
+      "accept",
+      "reject",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "reject",
+      "accept",
+      "reject",
+      "reject",
+      "accept",
+      "reject",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "reject"
+    ],
+    "expanded_labels": 1929,
+    "dominated_labels": 1183,
+    "maximum_frontier": 28,
+    "frontier_widths": [
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15,
+      18,
+      20,
+      23,
+      24,
+      26,
+      27,
+      26,
+      25,
+      25,
+      25,
+      25,
+      25,
+      25,
+      25,
+      28,
+      28,
+      27,
+      25,
+      25,
+      22,
+      22,
+      21,
+      21,
+      21,
+      20
+    ]
+  },
+  {
+    "source": "code",
+    "jobs": 32,
+    "window": 2,
+    "elapsed_ns": 7966700,
+    "specification": {
+      "jobs": [
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 1,
+          "fallback_time": 3
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 1,
+          "fallback_time": 3
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 2,
+          "fallback_cost": 3,
+          "accept_time": 1,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 0,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 0,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 2,
+          "accept_cost": 2,
+          "fallback_cost": 3,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 0,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 2,
+          "fallback_cost": 3,
+          "accept_time": 1,
+          "fallback_time": 3
+        },
+        {
+          "score": 2,
+          "accept_cost": 2,
+          "fallback_cost": 3,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 1,
+          "fallback_time": 2
+        }
+      ],
+      "drift": 1,
+      "crashes": 1,
+      "unsafe": 7,
+      "late": 12,
+      "cost": 171,
+      "recovery_time": 2,
+      "deadline": 4
+    },
+    "feasible": true,
+    "worst_cost": 70,
+    "actions": [
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "reject",
+      "reject",
+      "accept",
+      "accept",
+      "reject",
+      "reject",
+      "accept",
+      "reject",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "accept"
+    ],
+    "expanded_labels": 1179,
+    "dominated_labels": 708,
+    "maximum_frontier": 21,
+    "frontier_widths": [
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      19,
+      18,
+      17,
+      17,
+      16,
+      14,
+      14,
+      15,
+      12,
+      10,
+      10,
+      10,
+      9,
+      9,
+      9,
+      9,
+      9,
+      8,
+      8
+    ]
+  },
+  {
+    "source": "code",
+    "jobs": 32,
+    "window": 3,
+    "elapsed_ns": 8227400,
+    "specification": {
+      "jobs": [
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 1,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 2,
+          "accept_cost": 2,
+          "fallback_cost": 3,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 2,
+          "accept_cost": 2,
+          "fallback_cost": 3,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 2,
+          "fallback_cost": 3,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 0,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 0,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 1,
+          "fallback_time": 2
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 1,
+          "fallback_time": 3
+        },
+        {
+          "score": 0,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 4,
+          "accept_time": 1,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 5,
+          "accept_time": 1,
+          "fallback_time": 3
+        },
+        {
+          "score": 2,
+          "accept_cost": 2,
+          "fallback_cost": 3,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 0,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 2,
+          "fallback_cost": 3,
+          "accept_time": 2,
+          "fallback_time": 4
+        }
+      ],
+      "drift": 1,
+      "crashes": 1,
+      "unsafe": 4,
+      "late": 12,
+      "cost": 165,
+      "recovery_time": 2,
+      "deadline": 4
+    },
+    "feasible": true,
+    "worst_cost": 69,
+    "actions": [
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "reject",
+      "reject",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "reject",
+      "reject",
+      "reject",
+      "reject",
+      "accept"
+    ],
+    "expanded_labels": 1176,
+    "dominated_labels": 698,
+    "maximum_frontier": 20,
+    "frontier_widths": [
+      3,
+      4,
+      5,
+      7,
+      9,
+      10,
+      11,
+      13,
+      14,
+      17,
+      19,
+      20,
+      20,
+      18,
+      18,
+      17,
+      18,
+      18,
+      15,
+      15,
+      15,
+      13,
+      11,
+      11,
+      11,
+      10,
+      10,
+      10,
+      10,
+      10,
+      9,
+      9
+    ]
+  },
+  {
+    "source": "conv",
+    "jobs": 16,
+    "window": 0,
+    "elapsed_ns": 1989800,
+    "specification": {
+      "jobs": [
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        }
+      ],
+      "drift": 1,
+      "crashes": 1,
+      "unsafe": 1,
+      "late": 6,
+      "cost": 94,
+      "recovery_time": 2,
+      "deadline": 4
+    },
+    "feasible": true,
+    "worst_cost": 41,
+    "actions": [
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "reject",
+      "reject"
+    ],
+    "expanded_labels": 408,
+    "dominated_labels": 231,
+    "maximum_frontier": 12,
+    "frontier_widths": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      12,
+      12,
+      12,
+      10,
+      10,
+      10,
+      9,
+      9,
+      9,
+      9
+    ]
+  },
+  {
+    "source": "conv",
+    "jobs": 16,
+    "window": 1,
+    "elapsed_ns": 1719800,
+    "specification": {
+      "jobs": [
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 0,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        }
+      ],
+      "drift": 1,
+      "crashes": 1,
+      "unsafe": 1,
+      "late": 6,
+      "cost": 100,
+      "recovery_time": 2,
+      "deadline": 4
+    },
+    "feasible": true,
+    "worst_cost": 42,
+    "actions": [
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "reject",
+      "accept"
+    ],
+    "expanded_labels": 372,
+    "dominated_labels": 208,
+    "maximum_frontier": 11,
+    "frontier_widths": [
+      3,
+      5,
+      7,
+      8,
+      9,
+      11,
+      10,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      7,
+      7
+    ]
+  },
+  {
+    "source": "conv",
+    "jobs": 16,
+    "window": 2,
+    "elapsed_ns": 1786500,
+    "specification": {
+      "jobs": [
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 0,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        }
+      ],
+      "drift": 1,
+      "crashes": 1,
+      "unsafe": 1,
+      "late": 6,
+      "cost": 98,
+      "recovery_time": 2,
+      "deadline": 4
+    },
+    "feasible": true,
+    "worst_cost": 43,
+    "actions": [
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "reject",
+      "reject",
+      "accept",
+      "reject",
+      "reject"
+    ],
+    "expanded_labels": 387,
+    "dominated_labels": 217,
+    "maximum_frontier": 12,
+    "frontier_widths": [
+      3,
+      5,
+      7,
+      8,
+      10,
+      12,
+      11,
+      11,
+      11,
+      10,
+      10,
+      9,
+      7,
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "source": "conv",
+    "jobs": 16,
+    "window": 3,
+    "elapsed_ns": 1267300,
+    "specification": {
+      "jobs": [
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        }
+      ],
+      "drift": 1,
+      "crashes": 1,
+      "unsafe": 1,
+      "late": 6,
+      "cost": 100,
+      "recovery_time": 2,
+      "deadline": 4
+    },
+    "feasible": true,
+    "worst_cost": 43,
+    "actions": [
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "reject",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "reject"
+    ],
+    "expanded_labels": 312,
+    "dominated_labels": 167,
+    "maximum_frontier": 11,
+    "frontier_widths": [
+      2,
+      3,
+      5,
+      7,
+      9,
+      11,
+      10,
+      8,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      6,
+      5
+    ]
+  },
+  {
+    "source": "conv",
+    "jobs": 16,
+    "window": 4,
+    "elapsed_ns": 1444700,
+    "specification": {
+      "jobs": [
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        }
+      ],
+      "drift": 1,
+      "crashes": 1,
+      "unsafe": 1,
+      "late": 6,
+      "cost": 104,
+      "recovery_time": 2,
+      "deadline": 4
+    },
+    "feasible": true,
+    "worst_cost": 47,
+    "actions": [
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "reject",
+      "accept",
+      "reject",
+      "accept",
+      "reject",
+      "accept",
+      "reject"
+    ],
+    "expanded_labels": 333,
+    "dominated_labels": 186,
+    "maximum_frontier": 11,
+    "frontier_widths": [
+      3,
+      5,
+      7,
+      8,
+      9,
+      11,
+      10,
+      8,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7
+    ]
+  },
+  {
+    "source": "conv",
+    "jobs": 16,
+    "window": 5,
+    "elapsed_ns": 1347400,
+    "specification": {
+      "jobs": [
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        }
+      ],
+      "drift": 1,
+      "crashes": 1,
+      "unsafe": 1,
+      "late": 6,
+      "cost": 108,
+      "recovery_time": 2,
+      "deadline": 4
+    },
+    "feasible": true,
+    "worst_cost": 49,
+    "actions": [
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "reject",
+      "accept"
+    ],
+    "expanded_labels": 321,
+    "dominated_labels": 174,
+    "maximum_frontier": 11,
+    "frontier_widths": [
+      3,
+      5,
+      6,
+      8,
+      10,
+      11,
+      9,
+      9,
+      7,
+      7,
+      7,
+      6,
+      6,
+      6,
+      6,
+      6
+    ]
+  },
+  {
+    "source": "conv",
+    "jobs": 16,
+    "window": 6,
+    "elapsed_ns": 888500,
+    "specification": {
+      "jobs": [
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        }
+      ],
+      "drift": 1,
+      "crashes": 1,
+      "unsafe": 5,
+      "late": 6,
+      "cost": 106,
+      "recovery_time": 2,
+      "deadline": 4
+    },
+    "feasible": true,
+    "worst_cost": 49,
+    "actions": [
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "reject"
+    ],
+    "expanded_labels": 225,
+    "dominated_labels": 126,
+    "maximum_frontier": 7,
+    "frontier_widths": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5,
+      5,
+      4,
+      4,
+      3
+    ]
+  },
+  {
+    "source": "conv",
+    "jobs": 16,
+    "window": 7,
+    "elapsed_ns": 1416500,
+    "specification": {
+      "jobs": [
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 0,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 0,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 3,
+          "fallback_time": 5
+        }
+      ],
+      "drift": 1,
+      "crashes": 1,
+      "unsafe": 4,
+      "late": 6,
+      "cost": 113,
+      "recovery_time": 2,
+      "deadline": 4
+    },
+    "feasible": true,
+    "worst_cost": 53,
+    "actions": [
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "reject",
+      "reject",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "reject"
+    ],
+    "expanded_labels": 324,
+    "dominated_labels": 183,
+    "maximum_frontier": 9,
+    "frontier_widths": [
+      3,
+      5,
+      7,
+      7,
+      8,
+      9,
+      7,
+      7,
+      6,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      7
+    ]
+  },
+  {
+    "source": "conv",
+    "jobs": 32,
+    "window": 0,
+    "elapsed_ns": 11724800,
+    "specification": {
+      "jobs": [
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 6,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 0,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        }
+      ],
+      "drift": 1,
+      "crashes": 1,
+      "unsafe": 1,
+      "late": 12,
+      "cost": 193,
+      "recovery_time": 2,
+      "deadline": 4
+    },
+    "feasible": true,
+    "worst_cost": 79,
+    "actions": [
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "reject",
+      "accept",
+      "reject",
+      "reject",
+      "reject",
+      "accept",
+      "reject",
+      "reject"
+    ],
+    "expanded_labels": 1572,
+    "dominated_labels": 960,
+    "maximum_frontier": 23,
+    "frontier_widths": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      19,
+      21,
+      23,
+      22,
+      22,
+      22,
+      22,
+      22,
+      21,
+      21,
+      20,
+      19,
+      19,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      16,
+      16
+    ]
+  },
+  {
+    "source": "conv",
+    "jobs": 32,
+    "window": 1,
+    "elapsed_ns": 10237700,
+    "specification": {
+      "jobs": [
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 0,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        }
+      ],
+      "drift": 1,
+      "crashes": 1,
+      "unsafe": 2,
+      "late": 12,
+      "cost": 197,
+      "recovery_time": 2,
+      "deadline": 4
+    },
+    "feasible": true,
+    "worst_cost": 82,
+    "actions": [
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "reject",
+      "reject",
+      "accept",
+      "reject",
+      "reject",
+      "reject",
+      "reject",
+      "reject",
+      "reject"
+    ],
+    "expanded_labels": 1464,
+    "dominated_labels": 905,
+    "maximum_frontier": 22,
+    "frontier_widths": [
+      3,
+      5,
+      7,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      19,
+      21,
+      22,
+      20,
+      20,
+      20,
+      20,
+      19,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      16,
+      15,
+      15,
+      16,
+      16,
+      16,
+      16,
+      15,
+      14
+    ]
+  },
+  {
+    "source": "conv",
+    "jobs": 32,
+    "window": 2,
+    "elapsed_ns": 9076700,
+    "specification": {
+      "jobs": [
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        }
+      ],
+      "drift": 1,
+      "crashes": 1,
+      "unsafe": 1,
+      "late": 12,
+      "cost": 212,
+      "recovery_time": 2,
+      "deadline": 4
+    },
+    "feasible": true,
+    "worst_cost": 91,
+    "actions": [
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "reject",
+      "reject",
+      "reject",
+      "reject",
+      "reject",
+      "reject",
+      "accept",
+      "reject",
+      "accept",
+      "reject",
+      "reject",
+      "accept",
+      "accept",
+      "reject",
+      "accept"
+    ],
+    "expanded_labels": 1347,
+    "dominated_labels": 819,
+    "maximum_frontier": 20,
+    "frontier_widths": [
+      3,
+      5,
+      7,
+      8,
+      9,
+      11,
+      12,
+      13,
+      14,
+      16,
+      18,
+      20,
+      20,
+      19,
+      19,
+      19,
+      19,
+      19,
+      18,
+      18,
+      18,
+      17,
+      16,
+      16,
+      14,
+      14,
+      14,
+      13,
+      13,
+      13,
+      13,
+      13
+    ]
+  },
+  {
+    "source": "conv",
+    "jobs": 32,
+    "window": 3,
+    "elapsed_ns": 6975100,
+    "specification": {
+      "jobs": [
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 2,
+          "accept_cost": 3,
+          "fallback_cost": 5,
+          "accept_time": 2,
+          "fallback_time": 3
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 0,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 5
+        },
+        {
+          "score": 0,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 4,
+          "fallback_time": 6
+        },
+        {
+          "score": 1,
+          "accept_cost": 5,
+          "fallback_cost": 8,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 2,
+          "accept_cost": 4,
+          "fallback_cost": 7,
+          "accept_time": 3,
+          "fallback_time": 4
+        },
+        {
+          "score": 0,
+          "accept_cost": 6,
+          "fallback_cost": 9,
+          "accept_time": 3,
+          "fallback_time": 5
+        }
+      ],
+      "drift": 1,
+      "crashes": 1,
+      "unsafe": 8,
+      "late": 12,
+      "cost": 219,
+      "recovery_time": 2,
+      "deadline": 4
+    },
+    "feasible": true,
+    "worst_cost": 97,
+    "actions": [
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "accept",
+      "reject",
+      "reject",
+      "reject",
+      "accept",
+      "reject",
+      "accept",
+      "accept",
+      "reject"
+    ],
+    "expanded_labels": 1059,
+    "dominated_labels": 636,
+    "maximum_frontier": 17,
+    "frontier_widths": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      12,
+      14,
+      15,
+      17,
+      16,
+      14,
+      13,
+      12,
+      12,
+      12,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      10,
+      17,
+      16,
+      16,
+      15,
+      15,
+      15,
+      13
+    ]
+  }
+]

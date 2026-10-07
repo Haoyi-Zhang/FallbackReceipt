@@ -36,6 +36,8 @@ def main() -> None:
     args = parser.parse_args()
     py = [sys.executable, '-S']
     run(py + ['-m', 'unittest', 'discover', '-s', 'tests', '-v'])
+    run(py + ['-m', 'unittest', 'discover', '-s', 'regressions',
+              '-p', 'test_frontier_limits.py', '-v'])
     run(py + ['verify_results.py', '--results', 'results'])
     run(py + ['comparisons.py', '--verify'])
     run(py + ['retention_checks.py', '--verify'])

@@ -1,0 +1,36 @@
+{
+  "random_agreement_cases": 256,
+  "grid_agreement_cases": 576,
+  "scale_cases": 24,
+  "scale_feasible": 24,
+  "ratios": [
+    {
+      "source": "code",
+      "window": 0,
+      "median_paired_enumerated_over_frontier": 64.93030665073675
+    },
+    {
+      "source": "code",
+      "window": 8,
+      "median_paired_enumerated_over_frontier": 31.814453125
+    },
+    {
+      "source": "conv",
+      "window": 0,
+      "median_paired_enumerated_over_frontier": 43.339888386925324
+    },
+    {
+      "source": "conv",
+      "window": 8,
+      "median_paired_enumerated_over_frontier": 49.821875
+    }
+  ],
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.28000-SP0",
+    "processor": "Intel64 Family 6 Model 151 Stepping 2, GenuineIntel",
+    "timer": "perf_counter_ns",
+    "affinity_mask": 1,
+    "seed": 390071
+  }
+}

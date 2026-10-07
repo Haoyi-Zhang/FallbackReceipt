@@ -1,0 +1,506 @@
+[
+  {
+    "source": "code",
+    "window": 0,
+    "pair": 0,
+    "mode": "enumerated",
+    "elapsed_ns": 18188100,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "code",
+    "window": 0,
+    "pair": 0,
+    "mode": "frontier",
+    "elapsed_ns": 264600,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "code",
+    "window": 0,
+    "pair": 1,
+    "mode": "frontier",
+    "elapsed_ns": 251100,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "code",
+    "window": 0,
+    "pair": 1,
+    "mode": "enumerated",
+    "elapsed_ns": 16304000,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "code",
+    "window": 0,
+    "pair": 2,
+    "mode": "enumerated",
+    "elapsed_ns": 16049800,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "code",
+    "window": 0,
+    "pair": 2,
+    "mode": "frontier",
+    "elapsed_ns": 379100,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "code",
+    "window": 0,
+    "pair": 3,
+    "mode": "frontier",
+    "elapsed_ns": 245800,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "code",
+    "window": 0,
+    "pair": 3,
+    "mode": "enumerated",
+    "elapsed_ns": 16290100,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "code",
+    "window": 0,
+    "pair": 4,
+    "mode": "enumerated",
+    "elapsed_ns": 16214000,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "code",
+    "window": 0,
+    "pair": 4,
+    "mode": "frontier",
+    "elapsed_ns": 266000,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "code",
+    "window": 0,
+    "pair": 5,
+    "mode": "frontier",
+    "elapsed_ns": 244400,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "code",
+    "window": 0,
+    "pair": 5,
+    "mode": "enumerated",
+    "elapsed_ns": 18090000,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "code",
+    "window": 0,
+    "pair": 6,
+    "mode": "enumerated",
+    "elapsed_ns": 16469400,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "code",
+    "window": 0,
+    "pair": 6,
+    "mode": "frontier",
+    "elapsed_ns": 263000,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "code",
+    "window": 8,
+    "pair": 0,
+    "mode": "enumerated",
+    "elapsed_ns": 16176000,
+    "feasible": true,
+    "worst_cost": 16
+  },
+  {
+    "source": "code",
+    "window": 8,
+    "pair": 0,
+    "mode": "frontier",
+    "elapsed_ns": 527800,
+    "feasible": true,
+    "worst_cost": 16
+  },
+  {
+    "source": "code",
+    "window": 8,
+    "pair": 1,
+    "mode": "frontier",
+    "elapsed_ns": 478900,
+    "feasible": true,
+    "worst_cost": 16
+  },
+  {
+    "source": "code",
+    "window": 8,
+    "pair": 1,
+    "mode": "enumerated",
+    "elapsed_ns": 15995200,
+    "feasible": true,
+    "worst_cost": 16
+  },
+  {
+    "source": "code",
+    "window": 8,
+    "pair": 2,
+    "mode": "enumerated",
+    "elapsed_ns": 16578600,
+    "feasible": true,
+    "worst_cost": 16
+  },
+  {
+    "source": "code",
+    "window": 8,
+    "pair": 2,
+    "mode": "frontier",
+    "elapsed_ns": 523400,
+    "feasible": true,
+    "worst_cost": 16
+  },
+  {
+    "source": "code",
+    "window": 8,
+    "pair": 3,
+    "mode": "frontier",
+    "elapsed_ns": 478900,
+    "feasible": true,
+    "worst_cost": 16
+  },
+  {
+    "source": "code",
+    "window": 8,
+    "pair": 3,
+    "mode": "enumerated",
+    "elapsed_ns": 16149300,
+    "feasible": true,
+    "worst_cost": 16
+  },
+  {
+    "source": "code",
+    "window": 8,
+    "pair": 4,
+    "mode": "enumerated",
+    "elapsed_ns": 17766300,
+    "feasible": true,
+    "worst_cost": 16
+  },
+  {
+    "source": "code",
+    "window": 8,
+    "pair": 4,
+    "mode": "frontier",
+    "elapsed_ns": 563200,
+    "feasible": true,
+    "worst_cost": 16
+  },
+  {
+    "source": "code",
+    "window": 8,
+    "pair": 5,
+    "mode": "frontier",
+    "elapsed_ns": 478600,
+    "feasible": true,
+    "worst_cost": 16
+  },
+  {
+    "source": "code",
+    "window": 8,
+    "pair": 5,
+    "mode": "enumerated",
+    "elapsed_ns": 16256700,
+    "feasible": true,
+    "worst_cost": 16
+  },
+  {
+    "source": "code",
+    "window": 8,
+    "pair": 6,
+    "mode": "enumerated",
+    "elapsed_ns": 16289000,
+    "feasible": true,
+    "worst_cost": 16
+  },
+  {
+    "source": "code",
+    "window": 8,
+    "pair": 6,
+    "mode": "frontier",
+    "elapsed_ns": 512000,
+    "feasible": true,
+    "worst_cost": 16
+  },
+  {
+    "source": "conv",
+    "window": 0,
+    "pair": 0,
+    "mode": "enumerated",
+    "elapsed_ns": 16308300,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "conv",
+    "window": 0,
+    "pair": 0,
+    "mode": "frontier",
+    "elapsed_ns": 386400,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "conv",
+    "window": 0,
+    "pair": 1,
+    "mode": "frontier",
+    "elapsed_ns": 401800,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "conv",
+    "window": 0,
+    "pair": 1,
+    "mode": "enumerated",
+    "elapsed_ns": 16192700,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "conv",
+    "window": 0,
+    "pair": 2,
+    "mode": "enumerated",
+    "elapsed_ns": 16308800,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "conv",
+    "window": 0,
+    "pair": 2,
+    "mode": "frontier",
+    "elapsed_ns": 376300,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "conv",
+    "window": 0,
+    "pair": 3,
+    "mode": "frontier",
+    "elapsed_ns": 359600,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "conv",
+    "window": 0,
+    "pair": 3,
+    "mode": "enumerated",
+    "elapsed_ns": 17903700,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "conv",
+    "window": 0,
+    "pair": 4,
+    "mode": "enumerated",
+    "elapsed_ns": 16570900,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "conv",
+    "window": 0,
+    "pair": 4,
+    "mode": "frontier",
+    "elapsed_ns": 378400,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "conv",
+    "window": 0,
+    "pair": 5,
+    "mode": "frontier",
+    "elapsed_ns": 358900,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "conv",
+    "window": 0,
+    "pair": 5,
+    "mode": "enumerated",
+    "elapsed_ns": 17018000,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "conv",
+    "window": 0,
+    "pair": 6,
+    "mode": "enumerated",
+    "elapsed_ns": 16367300,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "conv",
+    "window": 0,
+    "pair": 6,
+    "mode": "frontier",
+    "elapsed_ns": 384500,
+    "feasible": true,
+    "worst_cost": 22
+  },
+  {
+    "source": "conv",
+    "window": 8,
+    "pair": 0,
+    "mode": "enumerated",
+    "elapsed_ns": 15843600,
+    "feasible": true,
+    "worst_cost": 25
+  },
+  {
+    "source": "conv",
+    "window": 8,
+    "pair": 0,
+    "mode": "frontier",
+    "elapsed_ns": 408600,
+    "feasible": true,
+    "worst_cost": 25
+  },
+  {
+    "source": "conv",
+    "window": 8,
+    "pair": 1,
+    "mode": "frontier",
+    "elapsed_ns": 320000,
+    "feasible": true,
+    "worst_cost": 25
+  },
+  {
+    "source": "conv",
+    "window": 8,
+    "pair": 1,
+    "mode": "enumerated",
+    "elapsed_ns": 15943000,
+    "feasible": true,
+    "worst_cost": 25
+  },
+  {
+    "source": "conv",
+    "window": 8,
+    "pair": 2,
+    "mode": "enumerated",
+    "elapsed_ns": 17602900,
+    "feasible": true,
+    "worst_cost": 25
+  },
+  {
+    "source": "conv",
+    "window": 8,
+    "pair": 2,
+    "mode": "frontier",
+    "elapsed_ns": 339500,
+    "feasible": true,
+    "worst_cost": 25
+  },
+  {
+    "source": "conv",
+    "window": 8,
+    "pair": 3,
+    "mode": "frontier",
+    "elapsed_ns": 321200,
+    "feasible": true,
+    "worst_cost": 25
+  },
+  {
+    "source": "conv",
+    "window": 8,
+    "pair": 3,
+    "mode": "enumerated",
+    "elapsed_ns": 16062500,
+    "feasible": true,
+    "worst_cost": 25
+  },
+  {
+    "source": "conv",
+    "window": 8,
+    "pair": 4,
+    "mode": "enumerated",
+    "elapsed_ns": 16089900,
+    "feasible": true,
+    "worst_cost": 25
+  },
+  {
+    "source": "conv",
+    "window": 8,
+    "pair": 4,
+    "mode": "frontier",
+    "elapsed_ns": 339400,
+    "feasible": true,
+    "worst_cost": 25
+  },
+  {
+    "source": "conv",
+    "window": 8,
+    "pair": 5,
+    "mode": "frontier",
+    "elapsed_ns": 321100,
+    "feasible": true,
+    "worst_cost": 25
+  },
+  {
+    "source": "conv",
+    "window": 8,
+    "pair": 5,
+    "mode": "enumerated",
+    "elapsed_ns": 16272500,
+    "feasible": true,
+    "worst_cost": 25
+  },
+  {
+    "source": "conv",
+    "window": 8,
+    "pair": 6,
+    "mode": "enumerated",
+    "elapsed_ns": 16015600,
+    "feasible": true,
+    "worst_cost": 25
+  },
+  {
+    "source": "conv",
+    "window": 8,
+    "pair": 6,
+    "mode": "frontier",
+    "elapsed_ns": 333800,
+    "feasible": true,
+    "worst_cost": 25
+  }
+]
