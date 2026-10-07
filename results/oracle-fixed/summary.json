@@ -1,0 +1,19 @@
+{
+  "adaptive_feasible": 911,
+  "adaptive_lower_cost": 0,
+  "adaptive_only": 0,
+  "both_infeasible": 289,
+  "cases": 1200,
+  "checker_acceptances": 1200,
+  "common_feasible": 911,
+  "complete_cases": 1200,
+  "equal_cost": 911,
+  "fixed_feasible": 911,
+  "fixed_sequences": 36000,
+  "incomplete_cases": 0,
+  "input_sha256": "8913b13a4b95b9c602b92383a051933178f96778b2e22aee377b069a71d866d4",
+  "literal_worlds": 318045,
+  "mismatches": 0,
+  "schema": 1,
+  "scope": "Retained bounded mathematical contracts; not runtime, deployment, or universal equivalence evidence."
+}

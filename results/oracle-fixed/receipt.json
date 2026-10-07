@@ -1,0 +1,175 @@
+{
+  "input_sha256": "8913b13a4b95b9c602b92383a051933178f96778b2e22aee377b069a71d866d4",
+  "process_bound_seconds": 120,
+  "shards": [
+    {
+      "exit": 0,
+      "first_id": 0,
+      "last_id": 59,
+      "shard": 0,
+      "stderr": "",
+      "timeout_seconds": 120
+    },
+    {
+      "exit": 0,
+      "first_id": 60,
+      "last_id": 119,
+      "shard": 1,
+      "stderr": "",
+      "timeout_seconds": 120
+    },
+    {
+      "exit": 0,
+      "first_id": 120,
+      "last_id": 179,
+      "shard": 2,
+      "stderr": "",
+      "timeout_seconds": 120
+    },
+    {
+      "exit": 0,
+      "first_id": 180,
+      "last_id": 239,
+      "shard": 3,
+      "stderr": "",
+      "timeout_seconds": 120
+    },
+    {
+      "exit": 0,
+      "first_id": 240,
+      "last_id": 299,
+      "shard": 4,
+      "stderr": "",
+      "timeout_seconds": 120
+    },
+    {
+      "exit": 0,
+      "first_id": 300,
+      "last_id": 359,
+      "shard": 5,
+      "stderr": "",
+      "timeout_seconds": 120
+    },
+    {
+      "exit": 0,
+      "first_id": 360,
+      "last_id": 419,
+      "shard": 6,
+      "stderr": "",
+      "timeout_seconds": 120
+    },
+    {
+      "exit": 0,
+      "first_id": 420,
+      "last_id": 479,
+      "shard": 7,
+      "stderr": "",
+      "timeout_seconds": 120
+    },
+    {
+      "exit": 0,
+      "first_id": 480,
+      "last_id": 539,
+      "shard": 8,
+      "stderr": "",
+      "timeout_seconds": 120
+    },
+    {
+      "exit": 0,
+      "first_id": 540,
+      "last_id": 599,
+      "shard": 9,
+      "stderr": "",
+      "timeout_seconds": 120
+    },
+    {
+      "exit": 0,
+      "first_id": 600,
+      "last_id": 659,
+      "shard": 10,
+      "stderr": "",
+      "timeout_seconds": 120
+    },
+    {
+      "exit": 0,
+      "first_id": 660,
+      "last_id": 719,
+      "shard": 11,
+      "stderr": "",
+      "timeout_seconds": 120
+    },
+    {
+      "exit": 0,
+      "first_id": 720,
+      "last_id": 779,
+      "shard": 12,
+      "stderr": "",
+      "timeout_seconds": 120
+    },
+    {
+      "exit": 0,
+      "first_id": 780,
+      "last_id": 839,
+      "shard": 13,
+      "stderr": "",
+      "timeout_seconds": 120
+    },
+    {
+      "exit": 0,
+      "first_id": 840,
+      "last_id": 899,
+      "shard": 14,
+      "stderr": "",
+      "timeout_seconds": 120
+    },
+    {
+      "exit": 0,
+      "first_id": 900,
+      "last_id": 959,
+      "shard": 15,
+      "stderr": "",
+      "timeout_seconds": 120
+    },
+    {
+      "exit": 0,
+      "first_id": 960,
+      "last_id": 1019,
+      "shard": 16,
+      "stderr": "",
+      "timeout_seconds": 120
+    },
+    {
+      "exit": 0,
+      "first_id": 1020,
+      "last_id": 1079,
+      "shard": 17,
+      "stderr": "",
+      "timeout_seconds": 120
+    },
+    {
+      "exit": 0,
+      "first_id": 1080,
+      "last_id": 1139,
+      "shard": 18,
+      "stderr": "",
+      "timeout_seconds": 120
+    },
+    {
+      "exit": 0,
+      "first_id": 1140,
+      "last_id": 1199,
+      "shard": 19,
+      "stderr": "",
+      "timeout_seconds": 120
+    }
+  ],
+  "source_sha256": {
+    "compare_oracle_fixed.py": "15b4500280a975fb570b87db4cc15245154e75148d3d94e80e2816dedeb21ffc",
+    "src/checker.py": "2085c720472336bdaf2d2be9525474b0d0d0979651b8064e4cdd107fad7065d5",
+    "src/game.py": "b1ddacfad774a45f5ddad108ad2bf7bcaad08ffc1ec9caa5d5e2a64384c26441",
+    "src/literal_fixed.py": "5bbd847f5594c7390015566bf1097911f5f202d9a9b315de316d63524ce5cabe",
+    "src/open_loop.py": "2c4dab7af20ca9c8e504e3a66bc095b016449ed1fbc0c55bd32beb82cc91ec42",
+    "src/oracle.py": "4f6341e9d7acc4ed401a2fe22d28e990236477eb62bee27550a476103a3033a1"
+  },
+  "timing_measured": false
+}

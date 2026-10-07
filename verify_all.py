@@ -40,6 +40,7 @@ def main() -> None:
               '-p', 'test_frontier_limits.py', '-v'])
     run(py + ['verify_results.py', '--results', 'results'])
     run(py + ['comparisons.py', '--verify'])
+    run(py + ['compare_oracle_fixed.py', '--verify'], timeout=120)
     run(py + ['retention_checks.py', '--verify'])
     run(py + ['examples/run_contract.py'])
     if args.reproduce:

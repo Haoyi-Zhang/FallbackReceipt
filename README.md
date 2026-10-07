@@ -19,7 +19,7 @@ python -S verify_all.py
 python -S verify_all.py --reproduce
 ```
 
-The first command schedules **87 tests in `tests/` plus six portable frontier-limit regressions**, reconstructs and checks retained results, recomputes exact comparisons, graph checks, and identity-retention checks, and runs the recovery example. The second also generates all ten experiment phases in a fresh temporary directory and compares logical results. Complete reproduction refuses a nonempty output directory rather than replacing earlier results. A nonzero exit is a failed check; finite checks do not establish general correctness. The dated 82/84-test receipts remain evidence of their original cohorts, not receipts for this expanded schedule.
+The first command schedules **95 tests in `tests/` plus six portable frontier-limit regressions**, reconstructs and checks retained results, recomputes exact comparisons, graph checks, and identity-retention checks, and runs the recovery example. The second also generates all ten experiment phases in a fresh temporary directory and compares logical results. Complete reproduction refuses a nonempty output directory rather than replacing earlier results. A nonzero exit is a failed check; finite checks do not establish general correctness. The dated 82/84-test receipts remain evidence of their original cohorts, not receipts for this expanded schedule.
 
 Individual entry points:
 
@@ -90,6 +90,33 @@ The finite selector agrees with an uncached tree oracle on 1,200 generated cases
 There are 576 eight-task contracts per policy from two 128-row Azure excerpts. The mapping is fitted only to the code excerpt and reused unchanged for conversation. The optimal fixed-sequence baseline enumerates **6,561 sequences per contract**. Both adaptive and optimal open-loop are feasible in **345/576**, with equal worst certified charge in every common feasible case. The four restricted physical policies minimize over a score-prescribed physical candidate and reject at each full budget state; they may choose cheaper reject even when the physical action is safe. They do not choose between accept and fallback based on remaining budgets. The 22 extra contracts relative to the union of restricted threshold/constant policies do **not** establish feedback advantage: optimal open-loop finds them too. A separate Cartesian enumeration checks the fixed-sequence formula on 240 specifications and 3,120 action sequences, with zero disagreement.
 
 Five exploratory fixed-budget perturbations cover 320 further comparisons. Feasible counts per 64 are 45, 45, 37, 41, and 52 for unchanged, recovery+1, durations+1, costs+1, and score rotation; adaptive and optimal open-loop tie throughout. This is post-development sensitivity analysis, not preregistered statistical generalization.
+
+The strongest fixed-policy comparison also covers every retained oracle input,
+IDs 0–1199, without generating, tuning, or filtering contracts. All 1,200 complete:
+adaptive and exact fixed policies both admit 911 and find 289 infeasible, with equal
+minimum worst certified charge in all 911 jointly feasible cases. The separate
+`src/literal_fixed.py` lists legal score-flip and recovery worlds without importing
+production transitions or envelope helpers: 36,000 fixed sequences and 318,045
+worlds are checked. Fresh adaptive certificates (including infeasibility) pass the
+unchanged checker and agree with the uncached oracle and retained costs. This is
+a bounded feedback-null result, not universal equivalence or a timing measurement.
+
+```sh
+python -B -S -m unittest discover -s tests -p test_oracle_fixed.py -v
+python -B -S compare_oracle_fixed.py --verify
+python -B -S compare_oracle_fixed.py --output NEW_EMPTY_PATH
+```
+
+The output path must be absent. The runner uses twenty predetermined sixty-ID
+shards with a 120-second subprocess deadline; refusal/failure remains incomplete
+and causes a nonzero final exit, without dropping any of the 1,200 IDs. Retained
+rows, full fresh certificates, counts, input/source bindings, and shard exit
+receipts are under `results/oracle-fixed/`. Eight new portable tests include hand
+controls, strict type/domain and resource refusals, and an unfiltered 2,916-contract
+two-job Cartesian check. Both the normal test discovery and scientific workflow
+include these tests; `verify_all.py` and CI explicitly recompute the full cohort.
+These commands perform mathematical checks only; the earlier runtime campaigns
+and their original receipts are unchanged.
 
 The two-crash protocol model contains 79 states and 91 edges; the four-crash model has 495 states and 633 edges. After removing further-crash transitions, every reached nonterminal state has a productive successor, and there is no productive cycle. All maximal productive paths terminate within six steps in the checked graphs. Idle/service-unavailable stuttering is excluded; fairness and bounded service times remain assumptions.
 
