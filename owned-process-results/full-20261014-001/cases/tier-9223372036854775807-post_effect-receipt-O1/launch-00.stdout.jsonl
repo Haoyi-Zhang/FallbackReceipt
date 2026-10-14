@@ -1,0 +1,2 @@
+{"kind": "receiver_return", "receipt": {"id": "owned-process-j0-a0", "status": "done", "adapter": "tier", "job": "job-0", "cost": 9223372036854775807, "unsafe": 0, "via": "execute", "ticket": null}, "committed": {"id": "owned-process-j0-a0", "status": "done", "row": ["done", "tier", "job-0", 9223372036854775807, 0], "effects": 1}}
+{"cut": "after_execute", "exit": 73, "disk_sample": {"controller.db": 4096, "controller.db-shm": 32768, "controller.db-wal": 98912, "receiver.db": 4096, "receiver.db-shm": 32768, "receiver.db-wal": 107152}}

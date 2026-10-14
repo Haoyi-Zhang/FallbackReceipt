@@ -1,0 +1,1151 @@
+{
+  "adapter": "tier",
+  "charge": 2,
+  "crash_snapshots": [],
+  "cuts": [],
+  "effects": {
+    "owned-process-j0-a0": [
+      2,
+      0
+    ],
+    "owned-process-j1-a0": [
+      2,
+      0
+    ],
+    "owned-process-j2-a0": [
+      2,
+      0
+    ]
+  },
+  "launches": [
+    {
+      "command": [
+        "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\library_review\\pdf-env\\Scripts\\python.exe",
+        "-B",
+        "-S",
+        "-W",
+        "error::ResourceWarning",
+        "-O",
+        "D:\\CodexProjects\\wg-check\\substantive-library\\P039\\artifact\\owned_process\\worker.py",
+        "--root",
+        "owned-process-results\\cost-pairs-20261014-001\\cases\\tier-O1-pair3-ordinary",
+        "--adapter",
+        "tier",
+        "--receiver",
+        "ordinary",
+        "--cut",
+        "none"
+      ],
+      "cut": "none",
+      "exit_code": 0,
+      "output": [
+        {
+          "committed": {
+            "effects": 1,
+            "id": "owned-process-j0-a0",
+            "row": [
+              "done",
+              "tier",
+              "job-0",
+              2,
+              0
+            ],
+            "status": "done"
+          },
+          "kind": "receiver_return",
+          "receipt": {
+            "adapter": "tier",
+            "cost": 2,
+            "id": "owned-process-j0-a0",
+            "job": "job-0",
+            "status": "done",
+            "ticket": null,
+            "unsafe": 0,
+            "via": "execute"
+          }
+        },
+        {
+          "after_checkpoint": {
+            "controller.db": 36864,
+            "controller.db-shm": 32768,
+            "controller.db-wal": 0,
+            "receiver.db": 53248,
+            "receiver.db-shm": 32768,
+            "receiver.db-wal": 0
+          },
+          "after_close": {
+            "controller.db": 36864,
+            "receiver.db": 53248
+          },
+          "before_checkpoint": {
+            "controller.db": 4096,
+            "controller.db-shm": 32768,
+            "controller.db-wal": 123632,
+            "receiver.db": 4096,
+            "receiver.db-shm": 32768,
+            "receiver.db-wal": 107152
+          },
+          "checkpoint_seconds": 0.0011374000168871135,
+          "checkpoints": [
+            {
+              "result": [
+                0,
+                0,
+                0
+              ],
+              "role": "controller"
+            },
+            {
+              "result": [
+                0,
+                0,
+                0
+              ],
+              "role": "receiver"
+            }
+          ],
+          "commit_observations": [
+            {
+              "effects": 1,
+              "id": "owned-process-j0-a0",
+              "row": [
+                "done",
+                "tier",
+                "job-0",
+                2,
+                0
+              ],
+              "status": "done"
+            }
+          ],
+          "complete": false,
+          "effects": {
+            "owned-process-j0-a0": [
+              2,
+              0
+            ]
+          },
+          "optimize": 1,
+          "receipts": [
+            {
+              "adapter": "tier",
+              "cost": 2,
+              "id": "owned-process-j0-a0",
+              "job": "job-0",
+              "status": "done",
+              "ticket": null,
+              "unsafe": 0,
+              "via": "execute"
+            }
+          ],
+          "receiver_outcomes": {
+            "owned-process-j0-a0": {
+              "adapter": "tier",
+              "cost": 2,
+              "job": "job-0",
+              "status": "done",
+              "unsafe": 0
+            }
+          },
+          "snapshot": {
+            "adapter": "tier",
+            "attempts": {
+              "owned-process-j0-a0": {
+                "action": "fallback",
+                "actual": [
+                  2,
+                  0
+                ],
+                "adapter": "tier",
+                "job": 0,
+                "recoveries": 0,
+                "status": "done",
+                "target": "job-0",
+                "ticket": null,
+                "upper": [
+                  2,
+                  0
+                ]
+              }
+            },
+            "controller_id": "owned-process",
+            "done": false,
+            "events": [
+              {
+                "action": "fallback",
+                "job": 0,
+                "kind": "select",
+                "state": [
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  6
+                ]
+              },
+              {
+                "action": "fallback",
+                "adapter": "tier",
+                "id": "owned-process-j0-a0",
+                "job": 0,
+                "kind": "reserve",
+                "target": "job-0",
+                "upper": [
+                  2,
+                  0
+                ]
+              },
+              {
+                "actual": [
+                  2,
+                  0
+                ],
+                "adapter": "tier",
+                "charge": 2,
+                "crashes": 0,
+                "id": "owned-process-j0-a0",
+                "kind": "settle",
+                "late": 0,
+                "next": [
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  4
+                ],
+                "status": "done",
+                "target": "job-0",
+                "ticket": null,
+                "via": "execute"
+              }
+            ],
+            "state": [
+              1,
+              0,
+              2,
+              0,
+              0,
+              4
+            ]
+          },
+          "sqlite_version": "3.53.1",
+          "worker_cpu_seconds": 0.015625,
+          "worker_wall_seconds": 0.03144140000222251
+        }
+      ],
+      "parent_wall_seconds": 0.17954480001935735
+    },
+    {
+      "command": [
+        "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\library_review\\pdf-env\\Scripts\\python.exe",
+        "-B",
+        "-S",
+        "-W",
+        "error::ResourceWarning",
+        "-O",
+        "D:\\CodexProjects\\wg-check\\substantive-library\\P039\\artifact\\owned_process\\worker.py",
+        "--root",
+        "owned-process-results\\cost-pairs-20261014-001\\cases\\tier-O1-pair3-ordinary",
+        "--adapter",
+        "tier",
+        "--receiver",
+        "ordinary",
+        "--cut",
+        "none"
+      ],
+      "cut": "none",
+      "exit_code": 0,
+      "output": [
+        {
+          "committed": {
+            "effects": 1,
+            "id": "owned-process-j1-a0",
+            "row": [
+              "done",
+              "tier",
+              "job-1",
+              2,
+              0
+            ],
+            "status": "done"
+          },
+          "kind": "receiver_return",
+          "receipt": {
+            "adapter": "tier",
+            "cost": 2,
+            "id": "owned-process-j1-a0",
+            "job": "job-1",
+            "status": "done",
+            "ticket": null,
+            "unsafe": 0,
+            "via": "execute"
+          }
+        },
+        {
+          "after_checkpoint": {
+            "controller.db": 36864,
+            "controller.db-shm": 32768,
+            "controller.db-wal": 0,
+            "receiver.db": 53248,
+            "receiver.db-shm": 32768,
+            "receiver.db-wal": 0
+          },
+          "after_close": {
+            "controller.db": 36864,
+            "receiver.db": 53248
+          },
+          "before_checkpoint": {
+            "controller.db": 36864,
+            "controller.db-shm": 32768,
+            "controller.db-wal": 61832,
+            "receiver.db": 53248,
+            "receiver.db-shm": 32768,
+            "receiver.db-wal": 32992
+          },
+          "checkpoint_seconds": 0.0010802000178955495,
+          "checkpoints": [
+            {
+              "result": [
+                0,
+                0,
+                0
+              ],
+              "role": "controller"
+            },
+            {
+              "result": [
+                0,
+                0,
+                0
+              ],
+              "role": "receiver"
+            }
+          ],
+          "commit_observations": [
+            {
+              "effects": 1,
+              "id": "owned-process-j1-a0",
+              "row": [
+                "done",
+                "tier",
+                "job-1",
+                2,
+                0
+              ],
+              "status": "done"
+            }
+          ],
+          "complete": false,
+          "effects": {
+            "owned-process-j0-a0": [
+              2,
+              0
+            ],
+            "owned-process-j1-a0": [
+              2,
+              0
+            ]
+          },
+          "optimize": 1,
+          "receipts": [
+            {
+              "adapter": "tier",
+              "cost": 2,
+              "id": "owned-process-j1-a0",
+              "job": "job-1",
+              "status": "done",
+              "ticket": null,
+              "unsafe": 0,
+              "via": "execute"
+            }
+          ],
+          "receiver_outcomes": {
+            "owned-process-j0-a0": {
+              "adapter": "tier",
+              "cost": 2,
+              "job": "job-0",
+              "status": "done",
+              "unsafe": 0
+            },
+            "owned-process-j1-a0": {
+              "adapter": "tier",
+              "cost": 2,
+              "job": "job-1",
+              "status": "done",
+              "unsafe": 0
+            }
+          },
+          "snapshot": {
+            "adapter": "tier",
+            "attempts": {
+              "owned-process-j0-a0": {
+                "action": "fallback",
+                "actual": [
+                  2,
+                  0
+                ],
+                "adapter": "tier",
+                "job": 0,
+                "recoveries": 0,
+                "status": "done",
+                "target": "job-0",
+                "ticket": null,
+                "upper": [
+                  2,
+                  0
+                ]
+              },
+              "owned-process-j1-a0": {
+                "action": "fallback",
+                "actual": [
+                  2,
+                  0
+                ],
+                "adapter": "tier",
+                "job": 1,
+                "recoveries": 0,
+                "status": "done",
+                "target": "job-1",
+                "ticket": null,
+                "upper": [
+                  2,
+                  0
+                ]
+              }
+            },
+            "controller_id": "owned-process",
+            "done": false,
+            "events": [
+              {
+                "action": "fallback",
+                "job": 0,
+                "kind": "select",
+                "state": [
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  6
+                ]
+              },
+              {
+                "action": "fallback",
+                "adapter": "tier",
+                "id": "owned-process-j0-a0",
+                "job": 0,
+                "kind": "reserve",
+                "target": "job-0",
+                "upper": [
+                  2,
+                  0
+                ]
+              },
+              {
+                "actual": [
+                  2,
+                  0
+                ],
+                "adapter": "tier",
+                "charge": 2,
+                "crashes": 0,
+                "id": "owned-process-j0-a0",
+                "kind": "settle",
+                "late": 0,
+                "next": [
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  4
+                ],
+                "status": "done",
+                "target": "job-0",
+                "ticket": null,
+                "via": "execute"
+              },
+              {
+                "action": "fallback",
+                "job": 1,
+                "kind": "select",
+                "state": [
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  4
+                ]
+              },
+              {
+                "action": "fallback",
+                "adapter": "tier",
+                "id": "owned-process-j1-a0",
+                "job": 1,
+                "kind": "reserve",
+                "target": "job-1",
+                "upper": [
+                  2,
+                  0
+                ]
+              },
+              {
+                "actual": [
+                  2,
+                  0
+                ],
+                "adapter": "tier",
+                "charge": 2,
+                "crashes": 0,
+                "id": "owned-process-j1-a0",
+                "kind": "settle",
+                "late": 0,
+                "next": [
+                  2,
+                  0,
+                  2,
+                  0,
+                  0,
+                  2
+                ],
+                "status": "done",
+                "target": "job-1",
+                "ticket": null,
+                "via": "execute"
+              }
+            ],
+            "state": [
+              2,
+              0,
+              2,
+              0,
+              0,
+              2
+            ]
+          },
+          "sqlite_version": "3.53.1",
+          "worker_cpu_seconds": 0.03125,
+          "worker_wall_seconds": 0.024792700016405433
+        }
+      ],
+      "parent_wall_seconds": 0.1783933000115212
+    },
+    {
+      "command": [
+        "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\library_review\\pdf-env\\Scripts\\python.exe",
+        "-B",
+        "-S",
+        "-W",
+        "error::ResourceWarning",
+        "-O",
+        "D:\\CodexProjects\\wg-check\\substantive-library\\P039\\artifact\\owned_process\\worker.py",
+        "--root",
+        "owned-process-results\\cost-pairs-20261014-001\\cases\\tier-O1-pair3-ordinary",
+        "--adapter",
+        "tier",
+        "--receiver",
+        "ordinary",
+        "--cut",
+        "none"
+      ],
+      "cut": "none",
+      "exit_code": 0,
+      "output": [
+        {
+          "committed": {
+            "effects": 1,
+            "id": "owned-process-j2-a0",
+            "row": [
+              "done",
+              "tier",
+              "job-2",
+              2,
+              0
+            ],
+            "status": "done"
+          },
+          "kind": "receiver_return",
+          "receipt": {
+            "adapter": "tier",
+            "cost": 2,
+            "id": "owned-process-j2-a0",
+            "job": "job-2",
+            "status": "done",
+            "ticket": null,
+            "unsafe": 0,
+            "via": "execute"
+          }
+        },
+        {
+          "after_checkpoint": {
+            "controller.db": 36864,
+            "controller.db-shm": 32768,
+            "controller.db-wal": 0,
+            "receiver.db": 53248,
+            "receiver.db-shm": 32768,
+            "receiver.db-wal": 0
+          },
+          "after_close": {
+            "controller.db": 36864,
+            "receiver.db": 53248
+          },
+          "before_checkpoint": {
+            "controller.db": 36864,
+            "controller.db-shm": 32768,
+            "controller.db-wal": 61832,
+            "receiver.db": 53248,
+            "receiver.db-shm": 32768,
+            "receiver.db-wal": 32992
+          },
+          "checkpoint_seconds": 0.0011371999862603843,
+          "checkpoints": [
+            {
+              "result": [
+                0,
+                0,
+                0
+              ],
+              "role": "controller"
+            },
+            {
+              "result": [
+                0,
+                0,
+                0
+              ],
+              "role": "receiver"
+            }
+          ],
+          "commit_observations": [
+            {
+              "effects": 1,
+              "id": "owned-process-j2-a0",
+              "row": [
+                "done",
+                "tier",
+                "job-2",
+                2,
+                0
+              ],
+              "status": "done"
+            }
+          ],
+          "complete": true,
+          "effects": {
+            "owned-process-j0-a0": [
+              2,
+              0
+            ],
+            "owned-process-j1-a0": [
+              2,
+              0
+            ],
+            "owned-process-j2-a0": [
+              2,
+              0
+            ]
+          },
+          "optimize": 1,
+          "receipts": [
+            {
+              "adapter": "tier",
+              "cost": 2,
+              "id": "owned-process-j2-a0",
+              "job": "job-2",
+              "status": "done",
+              "ticket": null,
+              "unsafe": 0,
+              "via": "execute"
+            }
+          ],
+          "receiver_outcomes": {
+            "owned-process-j0-a0": {
+              "adapter": "tier",
+              "cost": 2,
+              "job": "job-0",
+              "status": "done",
+              "unsafe": 0
+            },
+            "owned-process-j1-a0": {
+              "adapter": "tier",
+              "cost": 2,
+              "job": "job-1",
+              "status": "done",
+              "unsafe": 0
+            },
+            "owned-process-j2-a0": {
+              "adapter": "tier",
+              "cost": 2,
+              "job": "job-2",
+              "status": "done",
+              "unsafe": 0
+            }
+          },
+          "snapshot": {
+            "adapter": "tier",
+            "attempts": {
+              "owned-process-j0-a0": {
+                "action": "fallback",
+                "actual": [
+                  2,
+                  0
+                ],
+                "adapter": "tier",
+                "job": 0,
+                "recoveries": 0,
+                "status": "done",
+                "target": "job-0",
+                "ticket": null,
+                "upper": [
+                  2,
+                  0
+                ]
+              },
+              "owned-process-j1-a0": {
+                "action": "fallback",
+                "actual": [
+                  2,
+                  0
+                ],
+                "adapter": "tier",
+                "job": 1,
+                "recoveries": 0,
+                "status": "done",
+                "target": "job-1",
+                "ticket": null,
+                "upper": [
+                  2,
+                  0
+                ]
+              },
+              "owned-process-j2-a0": {
+                "action": "fallback",
+                "actual": [
+                  2,
+                  0
+                ],
+                "adapter": "tier",
+                "job": 2,
+                "recoveries": 0,
+                "status": "done",
+                "target": "job-2",
+                "ticket": null,
+                "upper": [
+                  2,
+                  0
+                ]
+              }
+            },
+            "controller_id": "owned-process",
+            "done": true,
+            "events": [
+              {
+                "action": "fallback",
+                "job": 0,
+                "kind": "select",
+                "state": [
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  6
+                ]
+              },
+              {
+                "action": "fallback",
+                "adapter": "tier",
+                "id": "owned-process-j0-a0",
+                "job": 0,
+                "kind": "reserve",
+                "target": "job-0",
+                "upper": [
+                  2,
+                  0
+                ]
+              },
+              {
+                "actual": [
+                  2,
+                  0
+                ],
+                "adapter": "tier",
+                "charge": 2,
+                "crashes": 0,
+                "id": "owned-process-j0-a0",
+                "kind": "settle",
+                "late": 0,
+                "next": [
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  4
+                ],
+                "status": "done",
+                "target": "job-0",
+                "ticket": null,
+                "via": "execute"
+              },
+              {
+                "action": "fallback",
+                "job": 1,
+                "kind": "select",
+                "state": [
+                  1,
+                  0,
+                  2,
+                  0,
+                  0,
+                  4
+                ]
+              },
+              {
+                "action": "fallback",
+                "adapter": "tier",
+                "id": "owned-process-j1-a0",
+                "job": 1,
+                "kind": "reserve",
+                "target": "job-1",
+                "upper": [
+                  2,
+                  0
+                ]
+              },
+              {
+                "actual": [
+                  2,
+                  0
+                ],
+                "adapter": "tier",
+                "charge": 2,
+                "crashes": 0,
+                "id": "owned-process-j1-a0",
+                "kind": "settle",
+                "late": 0,
+                "next": [
+                  2,
+                  0,
+                  2,
+                  0,
+                  0,
+                  2
+                ],
+                "status": "done",
+                "target": "job-1",
+                "ticket": null,
+                "via": "execute"
+              },
+              {
+                "action": "fallback",
+                "job": 2,
+                "kind": "select",
+                "state": [
+                  2,
+                  0,
+                  2,
+                  0,
+                  0,
+                  2
+                ]
+              },
+              {
+                "action": "fallback",
+                "adapter": "tier",
+                "id": "owned-process-j2-a0",
+                "job": 2,
+                "kind": "reserve",
+                "target": "job-2",
+                "upper": [
+                  2,
+                  0
+                ]
+              },
+              {
+                "actual": [
+                  2,
+                  0
+                ],
+                "adapter": "tier",
+                "charge": 2,
+                "crashes": 0,
+                "id": "owned-process-j2-a0",
+                "kind": "settle",
+                "late": 0,
+                "next": [
+                  3,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0
+                ],
+                "status": "done",
+                "target": "job-2",
+                "ticket": null,
+                "via": "execute"
+              }
+            ],
+            "state": [
+              3,
+              0,
+              2,
+              0,
+              0,
+              0
+            ]
+          },
+          "sqlite_version": "3.53.1",
+          "worker_cpu_seconds": 0.015625,
+          "worker_wall_seconds": 0.025721000012708828
+        }
+      ],
+      "parent_wall_seconds": 0.17516039998736233
+    }
+  ],
+  "optimized": true,
+  "receiver_implementation": "ordinary",
+  "receiver_outcomes": {
+    "owned-process-j0-a0": {
+      "adapter": "tier",
+      "cost": 2,
+      "job": "job-0",
+      "status": "done",
+      "unsafe": 0
+    },
+    "owned-process-j1-a0": {
+      "adapter": "tier",
+      "cost": 2,
+      "job": "job-1",
+      "status": "done",
+      "unsafe": 0
+    },
+    "owned-process-j2-a0": {
+      "adapter": "tier",
+      "cost": 2,
+      "job": "job-2",
+      "status": "done",
+      "unsafe": 0
+    }
+  },
+  "snapshot": {
+    "adapter": "tier",
+    "attempts": {
+      "owned-process-j0-a0": {
+        "action": "fallback",
+        "actual": [
+          2,
+          0
+        ],
+        "adapter": "tier",
+        "job": 0,
+        "recoveries": 0,
+        "status": "done",
+        "target": "job-0",
+        "ticket": null,
+        "upper": [
+          2,
+          0
+        ]
+      },
+      "owned-process-j1-a0": {
+        "action": "fallback",
+        "actual": [
+          2,
+          0
+        ],
+        "adapter": "tier",
+        "job": 1,
+        "recoveries": 0,
+        "status": "done",
+        "target": "job-1",
+        "ticket": null,
+        "upper": [
+          2,
+          0
+        ]
+      },
+      "owned-process-j2-a0": {
+        "action": "fallback",
+        "actual": [
+          2,
+          0
+        ],
+        "adapter": "tier",
+        "job": 2,
+        "recoveries": 0,
+        "status": "done",
+        "target": "job-2",
+        "ticket": null,
+        "upper": [
+          2,
+          0
+        ]
+      }
+    },
+    "controller_id": "owned-process",
+    "done": true,
+    "events": [
+      {
+        "action": "fallback",
+        "job": 0,
+        "kind": "select",
+        "state": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          6
+        ]
+      },
+      {
+        "action": "fallback",
+        "adapter": "tier",
+        "id": "owned-process-j0-a0",
+        "job": 0,
+        "kind": "reserve",
+        "target": "job-0",
+        "upper": [
+          2,
+          0
+        ]
+      },
+      {
+        "actual": [
+          2,
+          0
+        ],
+        "adapter": "tier",
+        "charge": 2,
+        "crashes": 0,
+        "id": "owned-process-j0-a0",
+        "kind": "settle",
+        "late": 0,
+        "next": [
+          1,
+          0,
+          2,
+          0,
+          0,
+          4
+        ],
+        "status": "done",
+        "target": "job-0",
+        "ticket": null,
+        "via": "execute"
+      },
+      {
+        "action": "fallback",
+        "job": 1,
+        "kind": "select",
+        "state": [
+          1,
+          0,
+          2,
+          0,
+          0,
+          4
+        ]
+      },
+      {
+        "action": "fallback",
+        "adapter": "tier",
+        "id": "owned-process-j1-a0",
+        "job": 1,
+        "kind": "reserve",
+        "target": "job-1",
+        "upper": [
+          2,
+          0
+        ]
+      },
+      {
+        "actual": [
+          2,
+          0
+        ],
+        "adapter": "tier",
+        "charge": 2,
+        "crashes": 0,
+        "id": "owned-process-j1-a0",
+        "kind": "settle",
+        "late": 0,
+        "next": [
+          2,
+          0,
+          2,
+          0,
+          0,
+          2
+        ],
+        "status": "done",
+        "target": "job-1",
+        "ticket": null,
+        "via": "execute"
+      },
+      {
+        "action": "fallback",
+        "job": 2,
+        "kind": "select",
+        "state": [
+          2,
+          0,
+          2,
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "action": "fallback",
+        "adapter": "tier",
+        "id": "owned-process-j2-a0",
+        "job": 2,
+        "kind": "reserve",
+        "target": "job-2",
+        "upper": [
+          2,
+          0
+        ]
+      },
+      {
+        "actual": [
+          2,
+          0
+        ],
+        "adapter": "tier",
+        "charge": 2,
+        "crashes": 0,
+        "id": "owned-process-j2-a0",
+        "kind": "settle",
+        "late": 0,
+        "next": [
+          3,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        "status": "done",
+        "target": "job-2",
+        "ticket": null,
+        "via": "execute"
+      }
+    ],
+    "state": [
+      3,
+      0,
+      2,
+      0,
+      0,
+      0
+    ]
+  },
+  "valid": true
+}

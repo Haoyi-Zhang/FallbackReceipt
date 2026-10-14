@@ -1,0 +1,1613 @@
+{
+  "adapter": "admission",
+  "charge": 9223372036854775807,
+  "crash_snapshots": [
+    {
+      "cut": "after_reserve",
+      "disk_sample": {
+        "controller.db": 4096,
+        "controller.db-shm": 32768,
+        "controller.db-wal": 98912,
+        "receiver.db": 4096,
+        "receiver.db-shm": 32768,
+        "receiver.db-wal": 74192
+      },
+      "observed": {
+        "attempts": [
+          [
+            "owned-process-j0-a0",
+            "pending",
+            0
+          ]
+        ],
+        "effects": [],
+        "outcomes": [],
+        "state": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          27670116110564327421
+        ]
+      }
+    },
+    {
+      "cut": "after_close",
+      "disk_sample": {
+        "controller.db": 4096,
+        "controller.db-shm": 32768,
+        "controller.db-wal": 115392,
+        "receiver.db": 4096,
+        "receiver.db-shm": 32768,
+        "receiver.db-wal": 90672
+      },
+      "observed": {
+        "attempts": [
+          [
+            "owned-process-j0-a0",
+            "pending",
+            1
+          ]
+        ],
+        "effects": [],
+        "outcomes": [
+          [
+            "owned-process-j0-a0",
+            "canceled",
+            0,
+            0
+          ]
+        ],
+        "state": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          27670116110564327421
+        ]
+      }
+    }
+  ],
+  "cuts": [
+    "after_reserve",
+    "after_close"
+  ],
+  "effects": {
+    "owned-process-j0-a1": [
+      9223372036854775807,
+      0
+    ],
+    "owned-process-j1-a0": [
+      9223372036854775807,
+      0
+    ],
+    "owned-process-j2-a0": [
+      9223372036854775807,
+      0
+    ]
+  },
+  "launches": [
+    {
+      "command": [
+        "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\library_review\\pdf-env\\Scripts\\python.exe",
+        "-B",
+        "-S",
+        "-W",
+        "error::ResourceWarning",
+        "D:\\CodexProjects\\wg-check\\substantive-library\\P039\\artifact\\owned_process\\worker.py",
+        "--root",
+        "owned-process-results\\full-20261014-001\\cases\\admission-9223372036854775807-close_interrupted-receipt-O0",
+        "--adapter",
+        "admission",
+        "--receiver",
+        "receipt",
+        "--cut",
+        "after_reserve"
+      ],
+      "cut": "after_reserve",
+      "exit_code": 73,
+      "output": [
+        {
+          "cut": "after_reserve",
+          "disk_sample": {
+            "controller.db": 4096,
+            "controller.db-shm": 32768,
+            "controller.db-wal": 98912,
+            "receiver.db": 4096,
+            "receiver.db-shm": 32768,
+            "receiver.db-wal": 74192
+          },
+          "exit": 73
+        }
+      ],
+      "parent_wall_seconds": 0.06640630000038072
+    },
+    {
+      "command": [
+        "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\library_review\\pdf-env\\Scripts\\python.exe",
+        "-B",
+        "-S",
+        "-W",
+        "error::ResourceWarning",
+        "D:\\CodexProjects\\wg-check\\substantive-library\\P039\\artifact\\owned_process\\worker.py",
+        "--root",
+        "owned-process-results\\full-20261014-001\\cases\\admission-9223372036854775807-close_interrupted-receipt-O0",
+        "--adapter",
+        "admission",
+        "--receiver",
+        "receipt",
+        "--cut",
+        "after_close"
+      ],
+      "cut": "after_close",
+      "exit_code": 73,
+      "output": [
+        {
+          "committed": {
+            "effects": 0,
+            "id": "owned-process-j0-a0",
+            "row": [
+              "canceled",
+              null,
+              null,
+              0,
+              0
+            ],
+            "status": "canceled"
+          },
+          "kind": "receiver_return",
+          "receipt": {
+            "adapter": null,
+            "cost": 0,
+            "id": "owned-process-j0-a0",
+            "job": null,
+            "status": "canceled",
+            "ticket": "03142f94485145d699816910ee1dd44a",
+            "unsafe": 0,
+            "via": "close"
+          }
+        },
+        {
+          "cut": "after_close",
+          "disk_sample": {
+            "controller.db": 4096,
+            "controller.db-shm": 32768,
+            "controller.db-wal": 115392,
+            "receiver.db": 4096,
+            "receiver.db-shm": 32768,
+            "receiver.db-wal": 90672
+          },
+          "exit": 73
+        }
+      ],
+      "parent_wall_seconds": 0.056953699997393414
+    },
+    {
+      "command": [
+        "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\library_review\\pdf-env\\Scripts\\python.exe",
+        "-B",
+        "-S",
+        "-W",
+        "error::ResourceWarning",
+        "D:\\CodexProjects\\wg-check\\substantive-library\\P039\\artifact\\owned_process\\worker.py",
+        "--root",
+        "owned-process-results\\full-20261014-001\\cases\\admission-9223372036854775807-close_interrupted-receipt-O0",
+        "--adapter",
+        "admission",
+        "--receiver",
+        "receipt",
+        "--cut",
+        "none"
+      ],
+      "cut": "none",
+      "exit_code": 0,
+      "output": [
+        {
+          "committed": {
+            "effects": 0,
+            "id": "owned-process-j0-a0",
+            "row": [
+              "canceled",
+              null,
+              null,
+              0,
+              0
+            ],
+            "status": "canceled"
+          },
+          "kind": "receiver_return",
+          "receipt": {
+            "adapter": null,
+            "cost": 0,
+            "id": "owned-process-j0-a0",
+            "job": null,
+            "status": "canceled",
+            "ticket": "5d51282f436042a78dc07e6f46d26f3f",
+            "unsafe": 0,
+            "via": "close"
+          }
+        },
+        {
+          "committed": {
+            "effects": 1,
+            "id": "owned-process-j0-a1",
+            "row": [
+              "done",
+              "admission",
+              "job-0",
+              9223372036854775807,
+              0
+            ],
+            "status": "done"
+          },
+          "kind": "receiver_return",
+          "receipt": {
+            "adapter": "admission",
+            "cost": 9223372036854775807,
+            "id": "owned-process-j0-a1",
+            "job": "job-0",
+            "status": "done",
+            "ticket": null,
+            "unsafe": 0,
+            "via": "execute"
+          }
+        },
+        {
+          "after_checkpoint": {
+            "controller.db": 36864,
+            "controller.db-shm": 32768,
+            "controller.db-wal": 0,
+            "receiver.db": 53248,
+            "receiver.db-shm": 32768,
+            "receiver.db-wal": 0
+          },
+          "after_close": {
+            "controller.db": 36864,
+            "receiver.db": 53248
+          },
+          "before_checkpoint": {
+            "controller.db": 4096,
+            "controller.db-shm": 32768,
+            "controller.db-wal": 197792,
+            "receiver.db": 4096,
+            "receiver.db-shm": 32768,
+            "receiver.db-wal": 123632
+          },
+          "checkpoint_seconds": 0.0011978000111412257,
+          "checkpoints": [
+            {
+              "result": [
+                0,
+                0,
+                0
+              ],
+              "role": "controller"
+            },
+            {
+              "result": [
+                0,
+                0,
+                0
+              ],
+              "role": "receiver"
+            }
+          ],
+          "commit_observations": [
+            {
+              "effects": 0,
+              "id": "owned-process-j0-a0",
+              "row": [
+                "canceled",
+                null,
+                null,
+                0,
+                0
+              ],
+              "status": "canceled"
+            },
+            {
+              "effects": 1,
+              "id": "owned-process-j0-a1",
+              "row": [
+                "done",
+                "admission",
+                "job-0",
+                9223372036854775807,
+                0
+              ],
+              "status": "done"
+            }
+          ],
+          "complete": false,
+          "effects": {
+            "owned-process-j0-a1": [
+              9223372036854775807,
+              0
+            ]
+          },
+          "optimize": 0,
+          "receipts": [
+            {
+              "adapter": null,
+              "cost": 0,
+              "id": "owned-process-j0-a0",
+              "job": null,
+              "status": "canceled",
+              "ticket": "5d51282f436042a78dc07e6f46d26f3f",
+              "unsafe": 0,
+              "via": "close"
+            },
+            {
+              "adapter": "admission",
+              "cost": 9223372036854775807,
+              "id": "owned-process-j0-a1",
+              "job": "job-0",
+              "status": "done",
+              "ticket": null,
+              "unsafe": 0,
+              "via": "execute"
+            }
+          ],
+          "receiver_outcomes": {
+            "owned-process-j0-a0": {
+              "adapter": null,
+              "cost": 0,
+              "job": null,
+              "status": "canceled",
+              "unsafe": 0
+            },
+            "owned-process-j0-a1": {
+              "adapter": "admission",
+              "cost": 9223372036854775807,
+              "job": "job-0",
+              "status": "done",
+              "unsafe": 0
+            }
+          },
+          "snapshot": {
+            "adapter": "admission",
+            "attempts": {
+              "owned-process-j0-a0": {
+                "action": "fallback",
+                "actual": [
+                  0,
+                  0
+                ],
+                "adapter": "admission",
+                "job": 0,
+                "recoveries": 2,
+                "status": "canceled",
+                "target": "job-0",
+                "ticket": "5d51282f436042a78dc07e6f46d26f3f",
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              },
+              "owned-process-j0-a1": {
+                "action": "fallback",
+                "actual": [
+                  9223372036854775807,
+                  0
+                ],
+                "adapter": "admission",
+                "job": 0,
+                "recoveries": 0,
+                "status": "done",
+                "target": "job-0",
+                "ticket": null,
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              }
+            },
+            "controller_id": "owned-process",
+            "done": false,
+            "events": [
+              {
+                "action": "fallback",
+                "job": 0,
+                "kind": "select",
+                "state": [
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  27670116110564327421
+                ]
+              },
+              {
+                "action": "fallback",
+                "adapter": "admission",
+                "id": "owned-process-j0-a0",
+                "job": 0,
+                "kind": "reserve",
+                "target": "job-0",
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              },
+              {
+                "id": "owned-process-j0-a0",
+                "job": 0,
+                "kind": "recover",
+                "recoveries": 1,
+                "ticket": "03142f94485145d699816910ee1dd44a"
+              },
+              {
+                "id": "owned-process-j0-a0",
+                "job": 0,
+                "kind": "recover",
+                "recoveries": 2,
+                "ticket": "5d51282f436042a78dc07e6f46d26f3f"
+              },
+              {
+                "actual": [
+                  0,
+                  0
+                ],
+                "adapter": "admission",
+                "id": "owned-process-j0-a0",
+                "kind": "settle",
+                "status": "canceled",
+                "target": "job-0",
+                "ticket": "5d51282f436042a78dc07e6f46d26f3f",
+                "via": "close"
+              },
+              {
+                "action": "fallback",
+                "adapter": "admission",
+                "id": "owned-process-j0-a1",
+                "job": 0,
+                "kind": "reserve",
+                "target": "job-0",
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              },
+              {
+                "actual": [
+                  9223372036854775807,
+                  0
+                ],
+                "adapter": "admission",
+                "charge": 9223372036854775807,
+                "crashes": 2,
+                "id": "owned-process-j0-a1",
+                "kind": "settle",
+                "late": 0,
+                "next": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  18446744073709551614
+                ],
+                "status": "done",
+                "target": "job-0",
+                "ticket": null,
+                "via": "execute"
+              }
+            ],
+            "state": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              18446744073709551614
+            ]
+          },
+          "sqlite_version": "3.53.1",
+          "worker_cpu_seconds": 0.015625,
+          "worker_wall_seconds": 0.011663500015856698
+        }
+      ],
+      "parent_wall_seconds": 0.06501829999615438
+    },
+    {
+      "command": [
+        "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\library_review\\pdf-env\\Scripts\\python.exe",
+        "-B",
+        "-S",
+        "-W",
+        "error::ResourceWarning",
+        "D:\\CodexProjects\\wg-check\\substantive-library\\P039\\artifact\\owned_process\\worker.py",
+        "--root",
+        "owned-process-results\\full-20261014-001\\cases\\admission-9223372036854775807-close_interrupted-receipt-O0",
+        "--adapter",
+        "admission",
+        "--receiver",
+        "receipt",
+        "--cut",
+        "none"
+      ],
+      "cut": "none",
+      "exit_code": 0,
+      "output": [
+        {
+          "committed": {
+            "effects": 1,
+            "id": "owned-process-j1-a0",
+            "row": [
+              "done",
+              "admission",
+              "job-1",
+              9223372036854775807,
+              0
+            ],
+            "status": "done"
+          },
+          "kind": "receiver_return",
+          "receipt": {
+            "adapter": "admission",
+            "cost": 9223372036854775807,
+            "id": "owned-process-j1-a0",
+            "job": "job-1",
+            "status": "done",
+            "ticket": null,
+            "unsafe": 0,
+            "via": "execute"
+          }
+        },
+        {
+          "after_checkpoint": {
+            "controller.db": 36864,
+            "controller.db-shm": 32768,
+            "controller.db-wal": 0,
+            "receiver.db": 53248,
+            "receiver.db-shm": 32768,
+            "receiver.db-wal": 0
+          },
+          "after_close": {
+            "controller.db": 36864,
+            "receiver.db": 53248
+          },
+          "before_checkpoint": {
+            "controller.db": 36864,
+            "controller.db-shm": 32768,
+            "controller.db-wal": 61832,
+            "receiver.db": 53248,
+            "receiver.db-shm": 32768,
+            "receiver.db-wal": 32992
+          },
+          "checkpoint_seconds": 0.001126299990573898,
+          "checkpoints": [
+            {
+              "result": [
+                0,
+                0,
+                0
+              ],
+              "role": "controller"
+            },
+            {
+              "result": [
+                0,
+                0,
+                0
+              ],
+              "role": "receiver"
+            }
+          ],
+          "commit_observations": [
+            {
+              "effects": 1,
+              "id": "owned-process-j1-a0",
+              "row": [
+                "done",
+                "admission",
+                "job-1",
+                9223372036854775807,
+                0
+              ],
+              "status": "done"
+            }
+          ],
+          "complete": false,
+          "effects": {
+            "owned-process-j0-a1": [
+              9223372036854775807,
+              0
+            ],
+            "owned-process-j1-a0": [
+              9223372036854775807,
+              0
+            ]
+          },
+          "optimize": 0,
+          "receipts": [
+            {
+              "adapter": "admission",
+              "cost": 9223372036854775807,
+              "id": "owned-process-j1-a0",
+              "job": "job-1",
+              "status": "done",
+              "ticket": null,
+              "unsafe": 0,
+              "via": "execute"
+            }
+          ],
+          "receiver_outcomes": {
+            "owned-process-j0-a0": {
+              "adapter": null,
+              "cost": 0,
+              "job": null,
+              "status": "canceled",
+              "unsafe": 0
+            },
+            "owned-process-j0-a1": {
+              "adapter": "admission",
+              "cost": 9223372036854775807,
+              "job": "job-0",
+              "status": "done",
+              "unsafe": 0
+            },
+            "owned-process-j1-a0": {
+              "adapter": "admission",
+              "cost": 9223372036854775807,
+              "job": "job-1",
+              "status": "done",
+              "unsafe": 0
+            }
+          },
+          "snapshot": {
+            "adapter": "admission",
+            "attempts": {
+              "owned-process-j0-a0": {
+                "action": "fallback",
+                "actual": [
+                  0,
+                  0
+                ],
+                "adapter": "admission",
+                "job": 0,
+                "recoveries": 2,
+                "status": "canceled",
+                "target": "job-0",
+                "ticket": "5d51282f436042a78dc07e6f46d26f3f",
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              },
+              "owned-process-j0-a1": {
+                "action": "fallback",
+                "actual": [
+                  9223372036854775807,
+                  0
+                ],
+                "adapter": "admission",
+                "job": 0,
+                "recoveries": 0,
+                "status": "done",
+                "target": "job-0",
+                "ticket": null,
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              },
+              "owned-process-j1-a0": {
+                "action": "fallback",
+                "actual": [
+                  9223372036854775807,
+                  0
+                ],
+                "adapter": "admission",
+                "job": 1,
+                "recoveries": 0,
+                "status": "done",
+                "target": "job-1",
+                "ticket": null,
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              }
+            },
+            "controller_id": "owned-process",
+            "done": false,
+            "events": [
+              {
+                "action": "fallback",
+                "job": 0,
+                "kind": "select",
+                "state": [
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  27670116110564327421
+                ]
+              },
+              {
+                "action": "fallback",
+                "adapter": "admission",
+                "id": "owned-process-j0-a0",
+                "job": 0,
+                "kind": "reserve",
+                "target": "job-0",
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              },
+              {
+                "id": "owned-process-j0-a0",
+                "job": 0,
+                "kind": "recover",
+                "recoveries": 1,
+                "ticket": "03142f94485145d699816910ee1dd44a"
+              },
+              {
+                "id": "owned-process-j0-a0",
+                "job": 0,
+                "kind": "recover",
+                "recoveries": 2,
+                "ticket": "5d51282f436042a78dc07e6f46d26f3f"
+              },
+              {
+                "actual": [
+                  0,
+                  0
+                ],
+                "adapter": "admission",
+                "id": "owned-process-j0-a0",
+                "kind": "settle",
+                "status": "canceled",
+                "target": "job-0",
+                "ticket": "5d51282f436042a78dc07e6f46d26f3f",
+                "via": "close"
+              },
+              {
+                "action": "fallback",
+                "adapter": "admission",
+                "id": "owned-process-j0-a1",
+                "job": 0,
+                "kind": "reserve",
+                "target": "job-0",
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              },
+              {
+                "actual": [
+                  9223372036854775807,
+                  0
+                ],
+                "adapter": "admission",
+                "charge": 9223372036854775807,
+                "crashes": 2,
+                "id": "owned-process-j0-a1",
+                "kind": "settle",
+                "late": 0,
+                "next": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  18446744073709551614
+                ],
+                "status": "done",
+                "target": "job-0",
+                "ticket": null,
+                "via": "execute"
+              },
+              {
+                "action": "fallback",
+                "job": 1,
+                "kind": "select",
+                "state": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  18446744073709551614
+                ]
+              },
+              {
+                "action": "fallback",
+                "adapter": "admission",
+                "id": "owned-process-j1-a0",
+                "job": 1,
+                "kind": "reserve",
+                "target": "job-1",
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              },
+              {
+                "actual": [
+                  9223372036854775807,
+                  0
+                ],
+                "adapter": "admission",
+                "charge": 9223372036854775807,
+                "crashes": 0,
+                "id": "owned-process-j1-a0",
+                "kind": "settle",
+                "late": 0,
+                "next": [
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  9223372036854775807
+                ],
+                "status": "done",
+                "target": "job-1",
+                "ticket": null,
+                "via": "execute"
+              }
+            ],
+            "state": [
+              2,
+              0,
+              0,
+              0,
+              0,
+              9223372036854775807
+            ]
+          },
+          "sqlite_version": "3.53.1",
+          "worker_cpu_seconds": 0.015625,
+          "worker_wall_seconds": 0.01168250001501292
+        }
+      ],
+      "parent_wall_seconds": 0.06456120000802912
+    },
+    {
+      "command": [
+        "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\library_review\\pdf-env\\Scripts\\python.exe",
+        "-B",
+        "-S",
+        "-W",
+        "error::ResourceWarning",
+        "D:\\CodexProjects\\wg-check\\substantive-library\\P039\\artifact\\owned_process\\worker.py",
+        "--root",
+        "owned-process-results\\full-20261014-001\\cases\\admission-9223372036854775807-close_interrupted-receipt-O0",
+        "--adapter",
+        "admission",
+        "--receiver",
+        "receipt",
+        "--cut",
+        "none"
+      ],
+      "cut": "none",
+      "exit_code": 0,
+      "output": [
+        {
+          "committed": {
+            "effects": 1,
+            "id": "owned-process-j2-a0",
+            "row": [
+              "done",
+              "admission",
+              "job-2",
+              9223372036854775807,
+              0
+            ],
+            "status": "done"
+          },
+          "kind": "receiver_return",
+          "receipt": {
+            "adapter": "admission",
+            "cost": 9223372036854775807,
+            "id": "owned-process-j2-a0",
+            "job": "job-2",
+            "status": "done",
+            "ticket": null,
+            "unsafe": 0,
+            "via": "execute"
+          }
+        },
+        {
+          "after_checkpoint": {
+            "controller.db": 36864,
+            "controller.db-shm": 32768,
+            "controller.db-wal": 0,
+            "receiver.db": 53248,
+            "receiver.db-shm": 32768,
+            "receiver.db-wal": 0
+          },
+          "after_close": {
+            "controller.db": 36864,
+            "receiver.db": 53248
+          },
+          "before_checkpoint": {
+            "controller.db": 36864,
+            "controller.db-shm": 32768,
+            "controller.db-wal": 61832,
+            "receiver.db": 53248,
+            "receiver.db-shm": 32768,
+            "receiver.db-wal": 32992
+          },
+          "checkpoint_seconds": 0.0010667000024113804,
+          "checkpoints": [
+            {
+              "result": [
+                0,
+                0,
+                0
+              ],
+              "role": "controller"
+            },
+            {
+              "result": [
+                0,
+                0,
+                0
+              ],
+              "role": "receiver"
+            }
+          ],
+          "commit_observations": [
+            {
+              "effects": 1,
+              "id": "owned-process-j2-a0",
+              "row": [
+                "done",
+                "admission",
+                "job-2",
+                9223372036854775807,
+                0
+              ],
+              "status": "done"
+            }
+          ],
+          "complete": true,
+          "effects": {
+            "owned-process-j0-a1": [
+              9223372036854775807,
+              0
+            ],
+            "owned-process-j1-a0": [
+              9223372036854775807,
+              0
+            ],
+            "owned-process-j2-a0": [
+              9223372036854775807,
+              0
+            ]
+          },
+          "optimize": 0,
+          "receipts": [
+            {
+              "adapter": "admission",
+              "cost": 9223372036854775807,
+              "id": "owned-process-j2-a0",
+              "job": "job-2",
+              "status": "done",
+              "ticket": null,
+              "unsafe": 0,
+              "via": "execute"
+            }
+          ],
+          "receiver_outcomes": {
+            "owned-process-j0-a0": {
+              "adapter": null,
+              "cost": 0,
+              "job": null,
+              "status": "canceled",
+              "unsafe": 0
+            },
+            "owned-process-j0-a1": {
+              "adapter": "admission",
+              "cost": 9223372036854775807,
+              "job": "job-0",
+              "status": "done",
+              "unsafe": 0
+            },
+            "owned-process-j1-a0": {
+              "adapter": "admission",
+              "cost": 9223372036854775807,
+              "job": "job-1",
+              "status": "done",
+              "unsafe": 0
+            },
+            "owned-process-j2-a0": {
+              "adapter": "admission",
+              "cost": 9223372036854775807,
+              "job": "job-2",
+              "status": "done",
+              "unsafe": 0
+            }
+          },
+          "snapshot": {
+            "adapter": "admission",
+            "attempts": {
+              "owned-process-j0-a0": {
+                "action": "fallback",
+                "actual": [
+                  0,
+                  0
+                ],
+                "adapter": "admission",
+                "job": 0,
+                "recoveries": 2,
+                "status": "canceled",
+                "target": "job-0",
+                "ticket": "5d51282f436042a78dc07e6f46d26f3f",
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              },
+              "owned-process-j0-a1": {
+                "action": "fallback",
+                "actual": [
+                  9223372036854775807,
+                  0
+                ],
+                "adapter": "admission",
+                "job": 0,
+                "recoveries": 0,
+                "status": "done",
+                "target": "job-0",
+                "ticket": null,
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              },
+              "owned-process-j1-a0": {
+                "action": "fallback",
+                "actual": [
+                  9223372036854775807,
+                  0
+                ],
+                "adapter": "admission",
+                "job": 1,
+                "recoveries": 0,
+                "status": "done",
+                "target": "job-1",
+                "ticket": null,
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              },
+              "owned-process-j2-a0": {
+                "action": "fallback",
+                "actual": [
+                  9223372036854775807,
+                  0
+                ],
+                "adapter": "admission",
+                "job": 2,
+                "recoveries": 0,
+                "status": "done",
+                "target": "job-2",
+                "ticket": null,
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              }
+            },
+            "controller_id": "owned-process",
+            "done": true,
+            "events": [
+              {
+                "action": "fallback",
+                "job": 0,
+                "kind": "select",
+                "state": [
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  27670116110564327421
+                ]
+              },
+              {
+                "action": "fallback",
+                "adapter": "admission",
+                "id": "owned-process-j0-a0",
+                "job": 0,
+                "kind": "reserve",
+                "target": "job-0",
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              },
+              {
+                "id": "owned-process-j0-a0",
+                "job": 0,
+                "kind": "recover",
+                "recoveries": 1,
+                "ticket": "03142f94485145d699816910ee1dd44a"
+              },
+              {
+                "id": "owned-process-j0-a0",
+                "job": 0,
+                "kind": "recover",
+                "recoveries": 2,
+                "ticket": "5d51282f436042a78dc07e6f46d26f3f"
+              },
+              {
+                "actual": [
+                  0,
+                  0
+                ],
+                "adapter": "admission",
+                "id": "owned-process-j0-a0",
+                "kind": "settle",
+                "status": "canceled",
+                "target": "job-0",
+                "ticket": "5d51282f436042a78dc07e6f46d26f3f",
+                "via": "close"
+              },
+              {
+                "action": "fallback",
+                "adapter": "admission",
+                "id": "owned-process-j0-a1",
+                "job": 0,
+                "kind": "reserve",
+                "target": "job-0",
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              },
+              {
+                "actual": [
+                  9223372036854775807,
+                  0
+                ],
+                "adapter": "admission",
+                "charge": 9223372036854775807,
+                "crashes": 2,
+                "id": "owned-process-j0-a1",
+                "kind": "settle",
+                "late": 0,
+                "next": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  18446744073709551614
+                ],
+                "status": "done",
+                "target": "job-0",
+                "ticket": null,
+                "via": "execute"
+              },
+              {
+                "action": "fallback",
+                "job": 1,
+                "kind": "select",
+                "state": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  18446744073709551614
+                ]
+              },
+              {
+                "action": "fallback",
+                "adapter": "admission",
+                "id": "owned-process-j1-a0",
+                "job": 1,
+                "kind": "reserve",
+                "target": "job-1",
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              },
+              {
+                "actual": [
+                  9223372036854775807,
+                  0
+                ],
+                "adapter": "admission",
+                "charge": 9223372036854775807,
+                "crashes": 0,
+                "id": "owned-process-j1-a0",
+                "kind": "settle",
+                "late": 0,
+                "next": [
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  9223372036854775807
+                ],
+                "status": "done",
+                "target": "job-1",
+                "ticket": null,
+                "via": "execute"
+              },
+              {
+                "action": "fallback",
+                "job": 2,
+                "kind": "select",
+                "state": [
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  9223372036854775807
+                ]
+              },
+              {
+                "action": "fallback",
+                "adapter": "admission",
+                "id": "owned-process-j2-a0",
+                "job": 2,
+                "kind": "reserve",
+                "target": "job-2",
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              },
+              {
+                "actual": [
+                  9223372036854775807,
+                  0
+                ],
+                "adapter": "admission",
+                "charge": 9223372036854775807,
+                "crashes": 0,
+                "id": "owned-process-j2-a0",
+                "kind": "settle",
+                "late": 0,
+                "next": [
+                  3,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "status": "done",
+                "target": "job-2",
+                "ticket": null,
+                "via": "execute"
+              }
+            ],
+            "state": [
+              3,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "sqlite_version": "3.53.1",
+          "worker_cpu_seconds": 0.0,
+          "worker_wall_seconds": 0.011838700011139736
+        }
+      ],
+      "parent_wall_seconds": 0.06505159998778254
+    }
+  ],
+  "optimized": false,
+  "receiver_implementation": "receipt",
+  "receiver_outcomes": {
+    "owned-process-j0-a0": {
+      "adapter": null,
+      "cost": 0,
+      "job": null,
+      "status": "canceled",
+      "unsafe": 0
+    },
+    "owned-process-j0-a1": {
+      "adapter": "admission",
+      "cost": 9223372036854775807,
+      "job": "job-0",
+      "status": "done",
+      "unsafe": 0
+    },
+    "owned-process-j1-a0": {
+      "adapter": "admission",
+      "cost": 9223372036854775807,
+      "job": "job-1",
+      "status": "done",
+      "unsafe": 0
+    },
+    "owned-process-j2-a0": {
+      "adapter": "admission",
+      "cost": 9223372036854775807,
+      "job": "job-2",
+      "status": "done",
+      "unsafe": 0
+    }
+  },
+  "snapshot": {
+    "adapter": "admission",
+    "attempts": {
+      "owned-process-j0-a0": {
+        "action": "fallback",
+        "actual": [
+          0,
+          0
+        ],
+        "adapter": "admission",
+        "job": 0,
+        "recoveries": 2,
+        "status": "canceled",
+        "target": "job-0",
+        "ticket": "5d51282f436042a78dc07e6f46d26f3f",
+        "upper": [
+          9223372036854775807,
+          0
+        ]
+      },
+      "owned-process-j0-a1": {
+        "action": "fallback",
+        "actual": [
+          9223372036854775807,
+          0
+        ],
+        "adapter": "admission",
+        "job": 0,
+        "recoveries": 0,
+        "status": "done",
+        "target": "job-0",
+        "ticket": null,
+        "upper": [
+          9223372036854775807,
+          0
+        ]
+      },
+      "owned-process-j1-a0": {
+        "action": "fallback",
+        "actual": [
+          9223372036854775807,
+          0
+        ],
+        "adapter": "admission",
+        "job": 1,
+        "recoveries": 0,
+        "status": "done",
+        "target": "job-1",
+        "ticket": null,
+        "upper": [
+          9223372036854775807,
+          0
+        ]
+      },
+      "owned-process-j2-a0": {
+        "action": "fallback",
+        "actual": [
+          9223372036854775807,
+          0
+        ],
+        "adapter": "admission",
+        "job": 2,
+        "recoveries": 0,
+        "status": "done",
+        "target": "job-2",
+        "ticket": null,
+        "upper": [
+          9223372036854775807,
+          0
+        ]
+      }
+    },
+    "controller_id": "owned-process",
+    "done": true,
+    "events": [
+      {
+        "action": "fallback",
+        "job": 0,
+        "kind": "select",
+        "state": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          27670116110564327421
+        ]
+      },
+      {
+        "action": "fallback",
+        "adapter": "admission",
+        "id": "owned-process-j0-a0",
+        "job": 0,
+        "kind": "reserve",
+        "target": "job-0",
+        "upper": [
+          9223372036854775807,
+          0
+        ]
+      },
+      {
+        "id": "owned-process-j0-a0",
+        "job": 0,
+        "kind": "recover",
+        "recoveries": 1,
+        "ticket": "03142f94485145d699816910ee1dd44a"
+      },
+      {
+        "id": "owned-process-j0-a0",
+        "job": 0,
+        "kind": "recover",
+        "recoveries": 2,
+        "ticket": "5d51282f436042a78dc07e6f46d26f3f"
+      },
+      {
+        "actual": [
+          0,
+          0
+        ],
+        "adapter": "admission",
+        "id": "owned-process-j0-a0",
+        "kind": "settle",
+        "status": "canceled",
+        "target": "job-0",
+        "ticket": "5d51282f436042a78dc07e6f46d26f3f",
+        "via": "close"
+      },
+      {
+        "action": "fallback",
+        "adapter": "admission",
+        "id": "owned-process-j0-a1",
+        "job": 0,
+        "kind": "reserve",
+        "target": "job-0",
+        "upper": [
+          9223372036854775807,
+          0
+        ]
+      },
+      {
+        "actual": [
+          9223372036854775807,
+          0
+        ],
+        "adapter": "admission",
+        "charge": 9223372036854775807,
+        "crashes": 2,
+        "id": "owned-process-j0-a1",
+        "kind": "settle",
+        "late": 0,
+        "next": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          18446744073709551614
+        ],
+        "status": "done",
+        "target": "job-0",
+        "ticket": null,
+        "via": "execute"
+      },
+      {
+        "action": "fallback",
+        "job": 1,
+        "kind": "select",
+        "state": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          18446744073709551614
+        ]
+      },
+      {
+        "action": "fallback",
+        "adapter": "admission",
+        "id": "owned-process-j1-a0",
+        "job": 1,
+        "kind": "reserve",
+        "target": "job-1",
+        "upper": [
+          9223372036854775807,
+          0
+        ]
+      },
+      {
+        "actual": [
+          9223372036854775807,
+          0
+        ],
+        "adapter": "admission",
+        "charge": 9223372036854775807,
+        "crashes": 0,
+        "id": "owned-process-j1-a0",
+        "kind": "settle",
+        "late": 0,
+        "next": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          9223372036854775807
+        ],
+        "status": "done",
+        "target": "job-1",
+        "ticket": null,
+        "via": "execute"
+      },
+      {
+        "action": "fallback",
+        "job": 2,
+        "kind": "select",
+        "state": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          9223372036854775807
+        ]
+      },
+      {
+        "action": "fallback",
+        "adapter": "admission",
+        "id": "owned-process-j2-a0",
+        "job": 2,
+        "kind": "reserve",
+        "target": "job-2",
+        "upper": [
+          9223372036854775807,
+          0
+        ]
+      },
+      {
+        "actual": [
+          9223372036854775807,
+          0
+        ],
+        "adapter": "admission",
+        "charge": 9223372036854775807,
+        "crashes": 0,
+        "id": "owned-process-j2-a0",
+        "kind": "settle",
+        "late": 0,
+        "next": [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "status": "done",
+        "target": "job-2",
+        "ticket": null,
+        "via": "execute"
+      }
+    ],
+    "state": [
+      3,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "valid": true
+}

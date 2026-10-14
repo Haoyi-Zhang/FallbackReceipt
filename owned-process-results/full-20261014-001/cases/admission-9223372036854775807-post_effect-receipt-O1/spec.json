@@ -1,0 +1,32 @@
+{
+  "cost": 27670116110564327421,
+  "crashes": 2,
+  "deadline": 1,
+  "drift": 0,
+  "jobs": [
+    {
+      "accept_cost": 9223372036854775807,
+      "accept_time": 1,
+      "fallback_cost": 9223372036854775807,
+      "fallback_time": 1,
+      "score": 0
+    },
+    {
+      "accept_cost": 9223372036854775807,
+      "accept_time": 1,
+      "fallback_cost": 9223372036854775807,
+      "fallback_time": 1,
+      "score": 0
+    },
+    {
+      "accept_cost": 9223372036854775807,
+      "accept_time": 1,
+      "fallback_cost": 9223372036854775807,
+      "fallback_time": 1,
+      "score": 0
+    }
+  ],
+  "late": 0,
+  "recovery_time": 0,
+  "unsafe": 0
+}

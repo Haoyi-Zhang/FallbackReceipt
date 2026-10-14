@@ -69,11 +69,11 @@ The local prototype implements both operations with a serialized SQLite transact
 
 ### Lemma 4: stable receiver outcome
 
-For every valid identifier in a receiver history, exactly one stable case holds: `DONE` with one matching effect, or `CANCELED` with no effect and no possibility of a later effect for that identifier.
+After the first committed execute or close for a valid identifier in a receiver history, exactly one stable case holds: `DONE` with one matching effect, or `CANCELED` with no effect and no possibility of a later effect for that identifier. Before that commit the identifier can be absent.
 
 **Proof.** The first serialized transaction that observes no outcome row installs one terminal state. An execute transaction inserts the adapter effect and `DONE` in the same transaction. A close transaction inserts only `CANCELED`. Primary keys prevent a second outcome or effect. Every later execute or close observes the terminal row. A repeated execute under `DONE` must carry the same adapter, target, cost, and unsafe values; conflicting reuse is rejected. A close receipt binds the identifier, terminal state, adapter, target, origin, and supplied ticket. A repeated execute under `CANCELED` returns cancellation without invoking the adapter. QED.
 
-This lemma assumes the receiver's local transaction semantics. A distributed implementation needs a linearizable substrate that realizes the same interface. A negative status query is not closure because a delayed request may still cross it.
+This lemma assumes the receiver's local transaction semantics. A distributed implementation needs a linearizable substrate that realizes the same interface. A negative status query is not closure because a delayed request may still cross it. The current local realization additionally needs the selected-action INTEGER domain and adequate storage resources described in `runtime-domain.md`; model acceptance alone is not local storage admission.
 
 ## 5. Persistent controller invariants
 

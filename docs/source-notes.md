@@ -12,7 +12,20 @@ The MLSys 2026 anchor studies uncertainty estimators and fallback workflows for 
 
 The anchor motivates task-dependent fallback but does not supply the receiver-closed persistent contract evaluated here. Learned-OS guardrail work motivates explicit properties and corrective actions. Birrell and Nelson's RPC semantics and RIFL establish the lost-reply/identity boundary. RIFL Section 6.5 also records transaction aborts under prepare identities to fence delayed prepares; cancellation fencing is therefore prior art. AFT, Beldi, distributed speculative execution, and transactional stateful serverless systems establish relevant durability or workflow mechanisms. The paper does not claim to supersede their execution substrates; it claims a bounded interface between a selective planner and a one-effect-or-none receiver outcome.
 
-The novelty boundary is therefore narrow: combining a finite multi-budget selector, an optimality-checkable reachable certificate, a two-world necessity argument, independently model-checked receipt-closing order, persistent recovery-before-close accounting, and independent event-to-game replay. Standard components are credited rather than renamed as new primitives.
+The contribution under assessment is the interface among the finite multi-budget selector, optimality-checkable reachable certificate, receiver closure, recovery accounting and event-to-game replay. Their combination is not by itself evidence of first publication or a new primitive. The October same-information ordinary SQLite result/fence receiver matches all 84 bounded recovery pairs and 42 alternating cost pairs. This is evidence of standard-mechanism overlap, not an advantage to be hidden. RIFL/Beldi can potentially host or adapt the contract; the study does not establish otherwise.
+
+The October inspection read the complete author-hosted RIFL PDF (16 physical
+pages), the official USENIX Beldi PDF (19 physical pages including cover and
+artifact appendix) and the complete official MLSys 2026 fallback paper
+(16 pages including references). RIFL Sections 3--4 and 6.5--6.6 establish
+atomic completion records, abort fences and record retention. Beldi's storage
+premises, replay/transactions and bounded-GC assumptions remain part of the
+comparison. Gohil et al. Sections 4--5 compare estimator and fallback workflows,
+not a finite charge-optimal certificate/refinement implementation. No code
+from these systems or native RIFL/Beldi/Heimdall service was run. Earlier
+Heimdall inspection and other bibliography rows remain inherited source
+records, not new full-text or native-validation claims. AFT and the other
+remaining citations have not all received a fresh complete-text inspection.
 
 ## Statistical and runtime-assurance context
 

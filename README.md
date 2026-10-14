@@ -154,6 +154,15 @@ The trace grid's `planning_ms` times each complete policy branch: adaptive inclu
 
 ## Trust and limits
 
+The optional October local-domain/recovery comparison is documented in
+`owned_process/README.md`. It adds selected-action SQLite INTEGER admission,
+canonical canceled-receipt validation and a same-information ordinary
+transaction receiver. Raw cohorts live in `owned-process-results/`, not the
+exact historical `results/` packet. They retain normal/-O process commands,
+per-return commit observations, checkpoint costs and DB/WAL/SHM samples.
+The 168-case correctness and separate 84-case cost cohorts agree for both
+receivers; neither result is primitive novelty or production performance.
+
 Stable identifiers and atomic local transactions are assumed. The receiver must represent all charged effects within its terminal transaction. An actual cache or storage system outside that boundary needs its own binding and envelope argument. Final rows cannot prove cross-database real-time order. Recovery tickets correlate records; they are not cryptographic signatures. The checker re-solves the finite game and is not a small verified proof kernel. Separate programs share the mathematical specification and Python semantics, so common-mode errors remain possible. No proof assistant verifies the Python/SQLite implementation.
 
 The public excerpts contribute request order, timestamps, and token counts only. Safety labels, envelopes, budgets, and service behavior are synthetic. There is no predictor training/inference, production utility claim, multi-machine latency, replication, power-loss test, or Byzantine guarantee. Protocol correctness and adaptive-control advantage are different questions; the latter is not demonstrated on this grid.

@@ -1,0 +1,49 @@
+{
+  "activity_wall_seconds": 85.67560310001136,
+  "attempts": 648,
+  "cases": 168,
+  "cost_scope": "Parent launch wall includes startup/exit; successful worker CPU excludes killed-worker CPU and final output encoding. Case process phase excludes input synthesis and final verification; checkpoint costs are separately recorded and included in successful worker time. Disk samples are logical file lengths, not physical allocation, continuous peaks or device write traffic.",
+  "effects": 504,
+  "environment": {
+    "clocks": {
+      "perf_counter": {
+        "adjustable": false,
+        "implementation": "QueryPerformanceCounter()",
+        "monotonic": true,
+        "resolution": 1e-07
+      },
+      "process_time": {
+        "adjustable": false,
+        "implementation": "GetProcessTimes()",
+        "monotonic": true,
+        "resolution": 1e-07
+      },
+      "time": {
+        "adjustable": true,
+        "implementation": "GetSystemTimeAsFileTime()",
+        "monotonic": false,
+        "resolution": 0.015625
+      }
+    },
+    "executable": "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\library_review\\pdf-env\\Scripts\\python.exe",
+    "platform": "Windows-11-10.0.28000-SP0",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "sqlite": "3.53.1"
+  },
+  "launches": 696,
+  "paired_cases": 84,
+  "returned_receipts": 696,
+  "same_information_disagreements": 0,
+  "scope": "Owned local Python processes, not RIFL/Beldi executions, production or power-loss tests",
+  "small": false,
+  "source_versions": {
+    "owned_process/campaign.py": "7f30cd7b9bf2ae0e23f62768d54f7ee8fa2719dfb89770372bf0b5b7d0e03ac9",
+    "owned_process/ordinary.py": "67b6ee5c3743d2171bdc3cc763168d6323cee31fd97a06985ac8690fdbe5605a",
+    "owned_process/worker.py": "625cce90e0080997c7c913a26e760e090b83f54ccd93122466b921e26569c808",
+    "src/checker.py": "2085c720472336bdaf2d2be9525474b0d0d0979651b8064e4cdd107fad7065d5",
+    "src/evidence_check.py": "63861e131dee0a74e42b3c5251651b9fc6a2d4647506cc47c28d2ba85cf6e1af",
+    "src/game.py": "b1ddacfad774a45f5ddad108ad2bf7bcaad08ffc1ec9caa5d5e2a64384c26441",
+    "src/runtime.py": "30ee534a60c2a7904930c02c058b11067037f2599d5d3eb6b14da5163c8f915d",
+    "src/trace_check.py": "dd0a45b664f89f2432a660f701c5d25622c2e30a5fec2e07a8d7fac042456e43"
+  }
+}

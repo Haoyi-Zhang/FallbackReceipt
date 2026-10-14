@@ -1,0 +1,2 @@
+{"kind": "receiver_return", "receipt": {"id": "owned-process-j0-a0", "status": "canceled", "adapter": null, "job": null, "cost": 0, "unsafe": 0, "via": "close", "ticket": "717731f1d5b44dacb956ff06d14d0557"}, "committed": {"id": "owned-process-j0-a0", "status": "canceled", "row": ["canceled", null, null, 0, 0], "effects": 0}}
+{"cut": "after_close", "exit": 73, "disk_sample": {"controller.db": 4096, "controller.db-shm": 32768, "controller.db-wal": 115392, "receiver.db": 4096, "receiver.db-shm": 32768, "receiver.db-wal": 90672}}

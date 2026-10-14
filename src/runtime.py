@@ -25,6 +25,32 @@ from typing import Any
 from checker import check as check_certificate
 from game import encode, nominal_unsafe
 
+SQLITE_INTEGER_MAX = (1 << 63) - 1
+
+
+class RuntimeDomainError(ValueError):
+    """A valid finite policy is outside the unchanged SQLite representation."""
+
+
+def _check_storage_domain(spec: dict[str, Any], cert: dict[str, Any]) -> None:
+    """Check a previously accepted strategy's reachable physical writes.
+
+    This guard does not cap model integers or JSON/TEXT budget coordinates. Only
+    selected cost envelopes and counters written as SQLite INTEGER are bounded;
+    oversized unselected actions do not exclude an otherwise executable policy.
+    """
+    for state_key, row in cert['policy'].items():
+        if row['action'] == 'reject':
+            continue
+        parts = state_key.split(',')
+        index, remaining_recoveries = int(parts[0]), int(parts[2])
+        if spec['jobs'][index][row['action'] + '_cost'] > SQLITE_INTEGER_MAX:
+            raise RuntimeDomainError('selected cost exceeds SQLite INTEGER runtime domain')
+        # Up to f canceled attempts followed by one done attempt write a next-
+        # attempt count of f+1. This is a representation guard, not infeasibility.
+        if remaining_recoveries >= SQLITE_INTEGER_MAX:
+            raise RuntimeDomainError('selected recovery count exceeds SQLite INTEGER runtime domain')
+
 
 def _freeze(value):
     """Detach verified JSON inputs and make their nested containers read-only."""
@@ -131,7 +157,7 @@ class ReceiverStore:
             raise ValueError("invalid identifier")
         if adapter not in {"admission", "cache", "tier"}:
             raise ValueError("invalid adapter")
-        if not _nat(cost) or not _nat(unsafe) or unsafe > 1:
+        if not _nat(cost) or cost > SQLITE_INTEGER_MAX or not _nat(unsafe) or unsafe > 1:
             raise ValueError("invalid effect quantities")
         self.db.execute("BEGIN IMMEDIATE")
         try:
@@ -238,6 +264,7 @@ class ControllerStore:
         spec, cert = copy.deepcopy(spec), copy.deepcopy(cert)
         if not cert.get("feasible") or not check_certificate(spec, cert):
             raise ValueError("runtime requires a valid feasible certificate")
+        _check_storage_domain(spec, cert)
         if controller_id is not None and not _valid_controller_id(controller_id):
             raise ValueError("invalid controller identifier")
         if adapter not in {"admission", "cache", "tier"}:
@@ -518,8 +545,14 @@ class ControllerStore:
             raise ValueError("direct execution receipt carries a recovery ticket")
         if receipt["via"] == "close" and not self._valid_ticket(receipt["ticket"]):
             raise ValueError("close receipt lacks a valid recovery ticket")
-        if not _nat(receipt["cost"]) or not _nat(receipt["unsafe"]) or receipt["unsafe"] > 1:
+        if (not _nat(receipt["cost"]) or receipt["cost"] > SQLITE_INTEGER_MAX
+                or not _nat(receipt["unsafe"]) or receipt["unsafe"] > 1):
             raise ValueError("malformed quantities")
+        # Canonical cancellation shape is required before either the first or
+        # duplicate branch. A duplicate cannot bypass descriptor validation.
+        if receipt['status'] == 'canceled' and (
+                receipt['cost'], receipt['unsafe'], receipt['adapter'], receipt['job']) != (0, 0, None, None):
+            raise ValueError('canceled receipt carries an effect')
         self.db.execute("BEGIN IMMEDIATE")
         try:
             row = self.db.execute(

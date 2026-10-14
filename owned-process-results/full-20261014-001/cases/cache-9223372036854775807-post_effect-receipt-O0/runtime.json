@@ -1,0 +1,1104 @@
+{
+  "adapter": "cache",
+  "charge": 9223372036854775807,
+  "crash_snapshots": [
+    {
+      "cut": "after_execute",
+      "disk_sample": {
+        "controller.db": 4096,
+        "controller.db-shm": 32768,
+        "controller.db-wal": 98912,
+        "receiver.db": 4096,
+        "receiver.db-shm": 32768,
+        "receiver.db-wal": 107152
+      },
+      "observed": {
+        "attempts": [
+          [
+            "owned-process-j0-a0",
+            "pending",
+            0
+          ]
+        ],
+        "effects": [
+          [
+            "owned-process-j0-a0",
+            9223372036854775807,
+            0
+          ]
+        ],
+        "outcomes": [
+          [
+            "owned-process-j0-a0",
+            "done",
+            9223372036854775807,
+            0
+          ]
+        ],
+        "state": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          27670116110564327421
+        ]
+      }
+    }
+  ],
+  "cuts": [
+    "after_execute"
+  ],
+  "effects": {
+    "owned-process-j0-a0": [
+      9223372036854775807,
+      0
+    ],
+    "owned-process-j1-a0": [
+      9223372036854775807,
+      0
+    ],
+    "owned-process-j2-a0": [
+      9223372036854775807,
+      0
+    ]
+  },
+  "launches": [
+    {
+      "command": [
+        "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\library_review\\pdf-env\\Scripts\\python.exe",
+        "-B",
+        "-S",
+        "-W",
+        "error::ResourceWarning",
+        "D:\\CodexProjects\\wg-check\\substantive-library\\P039\\artifact\\owned_process\\worker.py",
+        "--root",
+        "owned-process-results\\full-20261014-001\\cases\\cache-9223372036854775807-post_effect-receipt-O0",
+        "--adapter",
+        "cache",
+        "--receiver",
+        "receipt",
+        "--cut",
+        "after_execute"
+      ],
+      "cut": "after_execute",
+      "exit_code": 73,
+      "output": [
+        {
+          "committed": {
+            "effects": 1,
+            "id": "owned-process-j0-a0",
+            "row": [
+              "done",
+              "cache",
+              "job-0",
+              9223372036854775807,
+              0
+            ],
+            "status": "done"
+          },
+          "kind": "receiver_return",
+          "receipt": {
+            "adapter": "cache",
+            "cost": 9223372036854775807,
+            "id": "owned-process-j0-a0",
+            "job": "job-0",
+            "status": "done",
+            "ticket": null,
+            "unsafe": 0,
+            "via": "execute"
+          }
+        },
+        {
+          "cut": "after_execute",
+          "disk_sample": {
+            "controller.db": 4096,
+            "controller.db-shm": 32768,
+            "controller.db-wal": 98912,
+            "receiver.db": 4096,
+            "receiver.db-shm": 32768,
+            "receiver.db-wal": 107152
+          },
+          "exit": 73
+        }
+      ],
+      "parent_wall_seconds": 0.06433480000123382
+    },
+    {
+      "command": [
+        "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\library_review\\pdf-env\\Scripts\\python.exe",
+        "-B",
+        "-S",
+        "-W",
+        "error::ResourceWarning",
+        "D:\\CodexProjects\\wg-check\\substantive-library\\P039\\artifact\\owned_process\\worker.py",
+        "--root",
+        "owned-process-results\\full-20261014-001\\cases\\cache-9223372036854775807-post_effect-receipt-O0",
+        "--adapter",
+        "cache",
+        "--receiver",
+        "receipt",
+        "--cut",
+        "none"
+      ],
+      "cut": "none",
+      "exit_code": 0,
+      "output": [
+        {
+          "committed": {
+            "effects": 1,
+            "id": "owned-process-j0-a0",
+            "row": [
+              "done",
+              "cache",
+              "job-0",
+              9223372036854775807,
+              0
+            ],
+            "status": "done"
+          },
+          "kind": "receiver_return",
+          "receipt": {
+            "adapter": "cache",
+            "cost": 9223372036854775807,
+            "id": "owned-process-j0-a0",
+            "job": "job-0",
+            "status": "done",
+            "ticket": "91c927477db147e39b9311cfdd7791fe",
+            "unsafe": 0,
+            "via": "close"
+          }
+        },
+        {
+          "committed": {
+            "effects": 1,
+            "id": "owned-process-j1-a0",
+            "row": [
+              "done",
+              "cache",
+              "job-1",
+              9223372036854775807,
+              0
+            ],
+            "status": "done"
+          },
+          "kind": "receiver_return",
+          "receipt": {
+            "adapter": "cache",
+            "cost": 9223372036854775807,
+            "id": "owned-process-j1-a0",
+            "job": "job-1",
+            "status": "done",
+            "ticket": null,
+            "unsafe": 0,
+            "via": "execute"
+          }
+        },
+        {
+          "after_checkpoint": {
+            "controller.db": 36864,
+            "controller.db-shm": 32768,
+            "controller.db-wal": 0,
+            "receiver.db": 53248,
+            "receiver.db-shm": 32768,
+            "receiver.db-wal": 0
+          },
+          "after_close": {
+            "controller.db": 36864,
+            "receiver.db": 53248
+          },
+          "before_checkpoint": {
+            "controller.db": 4096,
+            "controller.db-shm": 32768,
+            "controller.db-wal": 201912,
+            "receiver.db": 4096,
+            "receiver.db-shm": 32768,
+            "receiver.db-wal": 140112
+          },
+          "checkpoint_seconds": 0.0011899999808520079,
+          "checkpoints": [
+            {
+              "result": [
+                0,
+                0,
+                0
+              ],
+              "role": "controller"
+            },
+            {
+              "result": [
+                0,
+                0,
+                0
+              ],
+              "role": "receiver"
+            }
+          ],
+          "commit_observations": [
+            {
+              "effects": 1,
+              "id": "owned-process-j0-a0",
+              "row": [
+                "done",
+                "cache",
+                "job-0",
+                9223372036854775807,
+                0
+              ],
+              "status": "done"
+            },
+            {
+              "effects": 1,
+              "id": "owned-process-j1-a0",
+              "row": [
+                "done",
+                "cache",
+                "job-1",
+                9223372036854775807,
+                0
+              ],
+              "status": "done"
+            }
+          ],
+          "complete": false,
+          "effects": {
+            "owned-process-j0-a0": [
+              9223372036854775807,
+              0
+            ],
+            "owned-process-j1-a0": [
+              9223372036854775807,
+              0
+            ]
+          },
+          "optimize": 0,
+          "receipts": [
+            {
+              "adapter": "cache",
+              "cost": 9223372036854775807,
+              "id": "owned-process-j0-a0",
+              "job": "job-0",
+              "status": "done",
+              "ticket": "91c927477db147e39b9311cfdd7791fe",
+              "unsafe": 0,
+              "via": "close"
+            },
+            {
+              "adapter": "cache",
+              "cost": 9223372036854775807,
+              "id": "owned-process-j1-a0",
+              "job": "job-1",
+              "status": "done",
+              "ticket": null,
+              "unsafe": 0,
+              "via": "execute"
+            }
+          ],
+          "receiver_outcomes": {
+            "owned-process-j0-a0": {
+              "adapter": "cache",
+              "cost": 9223372036854775807,
+              "job": "job-0",
+              "status": "done",
+              "unsafe": 0
+            },
+            "owned-process-j1-a0": {
+              "adapter": "cache",
+              "cost": 9223372036854775807,
+              "job": "job-1",
+              "status": "done",
+              "unsafe": 0
+            }
+          },
+          "snapshot": {
+            "adapter": "cache",
+            "attempts": {
+              "owned-process-j0-a0": {
+                "action": "fallback",
+                "actual": [
+                  9223372036854775807,
+                  0
+                ],
+                "adapter": "cache",
+                "job": 0,
+                "recoveries": 1,
+                "status": "done",
+                "target": "job-0",
+                "ticket": "91c927477db147e39b9311cfdd7791fe",
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              },
+              "owned-process-j1-a0": {
+                "action": "fallback",
+                "actual": [
+                  9223372036854775807,
+                  0
+                ],
+                "adapter": "cache",
+                "job": 1,
+                "recoveries": 0,
+                "status": "done",
+                "target": "job-1",
+                "ticket": null,
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              }
+            },
+            "controller_id": "owned-process",
+            "done": false,
+            "events": [
+              {
+                "action": "fallback",
+                "job": 0,
+                "kind": "select",
+                "state": [
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  27670116110564327421
+                ]
+              },
+              {
+                "action": "fallback",
+                "adapter": "cache",
+                "id": "owned-process-j0-a0",
+                "job": 0,
+                "kind": "reserve",
+                "target": "job-0",
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              },
+              {
+                "id": "owned-process-j0-a0",
+                "job": 0,
+                "kind": "recover",
+                "recoveries": 1,
+                "ticket": "91c927477db147e39b9311cfdd7791fe"
+              },
+              {
+                "actual": [
+                  9223372036854775807,
+                  0
+                ],
+                "adapter": "cache",
+                "charge": 9223372036854775807,
+                "crashes": 1,
+                "id": "owned-process-j0-a0",
+                "kind": "settle",
+                "late": 0,
+                "next": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  18446744073709551614
+                ],
+                "status": "done",
+                "target": "job-0",
+                "ticket": "91c927477db147e39b9311cfdd7791fe",
+                "via": "close"
+              },
+              {
+                "action": "fallback",
+                "job": 1,
+                "kind": "select",
+                "state": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  18446744073709551614
+                ]
+              },
+              {
+                "action": "fallback",
+                "adapter": "cache",
+                "id": "owned-process-j1-a0",
+                "job": 1,
+                "kind": "reserve",
+                "target": "job-1",
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              },
+              {
+                "actual": [
+                  9223372036854775807,
+                  0
+                ],
+                "adapter": "cache",
+                "charge": 9223372036854775807,
+                "crashes": 0,
+                "id": "owned-process-j1-a0",
+                "kind": "settle",
+                "late": 0,
+                "next": [
+                  2,
+                  0,
+                  1,
+                  0,
+                  0,
+                  9223372036854775807
+                ],
+                "status": "done",
+                "target": "job-1",
+                "ticket": null,
+                "via": "execute"
+              }
+            ],
+            "state": [
+              2,
+              0,
+              1,
+              0,
+              0,
+              9223372036854775807
+            ]
+          },
+          "sqlite_version": "3.53.1",
+          "worker_cpu_seconds": 0.015625,
+          "worker_wall_seconds": 0.011431399994762614
+        }
+      ],
+      "parent_wall_seconds": 0.06255260002217256
+    },
+    {
+      "command": [
+        "D:\\CodexProjects\\2026-07-13\\new-chat-4\\completion_workspace\\library_review\\pdf-env\\Scripts\\python.exe",
+        "-B",
+        "-S",
+        "-W",
+        "error::ResourceWarning",
+        "D:\\CodexProjects\\wg-check\\substantive-library\\P039\\artifact\\owned_process\\worker.py",
+        "--root",
+        "owned-process-results\\full-20261014-001\\cases\\cache-9223372036854775807-post_effect-receipt-O0",
+        "--adapter",
+        "cache",
+        "--receiver",
+        "receipt",
+        "--cut",
+        "none"
+      ],
+      "cut": "none",
+      "exit_code": 0,
+      "output": [
+        {
+          "committed": {
+            "effects": 1,
+            "id": "owned-process-j2-a0",
+            "row": [
+              "done",
+              "cache",
+              "job-2",
+              9223372036854775807,
+              0
+            ],
+            "status": "done"
+          },
+          "kind": "receiver_return",
+          "receipt": {
+            "adapter": "cache",
+            "cost": 9223372036854775807,
+            "id": "owned-process-j2-a0",
+            "job": "job-2",
+            "status": "done",
+            "ticket": null,
+            "unsafe": 0,
+            "via": "execute"
+          }
+        },
+        {
+          "after_checkpoint": {
+            "controller.db": 36864,
+            "controller.db-shm": 32768,
+            "controller.db-wal": 0,
+            "receiver.db": 53248,
+            "receiver.db-shm": 32768,
+            "receiver.db-wal": 0
+          },
+          "after_close": {
+            "controller.db": 36864,
+            "receiver.db": 53248
+          },
+          "before_checkpoint": {
+            "controller.db": 36864,
+            "controller.db-shm": 32768,
+            "controller.db-wal": 61832,
+            "receiver.db": 53248,
+            "receiver.db-shm": 32768,
+            "receiver.db-wal": 32992
+          },
+          "checkpoint_seconds": 0.0011616999981924891,
+          "checkpoints": [
+            {
+              "result": [
+                0,
+                0,
+                0
+              ],
+              "role": "controller"
+            },
+            {
+              "result": [
+                0,
+                0,
+                0
+              ],
+              "role": "receiver"
+            }
+          ],
+          "commit_observations": [
+            {
+              "effects": 1,
+              "id": "owned-process-j2-a0",
+              "row": [
+                "done",
+                "cache",
+                "job-2",
+                9223372036854775807,
+                0
+              ],
+              "status": "done"
+            }
+          ],
+          "complete": true,
+          "effects": {
+            "owned-process-j0-a0": [
+              9223372036854775807,
+              0
+            ],
+            "owned-process-j1-a0": [
+              9223372036854775807,
+              0
+            ],
+            "owned-process-j2-a0": [
+              9223372036854775807,
+              0
+            ]
+          },
+          "optimize": 0,
+          "receipts": [
+            {
+              "adapter": "cache",
+              "cost": 9223372036854775807,
+              "id": "owned-process-j2-a0",
+              "job": "job-2",
+              "status": "done",
+              "ticket": null,
+              "unsafe": 0,
+              "via": "execute"
+            }
+          ],
+          "receiver_outcomes": {
+            "owned-process-j0-a0": {
+              "adapter": "cache",
+              "cost": 9223372036854775807,
+              "job": "job-0",
+              "status": "done",
+              "unsafe": 0
+            },
+            "owned-process-j1-a0": {
+              "adapter": "cache",
+              "cost": 9223372036854775807,
+              "job": "job-1",
+              "status": "done",
+              "unsafe": 0
+            },
+            "owned-process-j2-a0": {
+              "adapter": "cache",
+              "cost": 9223372036854775807,
+              "job": "job-2",
+              "status": "done",
+              "unsafe": 0
+            }
+          },
+          "snapshot": {
+            "adapter": "cache",
+            "attempts": {
+              "owned-process-j0-a0": {
+                "action": "fallback",
+                "actual": [
+                  9223372036854775807,
+                  0
+                ],
+                "adapter": "cache",
+                "job": 0,
+                "recoveries": 1,
+                "status": "done",
+                "target": "job-0",
+                "ticket": "91c927477db147e39b9311cfdd7791fe",
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              },
+              "owned-process-j1-a0": {
+                "action": "fallback",
+                "actual": [
+                  9223372036854775807,
+                  0
+                ],
+                "adapter": "cache",
+                "job": 1,
+                "recoveries": 0,
+                "status": "done",
+                "target": "job-1",
+                "ticket": null,
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              },
+              "owned-process-j2-a0": {
+                "action": "fallback",
+                "actual": [
+                  9223372036854775807,
+                  0
+                ],
+                "adapter": "cache",
+                "job": 2,
+                "recoveries": 0,
+                "status": "done",
+                "target": "job-2",
+                "ticket": null,
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              }
+            },
+            "controller_id": "owned-process",
+            "done": true,
+            "events": [
+              {
+                "action": "fallback",
+                "job": 0,
+                "kind": "select",
+                "state": [
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  27670116110564327421
+                ]
+              },
+              {
+                "action": "fallback",
+                "adapter": "cache",
+                "id": "owned-process-j0-a0",
+                "job": 0,
+                "kind": "reserve",
+                "target": "job-0",
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              },
+              {
+                "id": "owned-process-j0-a0",
+                "job": 0,
+                "kind": "recover",
+                "recoveries": 1,
+                "ticket": "91c927477db147e39b9311cfdd7791fe"
+              },
+              {
+                "actual": [
+                  9223372036854775807,
+                  0
+                ],
+                "adapter": "cache",
+                "charge": 9223372036854775807,
+                "crashes": 1,
+                "id": "owned-process-j0-a0",
+                "kind": "settle",
+                "late": 0,
+                "next": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  18446744073709551614
+                ],
+                "status": "done",
+                "target": "job-0",
+                "ticket": "91c927477db147e39b9311cfdd7791fe",
+                "via": "close"
+              },
+              {
+                "action": "fallback",
+                "job": 1,
+                "kind": "select",
+                "state": [
+                  1,
+                  0,
+                  1,
+                  0,
+                  0,
+                  18446744073709551614
+                ]
+              },
+              {
+                "action": "fallback",
+                "adapter": "cache",
+                "id": "owned-process-j1-a0",
+                "job": 1,
+                "kind": "reserve",
+                "target": "job-1",
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              },
+              {
+                "actual": [
+                  9223372036854775807,
+                  0
+                ],
+                "adapter": "cache",
+                "charge": 9223372036854775807,
+                "crashes": 0,
+                "id": "owned-process-j1-a0",
+                "kind": "settle",
+                "late": 0,
+                "next": [
+                  2,
+                  0,
+                  1,
+                  0,
+                  0,
+                  9223372036854775807
+                ],
+                "status": "done",
+                "target": "job-1",
+                "ticket": null,
+                "via": "execute"
+              },
+              {
+                "action": "fallback",
+                "job": 2,
+                "kind": "select",
+                "state": [
+                  2,
+                  0,
+                  1,
+                  0,
+                  0,
+                  9223372036854775807
+                ]
+              },
+              {
+                "action": "fallback",
+                "adapter": "cache",
+                "id": "owned-process-j2-a0",
+                "job": 2,
+                "kind": "reserve",
+                "target": "job-2",
+                "upper": [
+                  9223372036854775807,
+                  0
+                ]
+              },
+              {
+                "actual": [
+                  9223372036854775807,
+                  0
+                ],
+                "adapter": "cache",
+                "charge": 9223372036854775807,
+                "crashes": 0,
+                "id": "owned-process-j2-a0",
+                "kind": "settle",
+                "late": 0,
+                "next": [
+                  3,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                "status": "done",
+                "target": "job-2",
+                "ticket": null,
+                "via": "execute"
+              }
+            ],
+            "state": [
+              3,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          },
+          "sqlite_version": "3.53.1",
+          "worker_cpu_seconds": 0.015625,
+          "worker_wall_seconds": 0.01153419999172911
+        }
+      ],
+      "parent_wall_seconds": 0.06241679997765459
+    }
+  ],
+  "optimized": false,
+  "receiver_implementation": "receipt",
+  "receiver_outcomes": {
+    "owned-process-j0-a0": {
+      "adapter": "cache",
+      "cost": 9223372036854775807,
+      "job": "job-0",
+      "status": "done",
+      "unsafe": 0
+    },
+    "owned-process-j1-a0": {
+      "adapter": "cache",
+      "cost": 9223372036854775807,
+      "job": "job-1",
+      "status": "done",
+      "unsafe": 0
+    },
+    "owned-process-j2-a0": {
+      "adapter": "cache",
+      "cost": 9223372036854775807,
+      "job": "job-2",
+      "status": "done",
+      "unsafe": 0
+    }
+  },
+  "snapshot": {
+    "adapter": "cache",
+    "attempts": {
+      "owned-process-j0-a0": {
+        "action": "fallback",
+        "actual": [
+          9223372036854775807,
+          0
+        ],
+        "adapter": "cache",
+        "job": 0,
+        "recoveries": 1,
+        "status": "done",
+        "target": "job-0",
+        "ticket": "91c927477db147e39b9311cfdd7791fe",
+        "upper": [
+          9223372036854775807,
+          0
+        ]
+      },
+      "owned-process-j1-a0": {
+        "action": "fallback",
+        "actual": [
+          9223372036854775807,
+          0
+        ],
+        "adapter": "cache",
+        "job": 1,
+        "recoveries": 0,
+        "status": "done",
+        "target": "job-1",
+        "ticket": null,
+        "upper": [
+          9223372036854775807,
+          0
+        ]
+      },
+      "owned-process-j2-a0": {
+        "action": "fallback",
+        "actual": [
+          9223372036854775807,
+          0
+        ],
+        "adapter": "cache",
+        "job": 2,
+        "recoveries": 0,
+        "status": "done",
+        "target": "job-2",
+        "ticket": null,
+        "upper": [
+          9223372036854775807,
+          0
+        ]
+      }
+    },
+    "controller_id": "owned-process",
+    "done": true,
+    "events": [
+      {
+        "action": "fallback",
+        "job": 0,
+        "kind": "select",
+        "state": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          27670116110564327421
+        ]
+      },
+      {
+        "action": "fallback",
+        "adapter": "cache",
+        "id": "owned-process-j0-a0",
+        "job": 0,
+        "kind": "reserve",
+        "target": "job-0",
+        "upper": [
+          9223372036854775807,
+          0
+        ]
+      },
+      {
+        "id": "owned-process-j0-a0",
+        "job": 0,
+        "kind": "recover",
+        "recoveries": 1,
+        "ticket": "91c927477db147e39b9311cfdd7791fe"
+      },
+      {
+        "actual": [
+          9223372036854775807,
+          0
+        ],
+        "adapter": "cache",
+        "charge": 9223372036854775807,
+        "crashes": 1,
+        "id": "owned-process-j0-a0",
+        "kind": "settle",
+        "late": 0,
+        "next": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          18446744073709551614
+        ],
+        "status": "done",
+        "target": "job-0",
+        "ticket": "91c927477db147e39b9311cfdd7791fe",
+        "via": "close"
+      },
+      {
+        "action": "fallback",
+        "job": 1,
+        "kind": "select",
+        "state": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          18446744073709551614
+        ]
+      },
+      {
+        "action": "fallback",
+        "adapter": "cache",
+        "id": "owned-process-j1-a0",
+        "job": 1,
+        "kind": "reserve",
+        "target": "job-1",
+        "upper": [
+          9223372036854775807,
+          0
+        ]
+      },
+      {
+        "actual": [
+          9223372036854775807,
+          0
+        ],
+        "adapter": "cache",
+        "charge": 9223372036854775807,
+        "crashes": 0,
+        "id": "owned-process-j1-a0",
+        "kind": "settle",
+        "late": 0,
+        "next": [
+          2,
+          0,
+          1,
+          0,
+          0,
+          9223372036854775807
+        ],
+        "status": "done",
+        "target": "job-1",
+        "ticket": null,
+        "via": "execute"
+      },
+      {
+        "action": "fallback",
+        "job": 2,
+        "kind": "select",
+        "state": [
+          2,
+          0,
+          1,
+          0,
+          0,
+          9223372036854775807
+        ]
+      },
+      {
+        "action": "fallback",
+        "adapter": "cache",
+        "id": "owned-process-j2-a0",
+        "job": 2,
+        "kind": "reserve",
+        "target": "job-2",
+        "upper": [
+          9223372036854775807,
+          0
+        ]
+      },
+      {
+        "actual": [
+          9223372036854775807,
+          0
+        ],
+        "adapter": "cache",
+        "charge": 9223372036854775807,
+        "crashes": 0,
+        "id": "owned-process-j2-a0",
+        "kind": "settle",
+        "late": 0,
+        "next": [
+          3,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "status": "done",
+        "target": "job-2",
+        "ticket": null,
+        "via": "execute"
+      }
+    ],
+    "state": [
+      3,
+      0,
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  "valid": true
+}
