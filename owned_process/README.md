@@ -4,9 +4,8 @@ This optional study changes no historical `artifact/results/` data or schema,
 dependency format, license or security mechanism. The old exact 62-database
 packet checker remains unchanged; additional databases are checked separately
 through `derive.py` and the existing per-case read-only replayer. All effects
-are benign owned SQL fixtures. AI assistance was used for the added code,
-domain argument, regressions and exposition, not independent human review or
-machine-checked proof.
+are benign owned SQL fixtures. The checks provide computational evidence, not
+independent human review or machine-checked proof.
 
 ## Contract and same-information comparator
 

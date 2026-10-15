@@ -79,8 +79,8 @@ Its 168-case process activity and separate 84-case alternating cost activity
 compare the same-information ordinary transaction receiver, retaining all raw
 inputs/outputs, commit observations and checkpoint costs. They do not replace
 historical results or demonstrate a new primitive, production benefit or a
-physical byte budget. Added code, arguments and exposition used AI assistance;
-this is neither a mechanized proof nor independent human review.
+physical byte budget. These checks provide neither a mechanized proof nor
+independent human review.
 
 The runtime deep-copies and recursively freezes validated specification/certificate inputs before exposing read-only accessors. The replayer checks exact scalar kinds before comparing values, preventing float/int and Boolean/int aliases. Before the October additions, the core `tests/` tree scheduled 95 regression tests covering those failures, catalogue binding, refusal semantics, the comparator oracle, productive paths, retained-identity bounds, delayed-request cancellation fences, a full reply-loss example, and refusal to overwrite an existing reproduction directory. A cost-semantics regression also distinguishes fixed certified charge from variable admissible actual costs. Two owned SQLite regressions check current-cohort storage compatibility and rejection of unlisted databases at historical and current roots. The integrated runner and scientific CI additionally schedule six portable frontier-limit tests from `regressions/test_frontier_limits.py`; their own 1,152-contract concrete-world check does not alter the retained 3,024-contract grid or campaign denominators. Dated test receipts are retained for their original cohorts. Test inventory is not a measure of novelty or proof completeness, and does not imply that every test has run on every platform.
 

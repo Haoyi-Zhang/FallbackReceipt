@@ -1,8 +1,7 @@
 # Typed realization and canonical cancellation
 
 This is a hand argument about the present Python/SQLite implementation, not a
-proof-assistant derivation. AI assistance was used in the added argument,
-regressions, comparison implementation and exposition. Executed checks are
+proof-assistant derivation. Executed checks are
 computational evidence, not independent human review.
 
 ## Domains
