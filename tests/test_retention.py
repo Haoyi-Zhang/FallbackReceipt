@@ -53,5 +53,9 @@ class RetentionTests(unittest.TestCase):
         self.assertEqual(r['complete_histories_replayed'],31)
         self.assertEqual(r['refinement_count_rows_checked'],171)
         self.assertGreater(r['bound_attained_histories'],0)
+        # JSON case identifiers use the retained POSIX spelling on every host.
+        # Checking only the counts misses a broken --verify command on Windows.
+        self.assertEqual(r,json.loads((ROOT/'results/retention/summary.json').read_text()))
+        self.assertTrue(all('\\' not in row['case'] for row in r['histories']))
 
 if __name__=='__main__':unittest.main()

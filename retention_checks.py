@@ -84,7 +84,7 @@ def evaluate(results: Path = ROOT / 'results') -> dict:
         row = summarize_history(json.loads((d/'spec.json').read_text()),
                                 json.loads((d/'certificate.json').read_text()),
                                 json.loads((d/'runtime.json').read_text()))
-        rows.append({'case': str(d.relative_to(results)), **row})
+        rows.append({'case': d.relative_to(results).as_posix(), **row})
     # These are scalar cross-checks against the independently reconstructed
     # refinement experiment; not 171 additional exported event histories.
     spec = json.loads((results/'pilot/spec.json').read_text())

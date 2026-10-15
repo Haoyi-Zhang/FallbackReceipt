@@ -19,7 +19,7 @@ python -S verify_all.py
 python -S verify_all.py --reproduce
 ```
 
-The first command schedules **95 tests in `tests/` plus six portable frontier-limit regressions**, reconstructs and checks retained results, recomputes exact comparisons, graph checks, and identity-retention checks, and runs the recovery example. The second also generates all ten experiment phases in a fresh temporary directory and compares logical results. Complete reproduction refuses a nonempty output directory rather than replacing earlier results. A nonzero exit is a failed check; finite checks do not establish general correctness. The dated 82/84-test receipts remain evidence of their original cohorts, not receipts for this expanded schedule.
+The first command schedules **102 tests in `tests/` plus six portable frontier-limit regressions**, reconstructs and checks retained results, recomputes exact comparisons, graph checks, and identity-retention checks, and runs the recovery example. The second also generates all ten experiment phases in a fresh temporary directory and compares logical results. Complete reproduction refuses a nonempty output directory rather than replacing earlier results. A nonzero exit is a failed check; finite checks do not establish general correctness. The dated 82/84-test receipts remain evidence of their original cohorts, not receipts for this expanded schedule.
 
 Individual entry points:
 
